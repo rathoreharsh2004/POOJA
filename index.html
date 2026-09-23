@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Shree Pooja Fasteners & Engineering — Wholesaler & Supplier of Premium Industrial Fasteners</title>
-<meta name="description" content="Shree Pooja Fasteners & Engineering is a trusted wholesaler and supplier of premium industrial fasteners, heavy hex bolts, nuts, washers, screws, and precision engineering solutions based in Vasai East, Maharashtra." />
+<title>Shree Pooja Fasteners & Engineering — Manufacturer & Supplier of Premium Industrial Fasteners</title>
+<meta name="description" content="Shree Pooja Fasteners & Engineering — Wholesaler & Supplier of high-quality industrial fasteners, bolts, nuts, washers, screws, and precision hardware solutions based in Vasai East, Maharashtra." />
 <meta name="theme-color" content="#101412" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23101412'/%3E%3Ccircle cx='16' cy='12' r='4' fill='%23D5E4E1'/%3E%3Cpath d='M5 24l7-8 4 4 3-3 8 7z' fill='%23fff'/%3E%3C/svg%3E" />
 
@@ -481,7 +481,8 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
   color: var(--snow);
   background: var(--pine-night);
 }
-.hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; transition: opacity 1s ease-in-out; }
+.hero__img.fade-out { opacity: 0; }
 .hero::after {
   content: ""; position: absolute; inset: 0; z-index: -1;
   background:
@@ -511,16 +512,14 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
 .hero__copy .cta-orbit { margin-top: .75rem; }
 .hero .cta-orbit__dot { box-shadow: 0 0 0 5px rgba(255, 255, 255, .9); }
 
-.hero__rail { padding-bottom: 2rem; }
+.hero__rail { padding-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .hero__rail span {
-  display: block; height: 2px; border-radius: 2px;
+  display: block; height: 2px; border-radius: 2px; flex: 1;
   background: linear-gradient(90deg, var(--snow) 0 34%, var(--snow-line) 34% 100%);
 }
-
-@media (max-width: 1024px) {
-  .hero__grid { grid-template-columns: minmax(0, 1fr); }
-  .hero__title { max-width: 13ch; }
-}
+.hero__slider-dots { display: flex; gap: .5rem; align-items: center; }
+.hero__dot-btn { width: 10px; height: 10px; border-radius: 50%; border: 1px solid var(--snow-line); background: transparent; padding: 0; cursor: pointer; transition: background var(--dur-fast), border-color var(--dur-fast); }
+.hero__dot-btn[aria-selected="true"] { background: var(--glacier); border-color: var(--glacier); }
 
 /* Statement with inline photo pills */
 .statement { text-align: center; }
@@ -567,7 +566,7 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
   .split__media { aspect-ratio: 4 / 3; }
 }
 
-/* Bento */
+/* Bento (High Demand - exactly 4 categories) */
 .destinations { background: var(--paper); border-radius: var(--r-lg) var(--r-lg) 0 0; }
 .bento {
   display: grid; gap: clamp(.75rem, 1.4vw, 1.1rem);
@@ -763,28 +762,12 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
 .values__list p { color: var(--pine-mute); }
 @media (max-width: 800px) { .values__list { grid-template-columns: minmax(0, 1fr); } }
 
-.team { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
-.guide { display: grid; gap: .35rem; justify-items: start; padding: 1.5rem; border-radius: var(--r-lg); background: var(--paper); }
-.guide__avatar { display: grid; place-items: center; width: 64px; height: 64px; margin-bottom: 1rem; border-radius: 50%; background: var(--glacier); color: var(--pine); font-family: var(--font-display); font-size: 1.25rem; font-weight: 500; }
-.guide h3 { font-size: var(--text-md); letter-spacing: -.01em; }
-.guide p { font-size: var(--text-sm); color: var(--pine-mute); }
-.guide .label { margin-top: .75rem; }
-@media (max-width: 960px) { .team { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 480px) { .team { grid-template-columns: minmax(0, 1fr); } }
-
 /* Contact */
 .contact { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: start; }
 .contact__form { display: grid; gap: 1.25rem; padding: clamp(1.5rem, 3vw, 2.5rem); border-radius: var(--r-lg); background: var(--paper); }
 .contact__form .btn { justify-self: start; }
 .contact__row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .contact__form input.input, .contact__form select.input { padding-inline: 1.1rem; }
-.contact__size { border: 0; padding: 0; margin: 0; min-width: 0; }
-.contact__size legend { margin-bottom: .5rem; padding: 0; }
-.radio-chip { position: relative; }
-.radio-chip input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
-.radio-chip span { display: inline-flex; align-items: center; min-height: 42px; padding: 0 1.2rem; border-radius: var(--r-pill); border: 1px solid var(--line); font-size: var(--text-sm); color: var(--pine); transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease); }
-.radio-chip input:checked + span { background: var(--pine); border-color: var(--pine); color: var(--snow); }
-.radio-chip input:focus-visible + span { outline: 2px solid var(--pine); outline-offset: 3px; }
 .contact__aside { display: grid; gap: 1rem; }
 .contact__photo { margin: 0; border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 4 / 3; }
 .contact__photo img { width: 100%; height: 100%; object-fit: cover; }
@@ -832,8 +815,8 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
 
   <!-- ==================== HOME PAGE ==================== -->
   <div id="page-home" class="spa-page active-page">
-    <section class="hero on-photo" aria-labelledby="hero-title">
-      <img class="hero__img" src="ho1.png" alt="Industrial fasteners and engineering supplies showroom" width="2000" height="1333" fetchpriority="high" decoding="async" />
+    <section class="hero on-photo" aria-labelledby="hero-title" data-hero-slider>
+      <img class="hero__img" src="ho1.png" alt="Industrial fasteners and engineering supplies showroom" width="2000" height="1333" fetchpriority="high" decoding="async" data-hero-slide-img />
       <div class="container hero__grid">
         <div class="hero__copy">
           <p class="hero__eyebrow"><span class="hero__dot" aria-hidden="true"></span>Industrial Fasteners Wholesaler &amp; Supplier</p>
@@ -845,7 +828,17 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
           </a>
         </div>
       </div>
-      <div class="container hero__rail" aria-hidden="true"><span></span></div>
+      <div class="container hero__rail" aria-hidden="true">
+        <span></span>
+        <div class="hero__slider-dots">
+          <button class="hero__dot-btn" type="button" aria-selected="true" data-slide-to="0" aria-label="Slide 1"></button>
+          <button class="hero__dot-btn" type="button" aria-selected="false" data-slide-to="1" aria-label="Slide 2"></button>
+          <button class="hero__dot-btn" type="button" aria-selected="false" data-slide-to="2" aria-label="Slide 3"></button>
+          <button class="hero__dot-btn" type="button" aria-selected="false" data-slide-to="3" aria-label="Slide 4"></button>
+          <button class="hero__dot-btn" type="button" aria-selected="false" data-slide-to="4" aria-label="Slide 5"></button>
+          <button class="hero__dot-btn" type="button" aria-selected="false" data-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+      </div>
     </section>
 
     <!-- Statement -->
@@ -858,7 +851,7 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
           <span class="pill-img pill-img--wide"><img src="ho3.png" alt="" width="600" height="400" loading="lazy" decoding="async" /></span>
           for industrial excellence.
         </h2>
-        <p class="statement__sub" data-reveal>Shree Pooja Fasteners &amp; Engineering ensures rigorous quality control, dimensional accuracy, and dependable supply chain execution for engineering, fabrication, construction, and infrastructure sectors.</p>
+        <p class="statement__sub" data-reveal>Shree Pooja Fasteners &amp; Engineering ensures rigorous quality control, dimensional accuracy, and dependable supply chain execution for engineering, fabrication, construction, electrical, and infrastructure sectors.</p>
       </div>
     </section>
 
@@ -867,15 +860,15 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
       <div class="container split">
         <figure class="split__media" data-reveal>
           <img src="ab.png" alt="Shree Pooja Fasteners facility and stock inventory" width="1100" height="1375" loading="lazy" decoding="async" />
-          <figcaption class="split__cap"><span class="label">Vasai East, Maharashtra · Bulk Supply &amp; Wholesaling</span></figcaption>
+          <figcaption class="split__cap"><span class="label">Vasai East, Tungar Phata, Maharashtra · Bulk Supply &amp; Wholesaling</span></figcaption>
         </figure>
         <div class="split__copy">
           <p class="label">Why Industry Leaders Choose Us</p>
           <h2 id="closer-title">Uncompromising quality and dependable industrial supply</h2>
-          <p>Serving engineering, construction, electrical, and infrastructure sectors with precision fasteners. We work closely with associated manufacturing facilities to bring you tested, reliable components.</p>
+          <p>Serving engineering, construction, electrical, heavy fabrication, and infrastructure sectors with precision fasteners. We work closely with associated manufacturing facilities to bring you tested, reliable components.</p>
           <dl class="ledger">
             <div><dt>On-Time Delivery Rate</dt><dd>98.5%</dd></div>
-            <div><dt>Product Categories</dt><dd>4+</dd></div>
+            <div><dt>Core Categories</dt><dd>4+</dd></div>
             <div><dt>Years of Expertise</dt><dd>15+</dd></div>
           </dl>
         </div>
@@ -929,35 +922,7 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
       </div>
     </section>
 
-    <!-- Promises -->
-    <section class="section promises" aria-labelledby="prom-title">
-      <div class="container">
-        <div class="shead shead--center">
-          <p class="label">The Shree Pooja Guarantee</p>
-          <h2 id="prom-title">Engineered for absolute reliability</h2>
-          <p>Every fastener undergoes dimensional verification and quality checks prior to dispatch.</p>
-        </div>
-        <ul class="promise-row">
-          <li class="promise" data-reveal>
-            <span class="promise__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h6a4 4 0 0 0 0-8h-4a4 4 0 0 1 0-8h6"/></svg></span>
-            <h3>Bulk &amp; Custom Orders</h3>
-            <p>From standard industrial requirements to specialized drawing-based custom fasteners.</p>
-          </li>
-          <li class="promise" data-reveal>
-            <span class="promise__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3.5"/><path d="M5 21a7 7 0 0 1 14 0M12 14v3"/></svg></span>
-            <h3>Technical Support</h3>
-            <p>Dependable customer support and expert consultation for precise application matching.</p>
-          </li>
-          <li class="promise" data-reveal>
-            <span class="promise__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
-            <h3>Controlled Quality</h3>
-            <p>Raw material inspection, dimensional accuracy checks, and final dispatch verification.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Product Catalog Section — ONLY 6 PRODUCTS -->
+    <!-- Product Catalog Section — ONLY 6 PRODUCTS (Placed right after High Demand) -->
     <section class="section" aria-labelledby="feat-title">
       <div class="container">
         <div class="shead shead--split">
@@ -1086,6 +1051,93 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
       </div>
     </section>
 
+    <!-- Fastener Engineering & Manufacturing Section -->
+    <section class="section values" aria-labelledby="eng-title">
+      <div class="container">
+        <div class="shead">
+          <p class="label">Engineering &amp; Production</p>
+          <h2 id="eng-title">Fastener Engineering &amp; Manufacturing Capabilities</h2>
+          <p>Operated via controlled supply chains and associated manufacturing partners to deliver zero-defect industrial hardware.</p>
+        </div>
+        <ol class="values__list">
+          <li><span class="label">01</span><h3>Raw Material &amp; Cold Forming</h3><p>High-grade wire rods and metal stock subjected to rigorous initial inspection, followed by precision cold forming / heading.</p></li>
+          <li><span class="label">02</span><h3>Thread Formation &amp; Rolling</h3><p>Thread rolling and precision machining ensure superior tensile strength, fatigue resistance, and accurate pitch tolerances.</p></li>
+          <li><span class="label">03</span><h3>Heat Treatment &amp; Finishing</h3><p>Controlled heat treatment followed by surface finishing (galvanizing, zinc plating, blackodising) for corrosion protection.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Infrastructure & Quality Control Section -->
+    <section class="section" aria-labelledby="infra-title">
+      <div class="container">
+        <div class="shead shead--split">
+          <div>
+            <p class="label">Infrastructure &amp; Quality</p>
+            <h2 id="infra-title">Controlled Supply &amp; Quality Assurance</h2>
+          </div>
+        </div>
+        <ul class="promise-row">
+          <li class="promise" data-reveal>
+            <span class="promise__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/></svg></span>
+            <h3>Raw Material Inspection</h3>
+            <p>Verification of chemical composition and material grade prior to processing.</p>
+          </li>
+          <li class="promise" data-reveal>
+            <span class="promise__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/></svg></span>
+            <h3>Dimensional Accuracy</h3>
+            <p>Rigorous checks on thread profiles, diameters, and lengths to meet international standards.</p>
+          </li>
+          <li class="promise" data-reveal>
+            <span class="promise__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg></span>
+            <h3>Final Dispatch Verification</h3>
+            <p>Comprehensive visual and packing inspection ensuring safe transit and timely delivery.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Applications / Industries Section -->
+    <section class="section destinations" aria-labelledby="apps-title">
+      <div class="container">
+        <div class="shead shead--split">
+          <div>
+            <p class="label">Applications</p>
+            <h2 id="apps-title">Industries We Serve</h2>
+          </div>
+        </div>
+        <div class="dest-strip">
+            <a class="dtile" href="#products" data-route="products">
+              <img src="ho5.png" alt="Construction Industry" width="1100" height="733" loading="lazy" decoding="async" />
+              <span class="dtile__meta">
+                <span class="dtile__name">Construction Industry</span>
+                <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Civil &amp; Infrastructure</span>
+              </span>
+            </a>
+            <a class="dtile" href="#products" data-route="products">
+              <img src="ho6.jpeg" alt="Industrial Machinery" width="1100" height="733" loading="lazy" decoding="async" />
+              <span class="dtile__meta">
+                <span class="dtile__name">Industrial Machinery</span>
+                <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Heavy Equipment</span>
+              </span>
+            </a>
+            <a class="dtile" href="#products" data-route="products">
+              <img src="ho1.png" alt="Heavy Fabrication" width="1100" height="733" loading="lazy" decoding="async" />
+              <span class="dtile__meta">
+                <span class="dtile__name">Heavy Fabrication</span>
+                <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Structural Engineering</span>
+              </span>
+            </a>
+            <a class="dtile" href="#products" data-route="products">
+              <img src="ho2.png" alt="Automobile & Electrical" width="1100" height="733" loading="lazy" decoding="async" />
+              <span class="dtile__meta">
+                <span class="dtile__name">Automobile &amp; Electrical</span>
+                <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Automotive &amp; Electrical</span>
+              </span>
+            </a>
+        </div>
+      </div>
+    </section>
+
     <!-- Quote Banner -->
     <section class="section quote-band on-photo" aria-labelledby="quote-title">
       <img class="quote-band__img" src="ho4.png" alt="Heavy industrial manufacturing plant floor" width="2000" height="1333" loading="lazy" decoding="async" />
@@ -1095,6 +1147,23 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
           <blockquote>&ldquo;Shree Pooja Fasteners delivered our bulk fastener requirements ahead of schedule with flawless dimensional accuracy and dependable support.&rdquo;</blockquote>
           <figcaption><strong>Rajesh Sharma</strong> · Senior Procurement Lead, InfraBuild Corp</figcaption>
         </figure>
+      </div>
+    </section>
+
+    <!-- Temporary Map Section -->
+    <section class="section" aria-labelledby="map-title">
+      <div class="container">
+        <div class="shead shead--center">
+          <p class="label">Location</p>
+          <h2 id="map-title">Our Business Headquarters</h2>
+          <p>Vasai East, Tungar Phata, Maharashtra, India</p>
+        </div>
+        <div style="width: 100%; height: 350px; background: var(--fog-deep); border-radius: var(--r-lg); display: grid; place-items: center; color: var(--pine);">
+          <div style="text-align: center; padding: 2rem;">
+            <p style="font-family: var(--font-display); font-size: var(--text-lg); font-weight: 500;">Vasai East, Tungar Phata, Maharashtra, India</p>
+            <p style="font-size: var(--text-sm); color: var(--pine-mute); margin-top: .5rem;">Interactive map location placeholder</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1273,52 +1342,6 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
         <button class="btn btn--dark" type="button" data-tour-reset>Reset filters</button>
       </div>
     </section>
-
-    <!-- Category Strip -->
-    <section class="section section--flush-top" aria-labelledby="where-title">
-      <div class="container">
-        <div class="shead shead--split">
-          <div>
-            <p class="label">Quick Navigation</p>
-            <h2 id="where-title">Explore by Application</h2>
-          </div>
-        </div>
-        <div class="dest-strip">
-            <a class="dtile" href="#products" data-route="products">
-              <img src="ho5.png" alt="Construction Industry" width="1100" height="733" loading="lazy" decoding="async" />
-              <span class="dtile__meta">
-                <span class="dtile__name">Construction Industry</span>
-                <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Heavy Civil &amp; Infrastructure</span>
-              </span>
-              <span class="dtile__count">Sectors</span>
-            </a>
-            <a class="dtile" href="#products" data-route="products">
-              <img src="ho6.jpeg" alt="Industrial Machinery" width="1100" height="733" loading="lazy" decoding="async" />
-              <span class="dtile__meta">
-                <span class="dtile__name">Industrial Machinery</span>
-                <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Machinery &amp; OEM</span>
-              </span>
-              <span class="dtile__count">Sectors</span>
-            </a>
-            <a class="dtile" href="#products" data-route="products">
-              <img src="ho1.png" alt="Heavy Fabrication" width="1100" height="733" loading="lazy" decoding="async" />
-              <span class="dtile__meta">
-                <span class="dtile__name">Heavy Fabrication</span>
-                <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Fabrication &amp; Structural</span>
-              </span>
-              <span class="dtile__count">Sectors</span>
-            </a>
-            <a class="dtile" href="#products" data-route="products">
-              <img src="ho2.png" alt="Automobile Industry" width="1100" height="733" loading="lazy" decoding="async" />
-              <span class="dtile__meta">
-                <span class="dtile__name">Automobile Industry</span>
-                <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Automotive &amp; Electrical</span>
-              </span>
-              <span class="dtile__count">Sectors</span>
-            </a>
-        </div>
-      </div>
-    </section>
   </div>
 
   <!-- ==================== PRODUCT DETAIL PAGE ==================== -->
@@ -1407,77 +1430,6 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
             <p class="bookcard__fine">Dependable customer support and secure wholesale supply across domestic and commercial channels.</p>
           </form>
         </aside>
-      </div>
-    </section>
-
-    <section class="section section--flush-top" aria-labelledby="more-title">
-      <div class="container">
-        <div class="shead shead--split">
-          <div>
-            <p class="label">Related Products</p>
-            <h2 id="more-title">You may also require</h2>
-          </div>
-          <a class="link-arrow" href="#products" data-route="products">All products <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-        </div>
-        <div class="tgrid">
-            <article class="tcard" data-kind="bolts" data-price="210" data-days="1">
-              <div class="tcard__media">
-                <img src="fo.jpeg" alt="Foundation Bolt" width="800" height="600" loading="lazy" decoding="async" />
-                <span class="tcard__kind">Bolt</span>
-              </div>
-              <div class="tcard__body">
-                <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Construction Grade</p>
-                <h3 class="tcard__name"><a href="#detail" data-route="detail">Foundation Bolt</a></h3>
-                <p class="tcard__facts">
-                  <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>1 Day dispatch</span>
-                  <span>In Stock</span>
-                  <span class="tcard__rating"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9Z"/></svg>4.8 <small>(388)</small></span>
-                </p>
-                <p class="tcard__foot">
-                  <span class="tcard__price"><small>per kg</small> &#8377;210</span>
-                  <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
-                </p>
-              </div>
-            </article>
-            <article class="tcard" data-kind="screws" data-price="450" data-days="2">
-              <div class="tcard__media">
-                <img src="as.jpeg" alt="Assembly Screw" width="800" height="600" loading="lazy" decoding="async" />
-                <span class="tcard__kind">Screw</span>
-              </div>
-              <div class="tcard__body">
-                <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Precision Assembly</p>
-                <h3 class="tcard__name"><a href="#detail" data-route="detail">Assembly Screw</a></h3>
-                <p class="tcard__facts">
-                  <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>2 Days dispatch</span>
-                  <span>Ready Ship</span>
-                  <span class="tcard__rating"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9Z"/></svg>4.7 <small>(451)</small></span>
-                </p>
-                <p class="tcard__foot">
-                  <span class="tcard__price"><small>per kg</small> &#8377;450</span>
-                  <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
-                </p>
-              </div>
-            </article>
-            <article class="tcard" data-kind="nuts" data-price="280" data-days="2">
-              <div class="tcard__media">
-                <img src="h.jpeg" alt="Hex Nut" width="800" height="600" loading="lazy" decoding="async" />
-                <span class="tcard__kind">Nuts</span>
-              </div>
-              <div class="tcard__body">
-                <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Standard &amp; Heavy</p>
-                <h3 class="tcard__name"><a href="#detail" data-route="detail">Hex Nut</a></h3>
-                <p class="tcard__facts">
-                  <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>2 Days dispatch</span>
-                  <span>Ready Stock</span>
-                  <span class="tcard__rating"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9Z"/></svg>4.9 <small>(76)</small></span>
-                </p>
-                <p class="tcard__foot">
-                  <span class="tcard__price"><small>per kg</small> &#8377;280</span>
-                  <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
-                </p>
-              </div>
-            </article>
-        </div>
       </div>
     </section>
   </div>
@@ -1802,10 +1754,52 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
 
   routeTo(window.location.hash);
 
+  /* Hero 6-Image Slider -------------------------------------------------- */
+  const heroSlider = $("[data-hero-slider]");
+  if (heroSlider) {
+    const images = ["ho1.png", "ho2.png", "ho3.png", "ho4.png", "ho5.png", "ho6.jpeg"];
+    const imgEl = $("[data-hero-slide-img]", heroSlider);
+    const dotBtns = $$("[data-slide-to]", heroSlider);
+    let currentIdx = 0;
+    let slideInterval;
+
+    const showSlide = (idx) => {
+      currentIdx = (idx + images.length) % images.length;
+      if (imgEl) {
+        imgEl.classList.add("fade-out");
+        setTimeout(() => {
+          imgEl.src = images[currentIdx];
+          imgEl.classList.remove("fade-out");
+        }, 300);
+      }
+      dotBtns.forEach((btn, i) => {
+        btn.setAttribute("aria-selected", String(i === currentIdx));
+      });
+    };
+
+    dotBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        clearInterval(slideInterval);
+        showSlide(Number(btn.dataset.slideTo));
+        startSlideTimer();
+      });
+    });
+
+    const startSlideTimer = () => {
+      slideInterval = setInterval(() => {
+        showSlide(currentIdx + 1);
+      }, 5000);
+    };
+    startSlideTimer();
+  }
+
   /* Product Catalog Filter, Price Cap, Sort ------------------------------ */
-  const grid = $("[data-tour-grid]");   if (grid) {     const cards = $$(".tcard", grid);
+  const grid = $("[data-tour-grid]");
+  if (grid) {
+    const cards = $$(".tcard", grid);
     const count = $("[data-tour-count]");
-    const empty = $("[data-tour-empty]");     const chips = $$("[data-kind-chip]");
+    const empty = $("[data-tour-empty]");
+    const chips = $$("[data-kind-chip]");
     const cap = $("[data-price-cap]");
     const capOut = $("[data-price-out]");
     const sort = $("[data-sort]");
@@ -1826,7 +1820,7 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
         featured: (a, b) => a.dataset.order - b.dataset.order,
         "price-asc": (a, b) => a.dataset.price - b.dataset.price,
         "price-desc": (a, b) => b.dataset.price - a.dataset.price,
-        days: (a, b) => a.dataset.days - b.dataset.days,
+        days: (a, b) => a.dataset.days - a.dataset.days,
       }[key];
       cards.slice().sort(by).forEach((c) => grid.appendChild(c));
       if (count) count.textContent = `${shown} ${shown === 1 ? "product" : "products"}`;

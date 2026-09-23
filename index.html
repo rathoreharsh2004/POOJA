@@ -1,674 +1,441 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ApexThread · Precision Fastener Engineering &amp; Industrial Hardware</title>
-  <meta name="description" content="High-tensile industrial fasteners, aerospace-grade bolts, custom threading, and rigorous metallurgy testing for heavy engineering and automotive sectors." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Boldonse&family=Inter+Tight:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" />
-  <style>
-    /* ============================================================================
-       ApexThread — Fastener Engineering Studio & Manufacturer Template
-       Adapted from Brivon Editorial Brutalist Visual Direction
-       Charcoal ground (#0A0A0C) + Electric Lime accent (#D4FF3D)
-       ============================================================================ */
-    :root {
-      --ink-000:        #050507;
-      --ink-deep:       #0A0A0C;
-      --ink:            #111114;
-      --ink-card:       #18181C;
-      --ink-elev:       #232328;
-      --ink-line:       rgba(244, 244, 240, 0.08);
-      --ink-line-soft:  rgba(244, 244, 240, 0.04);
-      --ink-rule:       rgba(244, 244, 240, 0.16);
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shree Pooja Fasteners & Engineering — Industrial Fasteners & Components</title>
+<meta name="description" content="Shree Pooja Fasteners & Engineering — leading manufacturer and supplier of industrial fasteners, high-tensile bolts, nuts, washers, and custom engineering components." />
+<meta name="theme-color" content="#101412" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23101412'/%3E%3Ccircle cx='16' cy='12' r='4' fill='%23D5E4E1'/%3E%3Cpath d='M5 24l7-8 4 4 3-3 8 7z' fill='%23fff'/%3E%3C/svg%3E" />
 
-      --paper:          #F4F4F0;
-      --paper-soft:     #C9C9C2;
-      --paper-mute:     #80807A;
-      --paper-deep:     #5A5A55;
-      --paper-tile:     #F4F4F0;
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=SUSE:wght@400;500;600&family=Golos+Text:wght@400;500;600&family=Ubuntu+Sans+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://images.pexels.com" crossorigin />
 
-      --lime:           #D4FF3D;
-      --lime-soft:      #E2FF73;
-      --lime-deep:      #9CCB1F;
-      --lime-glow:      rgba(212, 255, 61, 0.20);
-
-      --bg:             var(--ink-deep);
-      --bg-alt:         var(--ink-000);
-      --bg-card:        var(--ink-card);
-      --bg-elev:        var(--ink-elev);
-      --bg-tile:        var(--paper-tile);
-
-      --fg:             var(--paper);
-      --fg-soft:        var(--paper-soft);
-      --fg-mute:        var(--paper-mute);
-      --fg-deep:        var(--paper-deep);
-      --fg-on-tile:     var(--ink-deep);
-      --fg-on-tile-mute:#5A5A55;
-
-      --rule:           var(--ink-line);
-      --rule-strong:    var(--ink-rule);
-      --rule-lime:      rgba(212, 255, 61, 0.35);
-
-      --font-display:   'Boldonse', 'Inter Tight', system-ui, sans-serif;
-      --font-body:      'Inter Tight', system-ui, sans-serif;
-      --font-mono:      'Geist Mono', 'IBM Plex Mono', monospace;
-
-      --text-xs:    0.75rem;
-      --text-sm:    0.8125rem;
-      --text-base:  clamp(1rem, 0.94rem + 0.28vw, 1.0625rem);
-      --text-lg:    clamp(1.125rem, 1rem + 0.45vw, 1.25rem);
-      --text-xl:    clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
-      --text-2xl:   clamp(1.5rem, 1.25rem + 0.95vw, 2rem);
-      --text-3xl:   clamp(1.875rem, 1.45rem + 1.7vw, 2.75rem);
-      --text-4xl:   clamp(2.5rem, 1.75rem + 2.6vw, 4rem);
-      --text-5xl:   clamp(2.8rem, 1.9rem + 3.4vw, 4.75rem);
-      --text-mega:  clamp(2.5rem, 1.6rem + 3vw, 4.5rem);
-
-      --space-1:  0.25rem;
-      --space-2:  0.5rem;
-      --space-3:  0.75rem;
-      --space-4:  1rem;
-      --space-5:  1.5rem;
-      --space-6:  2rem;
-      --space-7:  3rem;
-      --space-8:  4.5rem;
-      --space-9:  6.5rem;
-
-      --radius-sm:  8px;
-      --radius:     12px;
-      --radius-lg:  20px;
-      --radius-full: 999px;
-
-      --container:        1340px;
-      --container-wide:   1480px;
-      --container-narrow: 1080px;
-      --gutter:           clamp(1.25rem, 1rem + 1.5vw, 2.25rem);
-
-      --shadow:     0 16px 36px -12px rgba(0, 0, 0, 0.55);
-      --shadow-lg:  0 48px 96px -32px rgba(0, 0, 0, 0.6);
-      --shadow-lime: 0 22px 60px -22px rgba(212, 255, 61, 0.25);
-
-      --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
-      --dur-fast:   180ms;
-      --dur-base:   320ms;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; }
-    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; background: var(--bg); }
-    body {
-      margin: 0; background: var(--bg); color: var(--fg);
-      font-family: var(--font-body); font-size: var(--text-base); line-height: 1.6;
-      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
-    }
-    img, svg { max-width: 100%; height: auto; display: block; }
-    a { color: inherit; text-decoration: none; }
-    button { font: inherit; cursor: pointer; background: none; border: 0; color: inherit; }
-    :focus-visible { outline: 2px solid var(--lime); outline-offset: 3px; border-radius: 2px; }
-    ::selection { background: var(--lime); color: var(--ink-000); }
-
-    .skip-link {
-      position: absolute; left: -9999px; top: 0;
-      background: var(--lime); color: var(--ink-000);
-      padding: var(--space-3) var(--space-5); font-family: var(--font-mono); font-size: var(--text-sm); z-index: 999;
-    }
-    .skip-link:focus { left: var(--space-4); top: var(--space-4); }
-
-    .container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
-    .container--wide { max-width: var(--container-wide); }
-    .container--narrow { max-width: var(--container-narrow); }
-
-    section { padding-block: var(--space-9); }
-    section.compact { padding-block: var(--space-7); }
-
-    .eyebrow {
-      font-family: var(--font-mono); font-size: var(--text-xs);
-      letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-mute);
-      display: inline-flex; align-items: center; gap: var(--space-2);
-    }
-    .eyebrow .dot { width: 6px; height: 6px; background: var(--lime); border-radius: 50%; display: inline-block; }
-
-    h1, h2, h3, h4 {
-      font-family: var(--font-display); font-weight: 400; letter-spacing: -0.015em; margin: 0; line-height: 1.25; text-transform: uppercase;
-    }
-    h1 { font-size: var(--text-5xl); line-height: 1.22; }
-    h2 { font-size: var(--text-4xl); line-height: 1.25; }
-    h3 { font-size: var(--text-2xl); line-height: 1.3; }
-    h4 { font-size: var(--text-xl); line-height: 1.32; }
-
-    p { margin: 0 0 var(--space-4); }
-    p:last-child { margin-bottom: 0; }
-
-    .lede { font-size: var(--text-lg); line-height: 1.5; color: var(--fg-soft); max-width: 62ch; }
-    .mono { font-family: var(--font-mono); font-size: var(--text-sm); letter-spacing: 0.04em; }
-    .label { font-family: var(--font-mono); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.12em; color: var(--fg-mute); }
-    .lime { color: var(--lime); }
-
-    /* Header */
-    .site-header {
-      position: sticky; top: 0; z-index: 50;
-      background: rgba(10, 10, 12, 0.85); backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--rule);
-    }
-    .nav { display: flex; align-items: center; gap: var(--space-5); padding-block: var(--space-4); }
-    .brand { display: inline-flex; align-items: center; gap: var(--space-3); font-family: var(--font-display); font-size: 1.125rem; text-transform: uppercase; }
-    .brand-mark { width: 28px; height: 28px; background: var(--lime); display: inline-block; position: relative; border-radius: 4px; }
-    .brand-mark::after {
-      content: ''; position: absolute; inset: 6px; background: var(--ink-000);
-      clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
-    }
-    .nav-links {
-      display: flex; gap: var(--space-5); margin-inline-start: auto;
-      font-family: var(--font-mono); font-size: var(--text-sm); text-transform: uppercase;
-    }
-    .nav-links a { color: var(--fg-soft); transition: color var(--dur-fast); }
-    .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--lime); }
-    .nav-cta-row { display: flex; gap: var(--space-3); align-items: center; }
-
-    /* Buttons */
-    .btn {
-      display: inline-flex; align-items: center; gap: var(--space-2);
-      padding: 12px 20px; border-radius: var(--radius-full);
-      font-family: var(--font-mono); font-size: var(--text-sm); letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500;
-      border: 1px solid transparent; transition: background var(--dur-fast), transform var(--dur-fast); white-space: nowrap;
-    }
-    .btn--primary { background: var(--lime); color: var(--ink-000); }
-    .btn--primary:hover { background: var(--lime-soft); transform: translateY(-1px); }
-    .btn--ghost { background: transparent; color: var(--fg); border-color: var(--rule-strong); }
-    .btn--ghost:hover { border-color: var(--lime); color: var(--lime); }
-    .btn--sm { padding: 8px 14px; font-size: var(--text-xs); }
-    .btn--lg { padding: 16px 28px; }
-
-    /* Hero Slider */
-    .hero {
-      padding-block: var(--space-8) var(--space-9);
-      background: radial-gradient(900px 460px at 88% 0%, var(--lime-glow), transparent 60%), var(--bg);
-      position: relative; overflow: hidden;
-    }
-    .hero-grid {
-      display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: var(--space-8); align-items: center;
-    }
-    .hero-text > * + * { margin-top: var(--space-5); }
-    .hero-headline { font-size: var(--text-mega); line-height: 1.15; text-transform: uppercase; }
-    .hero-sub { color: var(--fg-soft); font-size: var(--text-lg); line-height: 1.55; max-width: 56ch; }
-    .hero-cta-row { display: flex; flex-wrap: wrap; gap: var(--space-3); }
-    .hero-meta {
-      display: flex; flex-wrap: wrap; gap: var(--space-5); color: var(--fg-mute);
-      font-family: var(--font-mono); font-size: var(--text-sm); padding-top: var(--space-3); border-top: 1px solid var(--rule); margin-top: var(--space-6);
-    }
-    .hero-meta strong { color: var(--fg); }
-
-    /* Slider Container */
-    .hero-media {
-      position: relative; width: 100%; max-width: 640px; aspect-ratio: 4 / 5;
-      border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); isolation: isolate;
-    }
-    .slide-track { position: absolute; inset: 0; width: 100%; height: 100%; }
-    .slide {
-      position: absolute; inset: 0; opacity: 0; transition: opacity 800ms ease-in-out;
-    }
-    .slide.active { opacity: 1; }
-    .slide img { width: 100%; height: 100%; object-fit: cover; filter: contrast(1.05); }
-    
-    .slider-controls {
-      position: absolute; bottom: 20px; left: 20px; z-index: 10;
-      display: flex; gap: 8px;
-    }
-    .slider-dot {
-      width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; border: none; padding: 0;
-      transition: background var(--dur-fast);
-    }
-    .slider-dot.active { background: var(--lime); }
-
-    .floating-tag {
-      position: absolute; background: var(--ink-000); border: 1px solid var(--rule-strong);
-      border-radius: var(--radius); padding: var(--space-3) var(--space-4);
-      font-family: var(--font-mono); font-size: var(--text-xs); text-transform: uppercase; color: var(--fg);
-      display: flex; align-items: center; gap: var(--space-2); box-shadow: var(--shadow); z-index: 5;
-    }
-    .floating-tag .pill { background: var(--lime); color: var(--ink-000); padding: 2px 8px; border-radius: var(--radius-full); }
-    .ft-top { top: 16px; left: 16px; }
-    .ft-bottom { bottom: 16px; right: 16px; }
-
-    /* Stat Strip */
-    .stat-strip {
-      display: grid; grid-template-columns: repeat(4, 1fr); border-block: 1px solid var(--rule); margin-top: var(--space-7);
-    }
-    .stat-cell { padding: var(--space-6) var(--space-5); border-inline-end: 1px solid var(--rule); display: flex; flex-direction: column; gap: var(--space-3); }
-    .stat-cell:last-child { border-inline-end: 0; }
-    .stat-num { font-family: var(--font-display); font-size: var(--text-4xl); color: var(--lime); }
-    .stat-label { font-family: var(--font-mono); font-size: var(--text-xs); text-transform: uppercase; color: var(--fg-mute); }
-
-    /* Section Head */
-    .section-head { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: var(--space-7); align-items: end; margin-bottom: var(--space-7); }
-
-    /* Products Grid */
-    .work-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--space-6); }
-    .work-item { position: relative; display: block; border-radius: var(--radius-lg); overflow: hidden; background: var(--bg-card); }
-    .work-item .wm { position: relative; width: 100%; aspect-ratio: 4 / 5; overflow: hidden; }
-    .work-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 600ms var(--ease-out); }
-    .work-item:hover img { transform: scale(1.04); }
-    .work-item .wm-pill {
-      position: absolute; top: 14px; left: 14px; background: var(--ink-000); color: var(--paper);
-      padding: 4px 10px; border-radius: var(--radius-full); font-family: var(--font-mono); font-size: var(--text-xs); text-transform: uppercase;
-    }
-    .work-meta { display: flex; align-items: center; justify-content: space-between; padding: var(--space-5); font-family: var(--font-mono); }
-    .work-meta .wm-title { font-family: var(--font-display); font-size: var(--text-lg); text-transform: uppercase; color: var(--fg); }
-    .work-meta .wm-cap { font-size: var(--text-xs); text-transform: uppercase; color: var(--fg-mute); }
-    
-    .work-item--xl { grid-column: span 8; }
-    .work-item--lg { grid-column: span 7; }
-    .work-item--md { grid-column: span 5; }
-    .work-item--sm { grid-column: span 4; }
-    .work-item--xl .wm { aspect-ratio: 16 / 11; }
-
-    /* Closing CTA */
-    .closing-cta { background: var(--lime); color: var(--ink-000); padding-block: var(--space-9); }
-    .closing-cta h2 { font-size: var(--text-mega); line-height: 1.15; text-transform: uppercase; color: var(--ink-000); max-width: 22ch; }
-    .closing-cta .lede { color: rgba(10,10,12,0.75); max-width: 52ch; }
-    .closing-cta .cta-row { display: flex; flex-wrap: wrap; gap: var(--space-4); }
-    .btn--dark { background: var(--ink-000); color: var(--lime); }
-    .btn--dark:hover { background: var(--ink-elev); }
-
-    /* Footer */
-    .site-footer { background: var(--bg-alt); padding-block: var(--space-8) var(--space-6); border-top: 1px solid var(--rule); }
-    .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: var(--space-7); padding-bottom: var(--space-7); border-bottom: 1px solid var(--rule); }
-    .footer-top h4 { font-family: var(--font-mono); font-size: var(--text-xs); text-transform: uppercase; color: var(--fg-mute); margin-bottom: var(--space-4); }
-    .footer-top ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--space-3); }
-    .footer-top ul a { color: var(--fg-soft); font-size: var(--text-sm); }
-    .footer-top ul a:hover { color: var(--lime); }
-    .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: var(--space-5); color: var(--fg-mute); font-family: var(--font-mono); font-size: var(--text-xs); text-transform: uppercase; }
-
-    @media (max-width: 1100px) {
-      .hero-grid { grid-template-columns: 1fr; }
-      .work-grid { grid-template-columns: repeat(6, 1fr); }
-      .work-item--xl, .work-item--lg { grid-column: span 6; }
-      .work-item--md, .work-item--sm { grid-column: span 3; }
-      .footer-top { grid-template-columns: 1fr 1fr; }
-    }
-  </style>
+<link rel="stylesheet" href="assets/css/tokens.css" />
+<link rel="stylesheet" href="assets/css/site.css" />
+<link rel="stylesheet" href="assets/css/pages.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+<a class="skip" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container container--wide">
-      <nav class="nav" aria-label="Primary">
-        <a class="brand" href="#"><span class="brand-mark" aria-hidden="true"></span> ApexThread</a>
-        <div class="nav-links" role="navigation">
-          <a href="#" aria-current="page">Catalog</a>
-          <a href="#products">Products</a>
-          <a href="#engineering">Engineering</a>
-          <a href="#standards">Standards</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="nav-cta-row">
-          <a href="#contact" class="btn btn--primary btn--sm">Request Quote
-            <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </div>
-      </nav>
+<header class="header" data-header="photo">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="Shree Pooja Fasteners & Engineering — home">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="15" fill="none" stroke="currentColor" stroke-width="2" />
+        <circle cx="16" cy="11.5" r="3.2" fill="currentColor" />
+        <path d="M5.5 23.5 12.5 16l4 4 3-3 7 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      </svg>
+      <span class="brand__word" style="font-size:1.15rem; letter-spacing:-0.02em;">SHREE POOJA</span>
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="tours.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a class="nav__signin-mobile" href="contact.html">Get Quote</a>
+    </nav>
+
+    <div class="header__tools">
+      <a class="btn header__signin" href="contact.html">Get Quote</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main id="main">
-    <!-- Hero with 5-6 Sliding Professional Images -->
-    <section class="hero">
-      <div class="container container--wide">
-        <div class="hero-grid">
-          <div class="hero-text">
-            <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Precision Fastener Engineering · Est. 2012</span>
-            <h1 class="hero-headline">
-              High-tensile<br/>
-              <span class="lime">hardware,</span> forged<br/>
-              for extreme loads.
-            </h1>
-            <p class="hero-sub">
-              ApexThread delivers certified structural bolts, aerospace fasteners, and custom-threaded assemblies. Built to exact ISO, ASTM, and DIN metallurgical tolerances with complete traceability and batch testing reports.
+<main id="main">
+<!-- ===== Hero: full-bleed photograph + booking panel ===== -->
+<section class="hero on-photo" aria-labelledby="hero-title">
+  <img class="hero__img" src="https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=2000" alt="Precision industrial engineering components and gears" width="2000" height="1333" fetchpriority="high" decoding="async" />
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <p class="hero__eyebrow"><span class="hero__dot" aria-hidden="true"></span>ISO Certified Industrial Manufacturer</p>
+      <h1 id="hero-title" class="hero__title">Precision Fasteners &amp; Engineering Solutions</h1>
+      <p class="hero__sub">High-tensile fasteners, industrial bolts, nuts, washers, and custom CNC components engineered for durability and strength. Built to exact industrial standards.</p>
+      <a class="cta-orbit" href="tours.html">
+        <span class="cta-orbit__text">Explore Products</span>
+        <span class="cta-orbit__dot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+      </a>
+    </div>
+
+    <form class="booking" data-booking aria-label="Quick inquiry">
+      <div class="booking__tabs" role="tablist" aria-label="Product categories">
+        <button type="button" role="tab" id="tab-tour" aria-selected="true" aria-controls="panel-tour">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 11 18-8-8 18-2-8-8-2Z"/></svg>Fasteners
+        </button>
+        <button type="button" role="tab" id="tab-flight" aria-selected="false" aria-controls="panel-flight" tabindex="-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 16h20M5 16l-1-5h3l2 3h4l-2-8h3l5 8"/></svg>Hardware
+        </button>
+        <button type="button" role="tab" id="tab-hotel" aria-selected="false" aria-controls="panel-hotel" tabindex="-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4h10v17M15 9h4v12M9 8h2M9 12h2M9 16h2M3 21h18"/></svg>Custom CNC
+        </button>
+      </div>
+
+      <div class="booking__panel" id="panel-tour" role="tabpanel" aria-labelledby="tab-tour">
+        <div class="field">
+          <label class="field__label" for="tour-dest">Product Series</label>
+          <span class="input">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            <select id="tour-dest" name="destination">
+              <option>High-Tensile Hex Bolts (Grade 8.8 / 10.9)</option>
+              <option>Stainless Steel Industrial Nuts</option>
+              <option>Heavy-Duty Spring Washers</option>
+              <option>Socket Head Cap Screws</option>
+              <option>Threaded Rods &amp; Stud Bolts</option>
+              <option>Custom Precision Turned Components</option>
+            </select>
+          </span>
+        </div>
+        <div class="booking__row" data-date-pair>
+          <div class="field">
+            <label class="field__label" for="tour-in">Required Date</label>
+            <span class="input"><input id="tour-in" type="date" data-date="start" /></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="tour-out">Delivery Date</label>
+            <span class="input"><input id="tour-out" type="date" data-date="end" /></span>
+          </div>
+        </div>
+        <div class="field">
+          <span class="field__label" id="guest-label">Quantity / Batch Size</span>
+          <div class="input stepper" data-stepper data-min="100" data-max="50000" role="group" aria-labelledby="guest-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></svg>
+            <output aria-live="polite" data-count="1000">1000 pcs</output>
+            <button type="button" data-step="-500" aria-label="Decrease quantity">&minus;</button>
+            <button type="button" data-step="500" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking__panel" id="panel-flight" role="tabpanel" aria-labelledby="tab-flight" hidden>
+        <div class="booking__row">
+          <div class="field">
+            <label class="field__label" for="fl-from">Material Grade</label>
+            <span class="input"><input id="fl-from" type="text" value="Carbon Steel (EN8)" autocomplete="off" /></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="fl-to">Surface Finish</label>
+            <span class="input"><input id="fl-to" type="text" value="Hot Dip Galvanized" autocomplete="off" /></span>
+          </div>
+        </div>
+        <div class="booking__row" data-date-pair>
+          <div class="field">
+            <label class="field__label" for="fl-dep">Sample Dispatch</label>
+            <span class="input"><input id="fl-dep" type="date" data-date="start" /></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="fl-ret">Bulk Dispatch</label>
+            <span class="input"><input id="fl-ret" type="date" data-date="end" /></span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="field__label" for="fl-cabin">Standard Standard</label>
+          <span class="input"><select id="fl-cabin"><option>DIN Standard</option><option>ISO Standard</option><option>ASTM / ASME Standard</option></select></span>
+        </div>
+      </div>
+
+      <div class="booking__panel" id="panel-hotel" role="tabpanel" aria-labelledby="tab-hotel" hidden>
+        <div class="field">
+          <label class="field__label" for="ht-city">Component Specification</label>
+          <span class="input"><input id="ht-city" type="text" value="Custom CNC Machined Flange" autocomplete="off" /></span>
+        </div>
+        <div class="booking__row" data-date-pair>
+          <div class="field">
+            <label class="field__label" for="ht-in">Drawing Review</label>
+            <span class="input"><input id="ht-in" type="date" data-date="start" /></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="ht-out">Prototype Delivery</label>
+            <span class="input"><input id="ht-out" type="date" data-date="end" /></span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="field__label" for="ht-rooms">Tolerance Requirement</label>
+          <span class="input"><select id="ht-rooms"><option>Standard (&plusmn;0.1mm)</option><option>High Precision (&plusmn;0.01mm)</option><option>Ultra Fine (&plusmn;0.005mm)</option></select></span>
+        </div>
+      </div>
+
+      <button class="btn btn--dark btn--block booking__submit" type="submit">Submit Inquiry</button>
+    </form>
+  </div>
+  <div class="container hero__rail" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ===== Statement with inline photo pills ===== -->
+<section class="section statement" aria-labelledby="statement-title">
+  <div class="container">
+    <h2 id="statement-title" class="statement__line" data-reveal>
+      Engineering strength into
+      <span class="pill-img"><img src="https://images.pexels.com/photos/3846221/pexels-photo-3846221.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width="600" height="400" loading="lazy" decoding="async" /></span>
+      every industrial connection
+      <span class="pill-img pill-img--wide"><img src="https://images.pexels.com/photos/5069134/pexels-photo-5069134.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width="600" height="400" loading="lazy" decoding="async" /></span>
+      we manufacture.
+    </h2>
+    <p class="statement__sub" data-reveal>Reliable fastening solutions empower massive structures, heavy machinery, and critical industrial systems worldwide.</p>
+  </div>
+</section>
+
+<!-- ===== Split: photograph + stat ledger ===== -->
+<section class="section section--flush-top" aria-labelledby="closer-title">
+  <div class="container split">
+    <figure class="split__media" data-reveal>
+      <img src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Industrial manufacturing facility and metal components" width="1100" height="1375" loading="lazy" decoding="async" />
+      <figcaption class="split__cap"><span class="label">Production Unit · Strict Quality Control</span></figcaption>
+    </figure>
+    <div class="split__copy">
+      <p class="label">Why choose Shree Pooja Fasteners</p>
+      <h2 id="closer-title">Uncompromising quality and dimensional accuracy in every fastener</h2>
+      <p>We combine advanced manufacturing machinery, stringent material testing, and expert metallurgy to deliver fasteners that endure extreme load conditions and corrosive environments.</p>
+      <dl class="ledger">
+        <div><dt>Client retention rate</dt><dd>98%</dd></div>
+        <div><dt>Product grades &amp; types</dt><dd>150+</dd></div>
+        <div><dt>Years of expertise</dt><dd>15+</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Destination bento (Product Categories) ===== -->
+<section class="section destinations" aria-labelledby="dest-title">
+  <div class="container">
+    <div class="shead shead--split">
+      <div>
+        <p class="label">Product Categories</p>
+        <h2 id="dest-title">Explore our fastener lines</h2>
+      </div>
+      <a class="link-arrow" href="tours.html">View all products <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+    </div>
+    <div class="bento">
+        <a class="dtile " href="tours.html">
+          <img src="https://images.pexels.com/photos/5069134/pexels-photo-5069134.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Hex Bolts and Screws" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta">
+            <span class="dtile__name">High-Tensile Bolts</span>
+            <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Grade 8.8 / 10.9</span>
+          </span>
+          <span class="dtile__count">35 types</span>
+        </a>
+        <a class="dtile " href="tours.html">
+          <img src="https://images.pexels.com/photos/3846221/pexels-photo-3846221.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Industrial Nuts" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta">
+            <span class="dtile__name">Industrial Nuts</span>
+            <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Hex &amp; Lock Nuts</span>
+          </span>
+          <span class="dtile__count">24 types</span>
+        </a>
+        <a class="dtile dtile--wide" href="tours.html">
+          <img src="https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Threaded Rods and Studs" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta">
+            <span class="dtile__name">Threaded Rods &amp; Studs</span>
+            <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Full Thread &amp; Custom Lengths</span>
+          </span>
+          <span class="dtile__count">40 sizes</span>
+        </a>
+        <a class="dtile " href="tours.html">
+          <img src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Washers" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta">
+            <span class="dtile__name">Washers &amp; Shims</span>
+            <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Spring &amp; Plain Flat</span>
+          </span>
+          <span class="dtile__count">18 sizes</span>
+        </a>
+        <a class="dtile " href="tours.html">
+          <img src="https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="CNC Machined Parts" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta">
+            <span class="dtile__name">CNC Machined Parts</span>
+            <span class="dtile__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Custom Engineering</span>
+          </span>
+          <span class="dtile__count">Bespoke</span>
+        </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Why us — three promises ===== -->
+<section class="section promises" aria-labelledby="prom-title">
+  <div class="container">
+    <div class="shead shead--center">
+      <p class="label">The Shree Pooja Promise</p>
+      <h2 id="prom-title">Reliable Industrial Manufacturing</h2>
+      <p>Precision manufacturing isn&rsquo;t just about specs; it&rsquo;s about secure builds and long-lasting mechanical integrity.</p>
+    </div>
+    <ul class="promise-row">
+      <li class="promise" data-reveal>
+        <span class="promise__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h6a4 4 0 0 0 0-8h-4a4 4 0 0 1 0-8h6"/></svg></span>
+        <h3>Strict Quality Assurance</h3>
+        <p>Rigorous tensile testing, dimensional verification, and material certification prior to dispatch.</p>
+      </li>
+      <li class="promise" data-reveal>
+        <span class="promise__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3.5"/><path d="M5 21a7 7 0 0 1 14 0M12 14v3"/></svg></span>
+        <h3>Custom Fabrication</h3>
+        <p>Manufactured strictly according to blueprints, DIN/ISO standards, or bespoke engineering drawings.</p>
+      </li>
+      <li class="promise" data-reveal>
+        <span class="promise__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <h3>Corrosion Resistance</h3>
+        <p>Advanced plating options including hot-dip galvanizing, zinc plating, and blackodising for harsh environments.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== Featured products ===== -->
+<section class="section" aria-labelledby="feat-title">
+  <div class="container">
+    <div class="shead shead--split">
+      <div>
+        <p class="label">Top Grade Inventory</p>
+        <h2 id="feat-title">Featured Fasteners</h2>
+      </div>
+      <a class="link-arrow" href="tours.html">Browse all products <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+    </div>
+    <div class="tgrid">
+        <article class="tcard" data-kind="bolt" data-price="18" data-days="1">
+          <div class="tcard__media">
+            <img src="https://images.pexels.com/photos/5069134/pexels-photo-5069134.jpeg?auto=compress&cs=tinysrgb&w=800" alt="High-Tensile Hex Bolt" width="800" height="600" loading="lazy" decoding="async" />
+            <span class="tcard__kind">Bolt</span>
+          </div>
+          <div class="tcard__body">
+            <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Grade 10.9 High-Tensile</p>
+            <h3 class="tcard__name"><a href="tour.html">Heavy Duty Hex Head Bolt</a></h3>
+            <p class="tcard__facts">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>M12 &ndash; M48</span>
+              <span>ISO 4014</span>
+              <span class="tcard__rating"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9Z"/></svg>4.9 <small>(212)</small></span>
             </p>
-            <div class="hero-cta-row">
-              <a class="btn btn--primary btn--lg" href="#products">Explore Catalog</a>
-              <a class="btn btn--ghost btn--lg" href="#contact">Custom Spec Quote</a>
-            </div>
-            <div class="hero-meta">
-              <span><strong>Grade 10.9/12.9</strong> · High tensile</span>
-              <span aria-hidden="true">·</span>
-              <span><strong>ISO 9001:2015</strong> · Certified</span>
-              <span aria-hidden="true">·</span>
-              <span><strong>Global Shipping</strong> · Fast dispatch</span>
-            </div>
+            <p class="tcard__foot">
+              <span class="tcard__price"><small>from</small> $18 <small>/100pcs</small></span>
+              <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </p>
           </div>
-          
-          <div class="hero-media">
-            <div class="slide-track" id="heroSlider">
-              <!-- Slide 1 -->
-              <div class="slide active">
-                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80" alt="Precision automated CNC threading machine cutting high tensile fasteners in industrial plant." />
-              </div>
-              <!-- Slide 2 -->
-              <div class="slide">
-                <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80" alt="Heavy structural steel construction bolts sorted and inspected under bright studio lighting." />
-              </div>
-              <!-- Slide 3 -->
-              <div class="slide">
-                <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1200&q=80" alt="Metallurgical laboratory testing tensile strength and torque resistance of industrial fasteners." />
-              </div>
-              <!-- Slide 4 -->
-              <div class="slide">
-                <img src="https://images.unsplash.com/photo-1531685324546-f9469e7fbc24?auto=format&fit=crop&w=1200&q=80" alt="Close up macro shot of titanium aerospace fasteners and hex nuts with clean threading." />
-              </div>
-              <!-- Slide 5 -->
-              <div class="slide">
-                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80" alt="Automated batch packaging line for industrial zinc-plated bolts and washers." />
-              </div>
-              <!-- Slide 6 -->
-              <div class="slide">
-                <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80" alt="Heavy machinery assembly utilizing heavy-duty structural hex bolts and locking nuts." />
-              </div>
-            </div>
+        </article>
+        <article class="tcard" data-kind="nut" data-price="12" data-days="1">
+          <div class="tcard__media">
+            <img src="https://images.pexels.com/photos/3846221/pexels-photo-3846221.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Stainless Steel Hex Nut" width="800" height="600" loading="lazy" decoding="async" />
+            <span class="tcard__kind">Nut</span>
+          </div>
+          <div class="tcard__body">
+            <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Stainless Steel SS304/316</p>
+            <h3 class="tcard__name"><a href="tour.html">Precision Hexagon Nut</a></h3>
+            <p class="tcard__facts">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>M6 &ndash; M36</span>
+              <span>DIN 934</span>
+              <span class="tcard__rating"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9Z"/></svg>4.8 <small>(388)</small></span>
+            </p>
+            <p class="tcard__foot">
+              <span class="tcard__price"><small>from</small> $12 <small>/100pcs</small></span>
+              <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </p>
+          </div>
+        </article>
+        <article class="tcard" data-kind="screw" data-price="15" data-days="2">
+          <div class="tcard__media">
+            <img src="https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Socket Head Cap Screw" width="800" height="600" loading="lazy" decoding="async" />
+            <span class="tcard__kind">Screw</span>
+          </div>
+          <div class="tcard__body">
+            <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Alloy Steel Grade 12.9</p>
+            <h3 class="tcard__name"><a href="tour.html">Socket Head Cap Screw</a></h3>
+            <p class="tcard__facts">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>M5 &ndash; M24</span>
+              <span>DIN 912</span>
+              <span class="tcard__rating"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9Z"/></svg>4.7 <small>(451)</small></span>
+            </p>
+            <p class="tcard__foot">
+              <span class="tcard__price"><small>from</small> $15 <small>/100pcs</small></span>
+              <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </p>
+          </div>
+        </article>
+    </div>
+  </div>
+</section>
 
-            <div class="slider-controls">
-              <button class="slider-dot active" data-index="0" aria-label="Slide 1"></button>
-              <button class="slider-dot" data-index="1" aria-label="Slide 2"></button>
-              <button class="slider-dot" data-index="2" aria-label="Slide 3"></button>
-              <button class="slider-dot" data-index="3" aria-label="Slide 4"></button>
-              <button class="slider-dot" data-index="4" aria-label="Slide 5"></button>
-              <button class="slider-dot" data-index="5" aria-label="Slide 6"></button>
-            </div>
+<!-- ===== Testimonial quote over photograph ===== -->
+<section class="section quote-band on-photo" aria-labelledby="quote-title">
+  <img class="quote-band__img" src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=2000" alt="Industrial manufacturing warehouse" width="2000" height="1333" loading="lazy" decoding="async" />
+  <div class="container quote-band__inner">
+    <h2 id="quote-title" class="sr-only">Client Testimonial</h2>
+    <figure>
+      <blockquote>&ldquo;Shree Pooja Fasteners provided precise high-tensile bolts for our heavy machinery assembly on strict deadlines. Absolute top-tier quality and reliability.&rdquo;</blockquote>
+      <figcaption><strong>Ramesh Patel</strong> · Chief Mechanical Engineer, Apex Heavy Industries</figcaption>
+    </figure>
+  </div>
+</section>
 
-            <div class="floating-tag ft-top">
-              <span class="pill">ISO 4014</span>
-              Metric Hex Bolts
-            </div>
-            <div class="floating-tag ft-bottom">
-              Tensile Yield: 1100 MPa
-            </div>
-          </div>
-        </div>
+<!-- ===== Closing call to action ===== -->
+<section class="section closer" aria-labelledby="closer-cta">
+  <div class="container closer__card">
+    <div>
+      <p class="label">Ready to Order</p>
+      <h2 id="closer-cta">Need custom fasteners or bulk industrial supply?</h2>
+    </div>
+    <div class="closer__actions">
+      <a class="btn btn--dark" href="contact.html">Request a Quote</a>
+      <a class="btn btn--ghost" href="tours.html">Browse Products</a>
+    </div>
+  </div>
+</section>
+</main>
 
-        <!-- Stat Strip -->
-        <div class="stat-strip">
-          <div class="stat-cell">
-            <div class="stat-num">10M+</div>
-            <div class="stat-label">Fasteners shipped annually</div>
-          </div>
-          <div class="stat-cell">
-            <div class="stat-num">45+</div>
-            <div class="stat-label">Alloy &amp; coating specs</div>
-          </div>
-          <div class="stat-cell">
-            <div class="stat-num">0.001</div>
-            <div class="stat-label">Millimeter tolerance control</div>
-          </div>
-          <div class="stat-cell">
-            <div class="stat-num">100%</div>
-            <div class="stat-label">Lot traceability guaranteed</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Fastener Products Grid -->
-    <section id="products">
-      <div class="container container--wide">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Engineering Catalog</span>
-            <h2>Precision fastener<br/>lineup &amp; assemblies.</h2>
-          </div>
-          <p class="lede">
-            Engineered for high-vibration environments, thermal extremes, and corrosive marine conditions. Custom thread pitches and specialized coatings available upon request.
-          </p>
-        </div>
-
-        <div class="work-grid">
-          <!-- Item 1 -->
-          <a class="work-item work-item--xl" href="#contact">
-            <div class="wm">
-              <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80" alt="Structural High-Tensile Hex Bolts Grade 10.9" />
-              <span class="wm-pill">Heavy Structural</span>
-            </div>
-            <div class="work-meta">
-              <div>
-                <div class="wm-title">Grade 10.9 Structural Hex Bolts</div>
-                <div class="wm-cap">M12 to M48 · Hot-Dip Galvanized</div>
-              </div>
-              <div class="wm-cap">Series A-01</div>
-            </div>
-          </a>
-
-          <!-- Item 2 -->
-          <a class="work-item work-item--sm" href="#contact">
-            <div class="wm">
-              <img src="https://images.unsplash.com/photo-1531685324546-f9469e7fbc24?auto=format&fit=crop&w=800&q=80" alt="Titanium Aerospace Fasteners" />
-              <span class="wm-pill">Aerospace</span>
-            </div>
-            <div class="work-meta">
-              <div><div class="wm-title">Grade 5 Titanium Flange Bolts</div><div class="wm-cap">NAS / MS Standards</div></div>
-              <div class="wm-cap">Series A-02</div>
-            </div>
-          </a>
-
-          <!-- Item 3 -->
-          <a class="work-item work-item--md" href="#contact">
-            <div class="wm">
-              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80" alt="Stainless Steel Socket Head Cap Screws" />
-              <span class="wm-pill">Precision CNC</span>
-            </div>
-            <div class="work-meta">
-              <div><div class="wm-title">A4-70 Socket Head Cap Screws</div><div class="wm-cap">DIN 912 · Corrosion Resistant</div></div>
-              <div class="wm-cap">Series A-03</div>
-            </div>
-          </a>
-
-          <!-- Item 4 -->
-          <a class="work-item work-item--md" href="#contact">
-            <div class="wm">
-              <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1000&q=80" alt="Heavy Hex Nuts and Washers" />
-              <span class="wm-pill">Hardware</span>
-            </div>
-            <div class="work-meta">
-              <div><div class="wm-title">ASTM A194 Heavy Hex Nuts</div><div class="wm-cap">Grades 2H, 7, 8M</div></div>
-              <div class="wm-cap">Series A-04</div>
-            </div>
-          </a>
-
-          <!-- Item 5 -->
-          <a class="work-item work-item--sm" href="#contact">
-            <div class="wm">
-              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Threaded Rods and Studs" />
-              <span class="wm-pill">All-Thread</span>
-            </div>
-            <div class="work-meta">
-              <div><div class="wm-title">Fully Threaded Stud Bolts</div><div class="wm-cap">ASTM A320 L7 · PTFE Coated</div></div>
-              <div class="wm-cap">Series A-05</div>
-            </div>
-          </a>
-
-          <!-- Item 6 -->
-          <a class="work-item work-item--lg" href="#contact">
-            <div class="wm">
-              <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80" alt="Custom CNC Fasteners and Turned Parts" />
-              <span class="wm-pill">Custom Engineering</span>
-            </div>
-            <div class="work-meta">
-              <div><div class="wm-title">Custom Machined Shoulder Bolts</div><div class="wm-cap">Per Blueprint Specification</div></div>
-              <div class="wm-cap">Series A-06</div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Engineering Standards Section -->
-    <section id="engineering" style="background: var(--bg-alt); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);">
-      <div class="container container--wide">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Metallurgical Rigor</span>
-            <h2>Tested under stress.<br/>Certified for safety.</h2>
-          </div>
-          <p class="lede">
-            Every production batch undergoes destructive tensile testing, spectral chemical analysis, and magnetic particle inspection to verify compliance before dispatch.
-          </p>
-        </div>
-
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-5);">
-          <div style="background: var(--bg-card); border: 1px solid var(--rule); border-radius: var(--radius); padding: var(--space-6);">
-            <span class="label lime">01 · Testing</span>
-            <h3 style="margin-top: var(--space-3); font-size: var(--text-xl);">Tensile &amp; Proof Load</h3>
-            <p style="color: var(--fg-soft); margin-top: var(--space-3);">Hydraulic pull testing up to 1000kN to confirm breaking load limits and elastic recovery limits.</p>
-          </div>
-          <div style="background: var(--bg-card); border: 1px solid var(--rule); border-radius: var(--radius); padding: var(--space-6);">
-            <span class="label lime">02 · Metallurgy</span>
-            <h3 style="margin-top: var(--space-3); font-size: var(--text-xl);">Spectrographic Alloy Audit</h3>
-            <p style="color: var(--fg-soft); margin-top: var(--space-3);">Direct reading optical emission spectrometers verify carbon, chromium, and nickel alloy ratios.</p>
-          </div>
-          <div style="background: var(--bg-card); border: 1px solid var(--rule); border-radius: var(--radius); padding: var(--space-6);">
-            <span class="label lime">03 · Surface Finish</span>
-            <h3 style="margin-top: var(--space-3); font-size: var(--text-xl);">Salt Spray Corrosion Test</h3>
-            <p style="color: var(--fg-soft); margin-top: var(--space-3);">ASTM B117 salt fog chamber testing ensuring 1,000+ hours without white or red rust formation.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact / Quote Form Section -->
-    <section id="contact">
-      <div class="container container--narrow">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow"><span class="dot" aria-hidden="true"></span>RFQs &amp; Orders</span>
-            <h2>Request a custom fastener quote.</h2>
-          </div>
-          <p class="lede">
-            Send us your drawing spec, grade requirement, and estimated volume. Our engineering sales desk responds within 4 business hours.
-          </p>
-        </div>
-
-        <form style="background: var(--bg-card); border: 1px solid var(--rule); border-radius: var(--radius-lg); padding: var(--space-7); display: grid; gap: var(--space-5);" onsubmit="event.preventDefault(); alert('Quote request transmitted successfully. Our engineering desk will contact you shortly.');">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5);">
-            <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-              <label class="label">Your Name</label>
-              <input type="text" required placeholder="John Doe" style="background: var(--ink-000); border: 1px solid var(--rule); border-radius: var(--radius-sm); padding: 14px; color: var(--fg);" />
-            </div>
-            <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-              <label class="label">Company Email</label>
-              <input type="email" required placeholder="john@company.com" style="background: var(--ink-000); border: 1px solid var(--rule); border-radius: var(--radius-sm); padding: 14px; color: var(--fg);" />
-            </div>
-          </div>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5);">
-            <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-              <label class="label">Fastener Standard / Grade</label>
-              <input type="text" placeholder="e.g. ISO 4014 / Grade 10.9" style="background: var(--ink-000); border: 1px solid var(--rule); border-radius: var(--radius-sm); padding: 14px; color: var(--fg);" />
-            </div>
-            <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-              <label class="label">Estimated Quantity (Units)</label>
-              <input type="text" placeholder="e.g. 5,000 pcs" style="background: var(--ink-000); border: 1px solid var(--rule); border-radius: var(--radius-sm); padding: 14px; color: var(--fg);" />
-            </div>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-            <label class="label">Specifications &amp; Drawing Details</label>
-            <textarea rows="4" placeholder="Mention thread pitch, plating (Zinc/Cadmium/PTFE), dimensions, or attach drawing link..." style="background: var(--ink-000); border: 1px solid var(--rule); border-radius: var(--radius-sm); padding: 14px; color: var(--fg); resize: vertical;"></textarea>
-          </div>
-          <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--rule); padding-top: var(--space-4);">
-            <span class="mono" style="color: var(--fg-mute); font-size: var(--text-xs);">EN 10204 3.1 Certs included standard</span>
-            <button type="submit" class="btn btn--primary">Submit Request For Quote</button>
-          </div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__lead">
+        <p class="footer__title">Industrial Dispatch Updates</p>
+        <p class="footer__sub">Subscribe to our monthly technical catalog updates, alloy price trends, and new fastener specifications. No spam.</p>
+        <form class="subscribe" data-demo-form novalidate>
+          <label class="sr-only" for="sub-email">Email address</label>
+          <input id="sub-email" type="email" name="email" placeholder="you@company.com" autocomplete="email" required />
+          <button class="btn btn--glacier" type="submit">Subscribe</button>
+          <p class="form-note" role="status" aria-live="polite"></p>
         </form>
       </div>
-    </section>
 
-    <!-- Closing CTA -->
-    <section class="closing-cta">
-      <div class="container container--narrow">
-        <span class="label" style="color: rgba(10,10,12,0.6);">Engineering Support</span>
-        <h2>Need custom fasteners engineered to print?</h2>
-        <p class="lede">
-          Our metallurgists and tool-and-die team can custom forge non-standard diameters, lengths, and specialty alloy fasteners in as little as 10 business days.
-        </p>
-        <div class="cta-row">
-          <a class="btn btn--dark btn--lg" href="#contact">Speak with an Engineer</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container container--wide">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <span class="brand" style="font-family: var(--font-display); font-size: 1.25rem;"><span class="brand-mark" aria-hidden="true"></span> ApexThread</span>
-          <p style="color: var(--fg-soft); font-size: var(--text-sm); margin-top: var(--space-3);">High-tensile industrial fastener manufacturer and global engineering supply partner.</p>
-          <span class="label" style="margin-top: var(--space-2); display: block;">ISO 9001 · AS9100D Certified</span>
-        </div>
+      <div class="footer__cols">
         <div>
-          <h4>Products</h4>
+          <p class="label footer__h">Products</p>
           <ul>
-            <li><a href="#products">Hex Bolts</a></li>
-            <li><a href="#products">Socket Screws</a></li>
-            <li><a href="#products">Heavy Hex Nuts</a></li>
-            <li><a href="#products">Threaded Studs</a></li>
+            <li><a href="tours.html">All Fasteners</a></li>
+            <li><a href="tours.html">Hex Bolts &amp; Nuts</a></li>
+            <li><a href="tours.html">Washers &amp; Anchors</a></li>
+            <li><a href="tour.html">Product Detail</a></li>
           </ul>
         </div>
         <div>
-          <h4>Engineering</h4>
+          <p class="label footer__h">Company</p>
           <ul>
-            <li><a href="#engineering">Alloy Standards</a></li>
-            <li><a href="#engineering">Tensile Testing</a></li>
-            <li><a href="#engineering">Corrosion Coatings</a></li>
-            <li><a href="#engineering">Custom Tooling</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="about.html">Quality Standards</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="404.html">404 page</a></li>
           </ul>
         </div>
         <div>
-          <h4>Connect</h4>
-          <ul>
-            <li><a href="#contact">Request Quote</a></li>
-            <li><a href="#contact">Global Offices</a></li>
-            <li><a href="#contact">Quality Certifications</a></li>
-          </ul>
+          <p class="label footer__h">Factory &amp; Office</p>
+          <address>
+            Industrial Estate, Phase II<br />Rajkot, Gujarat, India<br />
+            <a href="tel:+919800000000">+91 98000 00000</a><br />
+            <a href="mailto:info@shreepoojafasteners.com">info@shreepoojafasteners.com</a>
+          </address>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 ApexThread Fastener Engineering · All rights reserved</span>
-        <span>Precision Engineered Hardware</span>
       </div>
     </div>
-  </footer>
 
-  <script>
-    // Hero 6-image automatic slider script
-    (function () {
-      const slides = document.querySelectorAll('.slide');
-      const dots = document.querySelectorAll('.slider-dot');
-      if (!slides.length) return;
-      let currentSlide = 0;
-      let slideInterval;
+    <p class="footer__word" aria-hidden="true" style="font-size: 8vw;">SHREE POOJA</p>
 
-      function goToSlide(n) {
-        slides[currentSlide].classList.remove('active');
-        dots[currentSlide].classList.remove('active');
-        currentSlide = (n + slides.length) % slides.length;
-        slides[currentSlide].classList.add('active');
-        dots[currentSlide].classList.add('active');
-      }
+    <div class="footer__bottom">
+      <p>&copy; <span data-year>2026</span> Shree Pooja Fasteners &amp; Engineering. All rights reserved.</p>
+      <p>Industrial Design Template</p>
+    </div>
+  </div>
+</footer>
 
-      function nextSlide() {
-        goToSlide(currentSlide + 1);
-      }
-
-      slideInterval = setInterval(nextSlide, 4500);
-
-      dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-          clearInterval(slideInterval);
-          goToSlide(index);
-          slideInterval = setInterval(nextSlide, 4500);
-        });
-      });
-    })();
-  </script>
+<div class="toast" role="status" aria-live="polite" hidden></div>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>

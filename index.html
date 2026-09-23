@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SHREE POOJA FASTENERS &amp; ENGINEERING | Industrial Fasteners</title>
-<meta name="description" content="SHREE POOJA FASTENERS &amp; ENGINEERING is a wholesaler and supplier of Industrial Fasteners from Vasai East, Maharashtra.">
-<meta name="theme-color" content="#101412">
-<link rel="icon" href="l.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=SUSE:wght@400;500;600&family=Golos+Text:wght@400;500;600&family=Ubuntu+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-<style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shree Pooja Fasteners & Engineering — Industrial Fasteners Supplier</title>
+<meta name="description" content="Shree Pooja Fasteners & Engineering is a wholesaler and supplier of industrial fasteners, screws, bolts, nuts and washers for engineering, construction, fabrication and industrial applications." />
+<meta name="theme-color" content="#101412" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23101412'/%3E%3Ccircle cx='16' cy='12' r='4' fill='%23D5E4E1'/%3E%3Cpath d='M5 24l7-8 4 4 3-3 8 7z' fill='%23fff'/%3E%3C/svg%3E" />
 
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=SUSE:wght@400;500;600&family=Golos+Text:wght@400;500;600&family=Ubuntu+Sans+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://images.pexels.com" crossorigin />
+
+<style>
 /* ==========================================================================
    Fjelvik — design tokens, reset, primitives (Modified for Shree Pooja Fasteners)
    ========================================================================== */
@@ -844,825 +845,210 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
 /* Single Page Hide Sections / Tab Switching for All-in-One */
 .spa-page { display: none; }
 .spa-page.active-page { display: block; }
-
-
-/* Functional additions — existing theme/styling remains unchanged */
-.hero-slider { position:absolute; inset:0; z-index:-2; overflow:hidden; }
-.hero-slider img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity 900ms ease, transform 6s ease; transform:scale(1.02); }
-.hero-slider img.is-active { opacity:1; transform:scale(1.06); }
-.category-panel { margin-top:1.5rem; display:none; }
-.category-panel.is-active { display:block; }
-.category-panel__grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:1rem; }
-.category-panel__card { background:var(--paper); border-radius:var(--r-lg); overflow:hidden; }
-.category-panel__card img { width:100%; aspect-ratio:4/3; object-fit:cover; }
-.category-panel__card div { padding:1rem 1.1rem 1.2rem; }
-.category-panel__card h3 { font-size:var(--text-lg); }
-.category-panel__card p { margin-top:.35rem; color:var(--pine-mute); font-size:var(--text-sm); }
-@media(max-width:900px){.category-panel__grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
-@media(max-width:520px){.category-panel__grid{grid-template-columns:minmax(0,1fr);}}
-.floating-contact { position:fixed; right:18px; bottom:18px; z-index:80; display:flex; flex-direction:column; gap:10px; }
-.floating-contact a { width:48px; height:48px; display:grid; place-items:center; border-radius:50%; background:var(--pine); color:var(--snow); box-shadow:var(--shadow-card); font-size:.78rem; font-family:var(--font-mono); }
-.floating-contact a:hover { transform:translateY(-3px); }
-
 </style>
 </head>
-
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="header" data-header="photo">
+<header class="header" data-header="photo" id="site-header">
   <div class="container header__inner">
-    <a class="brand" href="#home" data-route="home" aria-label="Shree Pooja Fasteners & Engineering">
-      <img class="brand__mark" src="l.png" alt="SHREE POOJA FASTENERS & ENGINEERING" width="30" height="30" />
-      <span class="brand__word">SHREE POOJA FASTENERS &amp; ENGINEERING</span>
+    <a class="brand" href="#home" data-route="home" aria-label="Shree Pooja Fasteners & Engineering — home">
+      <img class="brand__mark" src="l.png" alt="Shree Pooja Fasteners & Engineering logo" width="30" height="30" style="object-fit:contain;border-radius:6px;" />
+      <span class="brand__word">Shree Pooja Fasteners</span>
     </a>
-
-    <nav class="nav" id="site-nav" aria-label="Primary navigation">
-      <a href="#home" data-route="home">Home</a>
-      <a href="#about" data-route="about">About</a>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="#home" data-route="home" aria-current="page">Home</a>
       <a href="#products" data-route="products">Products</a>
-      <a href="#infrastructure" data-route="infrastructure">Infrastructure</a>
-      <a href="#contact" data-route="contact">Contact</a>
-      <a class="nav__signin-mobile" href="#contact" data-route="contact">Contact Us</a>
+      <a href="#about" data-route="about">About Us</a>
+      <a href="#engineering" data-route="engineering">Fastener Engineering</a>
+      <a href="#contact" data-route="contact">Contact Us</a>
+      <a class="nav__signin-mobile" href="#contact" data-route="contact">Request Quote</a>
     </nav>
-
     <div class="header__tools">
-      <a class="btn header__signin" href="tel:+916262665358">Call Now</a>
-      <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-        <span></span><span></span>
-      </button>
+      <a class="btn header__signin" href="#contact" data-route="contact">Request Quote</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span></button>
     </div>
   </div>
 </header>
 
 <main id="main">
-
-<!-- ==================== HOME ==================== -->
 <div id="page-home" class="spa-page active-page">
-
   <section class="hero on-photo" aria-labelledby="hero-title">
-    <div class="hero-slider" aria-hidden="true">
-      <img class="is-active" src="ho1.png" alt="" fetchpriority="high">
-      <img src="ho2.png" alt="">
-      <img src="ho3.png" alt="">
-      <img src="ho4.png" alt="">
-      <img src="ho5.png" alt="">
-      <img src="ho6.jpeg" alt="">
+    <div class="hero-slides" aria-hidden="true">
+      <img class="hero__img hero-slide is-active" src="ho1.png" alt="Industrial fasteners" width="2000" height="1333" fetchpriority="high" />
+      <img class="hero__img hero-slide" src="ho2.png" alt="Industrial fasteners" width="2000" height="1333" />
+      <img class="hero__img hero-slide" src="ho3.png" alt="Industrial fasteners" width="2000" height="1333" />
+      <img class="hero__img hero-slide" src="ho4.png" alt="Industrial fasteners" width="2000" height="1333" />
+      <img class="hero__img hero-slide" src="ho5.png" alt="Industrial fasteners" width="2000" height="1333" />
+      <img class="hero__img hero-slide" src="ho6.jpeg" alt="Industrial fasteners" width="2000" height="1333" />
     </div>
-
     <div class="container hero__grid">
-      <div class="hero__copy" data-reveal>
-        <p class="hero__eyebrow"><span class="hero__dot"></span>WELCOME TO SHREE POOJA FASTENERS &amp; ENGINEERING</p>
-        <h1 id="hero-title" class="hero__title">Manufacturer &amp; Supplier of Premium Industrial Fasteners</h1>
-        <p class="hero__sub">
-          We are committed to supplying premium quality Industrial Fasteners for Engineering, Construction, Automobile, Electrical, Fabrication and Heavy Industrial Applications.
-          Our focus is on delivering precision, durability, consistent quality, competitive pricing and timely delivery to every customer.
-        </p>
-        <a class="cta-orbit" href="#products" data-route="products">
-          <span class="cta-orbit__text">Explore Products</span>
-          <span class="cta-orbit__dot" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
-          </span>
-        </a>
+      <div class="hero__copy">
+        <p class="hero__eyebrow"><span class="hero__dot" aria-hidden="true"></span>Industrial Fasteners • Wholesaler &amp; Supplier</p>
+        <h1 id="hero-title" class="hero__title">Engineered strength for heavy industry</h1>
+        <p class="hero__sub">We supply quality Stainless Steel and Mild Steel fasteners for engineering, construction, fabrication, electrical, infrastructure and industrial applications, with dependable service, competitive pricing and timely delivery.</p>
+        <a class="cta-orbit" href="#products" data-route="products"><span class="cta-orbit__text">Explore Products</span><span class="cta-orbit__dot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
       </div>
     </div>
-    <div class="container hero__rail"><span></span></div>
+    <div class="hero__dots" aria-label="Hero images"><button type="button" class="is-active" data-hero-dot="0" aria-label="Hero image 1"></button><button type="button" data-hero-dot="1" aria-label="Hero image 2"></button><button type="button" data-hero-dot="2" aria-label="Hero image 3"></button><button type="button" data-hero-dot="3" aria-label="Hero image 4"></button><button type="button" data-hero-dot="4" aria-label="Hero image 5"></button><button type="button" data-hero-dot="5" aria-label="Hero image 6"></button></div>
+    <div class="container hero__rail" aria-hidden="true"><span></span></div>
   </section>
 
   <section class="section statement" aria-labelledby="statement-title">
     <div class="container">
-      <h2 id="statement-title" class="statement__line" data-reveal>
-        Delivering precision
-        <span class="pill-img"><img src="ab.png" alt="Industrial fastener engineering" loading="lazy"></span>
-        fasteners &amp; fastening solutions for industrial excellence.
-      </h2>
-      <p class="statement__sub" data-reveal>
-        Our focus is on delivering precision, durability, consistent quality, competitive pricing and timely delivery to every customer.
-      </p>
+      <h2 id="statement-title" class="statement__line" data-reveal>Dependable
+        <span class="pill-img"><img src="ab.png" alt="Fastener supply and engineering solutions" width="600" height="400" loading="lazy" /></span>
+        fastening solutions for industrial excellence.</h2>
+      <p class="statement__sub" data-reveal>Shree Pooja Fasteners &amp; Engineering focuses on product quality, dimensional accuracy, reliable supply, customer satisfaction and timely delivery.</p>
     </div>
   </section>
 
   <section class="section section--flush-top" aria-labelledby="about-home-title">
     <div class="container split">
-      <figure class="split__media" data-reveal>
-        <img src="ab.png" alt="SHREE POOJA FASTENERS & ENGINEERING" loading="lazy">
-        <figcaption class="split__cap"><span class="label">About Our Company</span></figcaption>
-      </figure>
+      <figure class="split__media" data-reveal><img src="ab.png" alt="Shree Pooja Fasteners & Engineering" width="1100" height="1375" loading="lazy" /><figcaption class="split__cap"><span class="label">Vasai East · Tungar Phata · Maharashtra</span></figcaption></figure>
       <div class="split__copy">
-        <p class="label">SHREE POOJA FASTENERS &amp; ENGINEERING</p>
-        <h2 id="about-home-title">Reliable fastening solutions across industries</h2>
-        <p>
-          SHREE POOJA FASTENERS &amp; ENGINEERING is an emerging wholesaler and supplier
-          of Industrial Fasteners located at Vasai East, Tungar Phata, Maharashtra.
-          We are dedicated to providing reliable fastening solutions for engineering,
-          fabrication, construction, electrical, infrastructure and various industrial sectors.
-        </p>
-        <p>
-          Our product range includes Stainless Steel Screws, Mild Steel Screws,
-          Stainless Steel Bolts, Mild Steel Bolts, Nuts, Washers and Custom Fasteners.
-        </p>
-        <a class="link-arrow" href="#about" data-route="about">About Our Company
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
-        </a>
+        <p class="label">About Our Company</p>
+        <h2 id="about-home-title">Reliable fastening supply backed by quality and service</h2>
+        <p>Shree Pooja Fasteners &amp; Engineering is a growing wholesaler and supplier based in Vasai East, Tungar Phata, Maharashtra. We specialize in Stainless Steel and Mild Steel fasteners and serve engineering, fabrication, construction, electrical, infrastructure and industrial sectors.</p>
+        <p>Our objective is to provide reliable fastening solutions with excellent dimensional accuracy, strength, corrosion resistance, long service life and superior finish through dependable sourcing and supply.</p>
+        <a class="link-arrow" href="#about" data-route="about">Know more about us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
       </div>
     </div>
   </section>
 
-  <!-- HIGH DEMAND / FOUR CATEGORIES -->
-  <section class="section destinations" aria-labelledby="high-demand-title">
+  <section class="section destinations" aria-labelledby="demand-title">
     <div class="container">
-      <div class="shead shead--split">
-        <div>
-          <p class="label">High Demand</p>
-          <h2 id="high-demand-title">Industrial Fastener Categories</h2>
-        </div>
-        <a class="link-arrow" href="#products" data-route="products">View all products
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
-        </a>
-      </div>
-
+      <div class="shead shead--split"><div><p class="label">High Demand</p><h2 id="demand-title">Core fastener categories</h2></div><a class="link-arrow" href="#products" data-route="products">View catalog <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
       <div class="bento">
-        <a class="dtile" href="#products" data-route="products" data-category="bolt">
-          <img src="hex.jpeg" alt="Bolt" loading="lazy">
-          <span class="dtile__meta"><span class="dtile__name">Bolt</span><span class="dtile__place">Hex, Foundation, Carriage &amp; Flange Bolts</span></span>
-          <span class="dtile__count">4 products</span>
-        </a>
-        <a class="dtile" href="#products" data-route="products" data-category="screw">
-          <img src="as.jpeg" alt="Screw" loading="lazy">
-          <span class="dtile__meta"><span class="dtile__name">Screw</span><span class="dtile__place">Assembly, Machine, Self Tapping &amp; More</span></span>
-          <span class="dtile__count">6 products</span>
-        </a>
-        <a class="dtile" href="#products" data-route="products" data-category="washer">
-          <img src="s.jpeg" alt="Washer" loading="lazy">
-          <span class="dtile__meta"><span class="dtile__name">Washer</span><span class="dtile__place">Spring Washer &amp; Plain Washer</span></span>
-          <span class="dtile__count">2 products</span>
-        </a>
-        <a class="dtile" href="#products" data-route="products" data-category="nuts">
-          <img src="h.jpeg" alt="Nuts" loading="lazy">
-          <span class="dtile__meta"><span class="dtile__name">Nuts</span><span class="dtile__place">Hex Nuts</span></span>
-          <span class="dtile__count">1 product</span>
-        </a>
+        <a class="dtile" href="#products" data-filter="Bolts"><img src="hex.jpeg" alt="Bolts" width="1100" height="733" loading="lazy" /><span class="dtile__meta"><span class="dtile__name">Bolt</span><span class="dtile__place">Hex, Foundation, Carriage &amp; Flange Bolts</span></span><span class="dtile__count">4 types</span></a>
+        <a class="dtile" href="#products" data-filter="Screws"><img src="as.jpeg" alt="Screws" width="1100" height="733" loading="lazy" /><span class="dtile__meta"><span class="dtile__name">Screw</span><span class="dtile__place">Assembly, Machine, Self Tapping, Drywall &amp; Wood</span></span><span class="dtile__count">5 types</span></a>
+        <a class="dtile dtile--wide" href="#products" data-filter="Washers"><img src="s.jpeg" alt="Washers" width="1100" height="733" loading="lazy" /><span class="dtile__meta"><span class="dtile__name">Washer</span><span class="dtile__place">Spring &amp; Plain Washers</span></span><span class="dtile__count">2 types</span></a>
+        <a class="dtile" href="#products" data-filter="Nuts"><img src="h.jpeg" alt="Nuts" width="1100" height="733" loading="lazy" /><span class="dtile__meta"><span class="dtile__name">Nuts</span><span class="dtile__place">Hex Nuts and related fastening requirements</span></span><span class="dtile__count">1 type</span></a>
       </div>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="quality-title">
-    <div class="container">
-      <div class="shead shead--center">
-        <p class="label">Why Customers Choose Us</p>
-        <h2 id="quality-title">Quality, supply and customer satisfaction</h2>
-        <p>Customer satisfaction, product quality and timely delivery remain the foundation of our business philosophy.</p>
-      </div>
-      <div class="promise-row">
-        <div class="promise" data-reveal>
-          <div class="promise__icon"><span>01</span></div>
-          <h3>Premium Quality</h3>
-          <p>Every product is handled with attention to precision, dimensional accuracy, durability and reliability.</p>
-        </div>
-        <div class="promise" data-reveal>
-          <div class="promise__icon"><span>02</span></div>
-          <h3>Timely Delivery</h3>
-          <p>We understand the importance of delivery schedules and strive to dispatch orders promptly.</p>
-        </div>
-        <div class="promise" data-reveal>
-          <div class="promise__icon"><span>03</span></div>
-          <h3>Customer Satisfaction</h3>
-          <p>Building long-term business relationships through quality products and professional service.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FASTENER ENGINEERING / RESEARCHED INDUSTRY SECTION -->
-  <section class="section" aria-labelledby="engineering-title">
-    <div class="container split">
-      <figure class="split__media" data-reveal>
-        <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&w=1200&q=85" alt="Industrial fastener engineering and manufacturing" loading="lazy">
-        <figcaption class="split__cap"><span class="label">Fastener Engineering</span></figcaption>
-      </figure>
-      <div class="split__copy">
-        <p class="label">Fastener Engineering &amp; Manufacturing</p>
-        <h2 id="engineering-title">From raw material to finished fastening components</h2>
-        <p>
-          Industrial fasteners are produced through a sequence of engineering processes selected
-          according to material, geometry, size and application. Common processes include
-          cold forming or heading, thread rolling, heat treatment, finishing and final quality checks.
-        </p>
-        <div class="ledger">
-          <div><dt>Raw Material</dt><dd>01</dd></div>
-          <div><dt>Head Forming</dt><dd>02</dd></div>
-          <div><dt>Thread Rolling</dt><dd>03</dd></div>
-          <div><dt>Heat Treatment &amp; Finishing</dt><dd>04</dd></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section destinations" aria-labelledby="industry-title">
-    <div class="container">
-      <div class="shead">
-        <p class="label">Applications</p>
-        <h2 id="industry-title">Industries We Serve</h2>
-        <p>Industrial fastening solutions for engineering, fabrication, construction and heavy industrial applications.</p>
-      </div>
-      <div class="chips">
-        <span class="chip">Automobile Industry</span>
-        <span class="chip">Construction Industry</span>
-        <span class="chip">Electrical Industry</span>
-        <span class="chip">Engineering Industry</span>
-        <span class="chip">Heavy Fabrication</span>
-        <span class="chip">Industrial Machinery</span>
-        <span class="chip">Infrastructure Projects</span>
-        <span class="chip">General Industrial Applications</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="process-title">
-    <div class="container">
-      <div class="shead shead--center">
-        <p class="label">Quality Control</p>
-        <h2 id="process-title">Production Process</h2>
-        <p>Systematic production and inspection focused on quality, accuracy and efficiency.</p>
-      </div>
-      <div class="tgrid">
-        <article class="tcard" data-reveal><div class="tcard__body"><span class="label">01</span><h3 class="tcard__name">Raw Material Inspection</h3><p>Every production cycle begins with inspection of raw material to ensure quality and consistency.</p></div></article>
-        <article class="tcard" data-reveal><div class="tcard__body"><span class="label">02</span><h3 class="tcard__name">Manufacturing</h3><p>Products are manufactured using modern production methods while maintaining dimensional accuracy.</p></div></article>
-        <article class="tcard" data-reveal><div class="tcard__body"><span class="label">03</span><h3 class="tcard__name">Threading &amp; Finishing</h3><p>Thread quality and surface finish are checked carefully before further processing.</p></div></article>
-        <article class="tcard" data-reveal><div class="tcard__body"><span class="label">04</span><h3 class="tcard__name">Quality Inspection</h3><p>Products are inspected before packing to ensure reliable performance.</p></div></article>
-        <article class="tcard" data-reveal><div class="tcard__body"><span class="label">05</span><h3 class="tcard__name">Packing</h3><p>Products are packed carefully to avoid transportation damage.</p></div></article>
-        <article class="tcard" data-reveal><div class="tcard__body"><span class="label">06</span><h3 class="tcard__name">Dispatch</h3><p>Orders are dispatched according to customer schedules and delivery commitments.</p></div></article>
-      </div>
-    </div>
-  </section>
-
-  <!-- TEMPORARY REVIEWS -->
-  <section class="section quote-band" aria-labelledby="review-title">
-    <img class="quote-band__img" src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1800&q=85" alt="Industrial engineering environment" loading="lazy">
-    <div class="container quote-band__inner">
-      <figure data-reveal>
-        <blockquote id="review-title">“Reliable fastening solutions with quality, precision and customer satisfaction.”</blockquote>
-        <figcaption>Customer Review — Temporary placeholder</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- TEMPORARY FAQ -->
-  <section class="section" aria-labelledby="faq-title">
-    <div class="container">
-      <div class="shead">
-        <p class="label">Frequently Asked Questions</p>
-        <h2 id="faq-title">Industrial Fasteners</h2>
-      </div>
-      <div class="itinerary" data-accordion>
-        <div class="acc">
-          <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq1">What products do you supply?</button></h3>
-          <div class="acc__panel" id="faq1" hidden><p>We supply Stainless Steel and Mild Steel Screws, Bolts, Nuts, Washers and customized industrial fasteners.</p></div>
-        </div>
-        <div class="acc">
-          <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq2">Do you accept bulk orders?</button></h3>
-          <div class="acc__panel" id="faq2" hidden><p>Yes. We supply both regular and bulk industrial requirements.</p></div>
-        </div>
-        <div class="acc">
-          <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq3">Can you manufacture as per drawing?</button></h3>
-          <div class="acc__panel" id="faq3" hidden><p>Yes. Customized manufacturing is available according to customer drawings and specifications through associated manufacturing capabilities.</p></div>
-        </div>
-        <div class="acc">
-          <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq4">Where are you located?</button></h3>
-          <div class="acc__panel" id="faq4" hidden><p>Vasai East, Tungar Phata, Maharashtra.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TEMPORARY MAP -->
-  <section class="section destinations" aria-labelledby="map-title">
-    <div class="container">
-      <div class="shead">
-        <p class="label">Location</p>
-        <h2 id="map-title">Vasai East, Tungar Phata, Maharashtra</h2>
-      </div>
-      <div style="border-radius:var(--r-lg);overflow:hidden;background:var(--paper);">
-        <iframe
-          title="SHREE POOJA FASTENERS & ENGINEERING location"
-          src="https://www.google.com/maps?q=Vasai%20East%2C%20Tungar%20Phata%2C%20Maharashtra&output=embed"
-          width="100%" height="420" style="border:0;display:block;" loading="lazy"></iframe>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="closer__card">
-      <div>
-        <p class="label">Contact Us</p>
-        <h2>Let's Build Strong Business Relationships</h2>
-        <p>Contact us today for product information, quotations and customized fastening solutions.</p>
-      </div>
-      <div class="closer__actions">
-        <a class="btn btn--dark" href="#contact" data-route="contact">Contact Us</a>
-        <a class="btn btn--ghost" href="https://wa.me/916262665358" target="_blank" rel="noopener">WhatsApp</a>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ==================== PRODUCTS ==================== -->
-<div id="page-products" class="spa-page">
-  <section class="thero on-photo">
-    <img class="thero__img" src="ho3.png" alt="Industrial fasteners" loading="eager">
-    <div class="container thero__inner">
-      <p class="label thero__label">OUR PRODUCTS</p>
-      <h1>Industrial Fasteners</h1>
-      <p>Supplying quality fastening solutions for industrial and engineering applications.</p>
-    </div>
-  </section>
-
-  <section class="section destinations">
-    <div class="container">
-      <div class="shead shead--center">
-        <p class="label">High Demand</p>
-        <h2>Browse by Category</h2>
-        <p>Select a category to view the product images and names.</p>
-      </div>
-
-      <div class="dest-strip">
-        <button class="dtile" type="button" data-category-btn="bolt">
-          <img src="hex.jpeg" alt="Bolt">
-          <span class="dtile__meta"><span class="dtile__name">Bolt</span><span class="dtile__place">View More</span></span>
-        </button>
-        <button class="dtile" type="button" data-category-btn="screw">
-          <img src="as.jpeg" alt="Screw">
-          <span class="dtile__meta"><span class="dtile__name">Screw</span><span class="dtile__place">View More</span></span>
-        </button>
-        <button class="dtile" type="button" data-category-btn="washer">
-          <img src="s.jpeg" alt="Washer">
-          <span class="dtile__meta"><span class="dtile__name">Washer</span><span class="dtile__place">View More</span></span>
-        </button>
-        <button class="dtile" type="button" data-category-btn="nuts">
-          <img src="h.jpeg" alt="Nuts">
-          <span class="dtile__meta"><span class="dtile__name">Nuts</span><span class="dtile__place">View More</span></span>
-        </button>
-      </div>
-
-      <div class="category-panel" data-category-panel="bolt">
-        <div class="category-panel__grid">
-          <article class="category-panel__card"><img src="hex.jpeg" alt="Hex Bolt"><div><h3>Hex Bolt</h3><p>Available in various diameters, lengths and industrial specifications. Suitable for heavy-duty fastening.</p></div></article>
-          <article class="category-panel__card"><img src="fo.jpeg" alt="Foundation Bolt"><div><h3>Foundation Bolt</h3><p>Used in industrial machinery, steel structures and heavy construction.</p></div></article>
-          <article class="category-panel__card"><img src="ca.jpeg" alt="Carriage Bolt"><div><h3>Carriage Bolt</h3><p>High strength bolts used in fabrication and industrial equipment.</p></div></article>
-          <article class="category-panel__card"><img src="fl.jpeg" alt="Flange Bolt"><div><h3>Flange Bolt</h3><p>High-strength industrial bolts for machinery and engineering use.</p></div></article>
-        </div>
-      </div>
-
-      <div class="category-panel" data-category-panel="screw">
-        <div class="category-panel__grid">
-          <article class="category-panel__card"><img src="as.jpeg" alt="Assembly Screw"><div><h3>Assembly Screw</h3><p>Industrial fastening component for assemblies.</p></div></article>
-          <article class="category-panel__card"><img src="ma.jpeg" alt="Machine Screw"><div><h3>Machine Screw</h3><p>Used in industrial machines, electrical equipment and assemblies.</p></div></article>
-          <article class="category-panel__card"><img src="se1.jpeg" alt="Self Tapping Screw"><div><h3>Self Tapping Screw</h3><p>Designed for quick installation without pre-threading.</p></div></article>
-          <article class="category-panel__card"><img src="se2.jpeg" alt="Self Tapping Screw"><div><h3>Self Tapping Screw</h3><p>Designed for quick installation without pre-threading.</p></div></article>
-          <article class="category-panel__card"><img src="dr.jpeg" alt="Drywall Screw"><div><h3>Drywall Screw</h3><p>Suitable for gypsum board and construction applications.</p></div></article>
-          <article class="category-panel__card"><img src="w.jpeg" alt="Wood Screw"><div><h3>Wood Screw</h3><p>Manufactured for furniture, woodwork and interior projects.</p></div></article>
-        </div>
-      </div>
-
-      <div class="category-panel" data-category-panel="washer">
-        <div class="category-panel__grid">
-          <article class="category-panel__card"><img src="s.jpeg" alt="Spring Washer"><div><h3>Spring Washer</h3><p>Suitable for vibration resistance and secure fastening.</p></div></article>
-          <article class="category-panel__card"><img src="p.jpeg" alt="Plain Washer"><div><h3>Plain Washer</h3><p>Manufactured with dimensional accuracy for load distribution.</p></div></article>
-        </div>
-      </div>
-
-      <div class="category-panel" data-category-panel="nuts">
-        <div class="category-panel__grid">
-          <article class="category-panel__card"><img src="h.jpeg" alt="Hex Nut"><div><h3>Hex Nut</h3><p>Precision manufactured nuts for secure fastening applications.</p></div></article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXACTLY SIX CATALOG PRODUCTS -->
-  <section class="section" aria-labelledby="catalog-title">
-    <div class="container">
-      <div class="shead shead--split">
-        <div>
-          <p class="label">Product Catalog</p>
-          <h2 id="catalog-title">Selected Industrial Fasteners</h2>
-        </div>
-        <p>Industrial fasteners suitable for engineering, fabrication, construction and heavy industrial applications.</p>
-      </div>
-
-      <div class="tgrid">
-        <article class="tcard" data-reveal>
-          <div class="tcard__media"><img src="hex.jpeg" alt="Hex Bolts industrial engineering" loading="lazy"></div>
-          <div class="tcard__body"><span class="label">Bolt</span><h3 class="tcard__name">Hex Bolts</h3><p>Available in various diameters, lengths and industrial specifications. Suitable for heavy-duty fastening.</p></div>
-        </article>
-
-        <article class="tcard" data-reveal>
-          <div class="tcard__media"><img src="fo.jpeg" alt="Foundation Bolts construction and engineering" loading="lazy"></div>
-          <div class="tcard__body"><span class="label">Bolt</span><h3 class="tcard__name">Foundation Bolts</h3><p>Used in industrial machinery, steel structures and heavy construction.</p></div>
-        </article>
-
-        <article class="tcard" data-reveal>
-          <div class="tcard__media"><img src="as.jpeg" alt="Stainless Steel Screws industrial manufacturing" loading="lazy"></div>
-          <div class="tcard__body"><span class="label">Screw</span><h3 class="tcard__name">Stainless Steel Screws</h3><p>Available in SS202, SS304 &amp; SS316 grades. Applications include fabrication, machinery, electrical panels, furniture and industrial assemblies.</p></div>
-        </article>
-
-        <article class="tcard" data-reveal>
-          <div class="tcard__media"><img src="h.jpeg" alt="Hex Nuts industrial components" loading="lazy"></div>
-          <div class="tcard__body"><span class="label">Nuts</span><h3 class="tcard__name">Hex Nuts</h3><p>Precision manufactured nuts for secure fastening applications.</p></div>
-        </article>
-
-        <article class="tcard" data-reveal>
-          <div class="tcard__media"><img src="s.jpeg" alt="Spring Washers industrial hardware" loading="lazy"></div>
-          <div class="tcard__body"><span class="label">Washer</span><h3 class="tcard__name">Spring Washers</h3><p>Suitable for vibration resistance and secure fastening.</p></div>
-        </article>
-
-        <article class="tcard" data-reveal>
-          <div class="tcard__media"><img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=1000&q=85" alt="Threaded Rods industrial supply" loading="lazy"></div>
-          <div class="tcard__body"><span class="label">Fastener</span><h3 class="tcard__name">Threaded Rods</h3><p>Available in multiple sizes and lengths for industrial applications.</p></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section destinations">
-    <div class="container">
-      <div class="shead">
-        <p class="label">Materials We Offer</p>
-        <h2>Materials</h2>
-      </div>
-      <div class="chips">
-        <span class="chip">Stainless Steel 202</span>
-        <span class="chip">Stainless Steel 304</span>
-        <span class="chip">Stainless Steel 316</span>
-        <span class="chip">Mild Steel</span>
-        <span class="chip">Carbon Steel</span>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ==================== ABOUT ==================== -->
-<div id="page-about" class="spa-page">
-  <section class="thero on-photo">
-    <img class="thero__img" src="ho2.png" alt="Industrial fasteners" loading="eager">
-    <div class="container thero__inner">
-      <p class="label thero__label">ABOUT OUR COMPANY</p>
-      <h1>SHREE POOJA FASTENERS &amp; ENGINEERING</h1>
-      <p>Delivering dependable fastening solutions with quality, precision and customer satisfaction.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container story">
-      <p class="story__lead">Reliable fastening solutions for engineering, fabrication, construction, electrical, infrastructure and industrial sectors.</p>
-      <div class="story__cols">
-        <p>SHREE POOJA FASTENERS &amp; ENGINEERING is a growing wholesaler and supplier of high-quality industrial fasteners based in Vasai East, Tungar Phata, Maharashtra.</p>
-        <p>Our product range includes Stainless Steel Screws, Mild Steel Screws, Stainless Steel Bolts, Mild Steel Bolts, Nuts, Washers and Custom Fasteners manufactured according to customer requirements and industrial standards.</p>
-        <p>Customer satisfaction, product quality and timely delivery remain the foundation of our business philosophy.</p>
-        <p>We work with manufacturing partners for requirements where manufacturing capability is needed, while our focus remains on dependable industrial fastener supply and customer requirements.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section values">
-    <div class="container">
-      <div class="shead">
-        <p class="label">Our Vision</p>
-        <h2>Long-term customer value</h2>
-        <p>To become one of India's trusted industrial fastener manufacturers by consistently delivering premium quality products, dependable services and long-term customer value.</p>
-      </div>
-      <ul class="values__list">
-        <li><h3>Quality Products</h3><p>Deliver industrial fasteners manufactured with precision and reliability.</p></li>
-        <li><h3>Customer Satisfaction</h3><p>Build long-term relationships through honest business practices and professional support.</p></li>
-        <li><h3>Timely Delivery</h3><p>Ensure prompt order processing and dependable supply chain management.</p></li>
-        <li><h3>Integrity</h3><p>Maintaining transparency and professionalism in every business transaction.</p></li>
-        <li><h3>Commitment</h3><p>Dedicated to fulfilling customer requirements with consistency and responsibility.</p></li>
-        <li><h3>Innovation</h3><p>Continuously improving manufacturing methods and customer service.</p></li>
+  <section class="section promises" aria-labelledby="promise-title">
+    <div class="container"><div class="shead shead--center"><p class="label">Why Choose Us</p><h2 id="promise-title">Quality, supply and customer-focused service</h2><p>Our customer information highlights premium quality, industrial standards, reliable supply and dependable support.</p></div>
+      <ul class="promise-row">
+        <li class="promise" data-reveal><span class="promise__icon" aria-hidden="true">✓</span><h3>Premium Quality</h3><p>Fasteners selected for dimensional accuracy, strength, corrosion resistance, durability and finish.</p></li>
+        <li class="promise" data-reveal><span class="promise__icon" aria-hidden="true">↗</span><h3>Reliable Supply</h3><p>Prompt order processing and dependable supply-chain coordination for customer requirements.</p></li>
+        <li class="promise" data-reveal><span class="promise__icon" aria-hidden="true">◇</span><h3>Customer Satisfaction</h3><p>Professional support, honest business practices, competitive pricing and long-term relationships.</p></li>
       </ul>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container split">
-      <figure class="split__media"><img src="ab.png" alt="SHREE POOJA FASTENERS & ENGINEERING" loading="lazy"></figure>
-      <div class="split__copy">
-        <p class="label">Why Customers Choose Us</p>
-        <h2>Professional industrial fastener supply</h2>
-        <div class="chips">
-          <span class="chip">Premium Quality Products</span>
-          <span class="chip">Industrial Standard Manufacturing</span>
-          <span class="chip">Competitive Pricing</span>
-          <span class="chip">Timely Delivery</span>
-          <span class="chip">Reliable Customer Support</span>
-          <span class="chip">Customized Fastener Solutions</span>
-          <span class="chip">Strong Business Ethics</span>
-          <span class="chip">Long-Term Customer Relationships</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="closer__card">
-      <div><p class="label">Contact Us</p><h2>Let's Build Strong Business Relationships</h2><p>Contact us today for product information, quotations and customized fastening solutions.</p></div>
-      <div class="closer__actions"><a class="btn btn--dark" href="#contact" data-route="contact">Contact Us</a><a class="btn btn--ghost" href="https://wa.me/916262665358" target="_blank" rel="noopener">WhatsApp</a></div>
-    </div>
-  </section>
-</div>
-
-<!-- ==================== INFRASTRUCTURE ==================== -->
-<div id="page-infrastructure" class="spa-page">
-  <section class="thero on-photo">
-    <img class="thero__img" src="ho4.png" alt="Industrial manufacturing facility" loading="eager">
-    <div class="container thero__inner">
-      <p class="label thero__label">OUR INFRASTRUCTURE</p>
-      <h1>Modern Manufacturing Facility</h1>
-      <p>Committed to quality manufacturing, reliable production and customer satisfaction.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container split">
-      <figure class="split__media"><img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&w=1200&q=85" alt="Industrial manufacturing facility" loading="lazy"></figure>
-      <div class="split__copy">
-        <p class="label">Manufacturing Facility</p>
-        <h2>Systematic manufacturing process</h2>
-        <p>SHREE POOJA FASTENERS &amp; ENGINEERING operates with a systematic manufacturing process focused on quality, accuracy and efficiency.</p>
-        <p>Our objective is to manufacture industrial fasteners that meet customer requirements with consistency and reliability.</p>
-        <p>Our manufacturing activities are carried out using appropriate machinery, quality raw materials and controlled production methods through associated manufacturing capabilities.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section destinations">
-    <div class="container">
-      <div class="shead"><p class="label">Production Process</p><h2>Quality, accuracy and efficiency</h2></div>
+  <section class="section" aria-labelledby="catalog-preview-title">
+    <div class="container"><div class="shead shead--split"><div><p class="label">Product Catalog</p><h2 id="catalog-preview-title">Selected products</h2></div><a class="link-arrow" href="#products" data-route="products">See all 6 products <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
       <div class="tgrid">
-        <article class="tcard"><div class="tcard__body"><span class="label">01</span><h3 class="tcard__name">Raw Material Inspection</h3><p>Every production cycle begins with inspection of raw material to ensure quality and consistency.</p></div></article>
-        <article class="tcard"><div class="tcard__body"><span class="label">02</span><h3 class="tcard__name">Manufacturing</h3><p>Products are manufactured using modern production methods while maintaining dimensional accuracy.</p></div></article>
-        <article class="tcard"><div class="tcard__body"><span class="label">03</span><h3 class="tcard__name">Threading &amp; Finishing</h3><p>Thread quality and surface finish are checked carefully before further processing.</p></div></article>
-        <article class="tcard"><div class="tcard__body"><span class="label">04</span><h3 class="tcard__name">Quality Inspection</h3><p>Products are inspected before packing to ensure reliable performance.</p></div></article>
-        <article class="tcard"><div class="tcard__body"><span class="label">05</span><h3 class="tcard__name">Packing</h3><p>Products are packed carefully to avoid transportation damage.</p></div></article>
-        <article class="tcard"><div class="tcard__body"><span class="label">06</span><h3 class="tcard__name">Dispatch</h3><p>Orders are dispatched according to customer schedules and delivery commitments.</p></div></article>
+        <article class="tcard"><div class="tcard__media"><img src="hex.jpeg" alt="Hex Bolt" width="800" height="600" loading="lazy" /><span class="tcard__kind">Bolts</span></div><div class="tcard__body"><p class="tcard__place">Industrial Fastener</p><h3 class="tcard__name">Hex Bolt</h3><p class="tcard__facts"><span>Industrial applications</span><span>MS / SS options</span></p></div></article>
+        <article class="tcard"><div class="tcard__media"><img src="fo.jpeg" alt="Foundation Bolt" width="800" height="600" loading="lazy" /><span class="tcard__kind">Bolts</span></div><div class="tcard__body"><p class="tcard__place">Heavy Construction</p><h3 class="tcard__name">Foundation Bolt</h3><p class="tcard__facts"><span>Structures &amp; machinery</span></p></div></article>
+        <article class="tcard"><div class="tcard__media"><img src="as.jpeg" alt="Assembly Screw" width="800" height="600" loading="lazy" /><span class="tcard__kind">Screws</span></div><div class="tcard__body"><p class="tcard__place">Industrial Assembly</p><h3 class="tcard__name">Assembly Screw</h3><p class="tcard__facts"><span>Engineering &amp; fabrication</span></p></div></article>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="shead"><p class="label">Quality Control</p><h2>Inspection &amp; verification</h2></div>
-      <div class="chips">
-        <span class="chip">Inspection of Raw Materials</span>
-        <span class="chip">Dimensional Accuracy Check</span>
-        <span class="chip">Visual Inspection</span>
-        <span class="chip">Thread Quality Verification</span>
-        <span class="chip">Proper Packing Inspection</span>
-        <span class="chip">Final Dispatch Verification</span>
-      </div>
-    </div>
-  </section>
+  <section class="section quote-band on-photo" aria-labelledby="quote-title"><div class="container"><p class="label">Customer Feedback · Temporary</p><h2 id="quote-title">“Reliable supply, responsive communication and product quality that meets our requirements.”</h2><p>— Temporary sample review</p></div></section>
 
-  <section class="section destinations">
-    <div class="container">
-      <div class="shead"><p class="label">Our Capabilities</p><h2>Custom Manufacturing &amp; Bulk Supply</h2></div>
-      <div class="promise-row">
-        <div class="promise"><h3>Custom Manufacturing</h3><p>Products can be manufactured according to customer drawings, specifications and industrial requirements through manufacturing capabilities.</p></div>
-        <div class="promise"><h3>Bulk Supply</h3><p>Dependable supply for regular and bulk industrial requirements.</p></div>
-        <div class="promise"><h3>Timely Dispatch</h3><p>Orders are dispatched according to customer schedules and delivery commitments.</p></div>
-      </div>
-    </div>
-  </section>
+  <section class="section closer" aria-labelledby="closer-cta"><div class="container closer__inner"><div><p class="label">Ready to Enquire?</p><h2 id="closer-cta">Share your fastener requirement with us</h2><p>Contact us for product information, quotations, bulk supply and customized fastener requirements.</p></div><a class="cta-orbit" href="#contact" data-route="contact"><span class="cta-orbit__text">Request a Quote</span><span class="cta-orbit__dot" aria-hidden="true">↗</span></a></div></section>
 </div>
 
-<!-- ==================== CONTACT ==================== -->
+<div id="page-products" class="spa-page">
+  <section class="container phead" aria-labelledby="products-title"><p class="label">Product Catalog</p><h1 id="products-title">Industrial Fasteners</h1><p>Selected products supplied by Shree Pooja Fasteners &amp; Engineering.</p></section>
+  <section class="container section section--flush-top" aria-label="Product listings">
+    <div class="chips" style="margin-bottom:2rem"><button class="chip is-active" type="button" data-product-filter="All">All</button><button class="chip" type="button" data-product-filter="Bolts">Bolts</button><button class="chip" type="button" data-product-filter="Screws">Screws</button><button class="chip" type="button" data-product-filter="Washers">Washers</button><button class="chip" type="button" data-product-filter="Nuts">Nuts</button></div>
+    <div class="tgrid" id="product-grid">
+      <article class="tcard product-item" data-kind="Bolts"><div class="tcard__media"><img src="hex.jpeg" alt="Hex Bolt" width="800" height="600" loading="lazy" /><span class="tcard__kind">Bolt</span></div><div class="tcard__body"><h3 class="tcard__name">Hex Bolt</h3><p class="tcard__facts"><span>Heavy-duty fastening</span><span>Engineering &amp; fabrication</span></p><a class="btn btn--ghost" href="#contact" data-route="contact">Enquire</a></div></article>
+      <article class="tcard product-item" data-kind="Bolts"><div class="tcard__media"><img src="fo.jpeg" alt="Foundation Bolt" width="800" height="600" loading="lazy" /><span class="tcard__kind">Bolt</span></div><div class="tcard__body"><h3 class="tcard__name">Foundation Bolt</h3><p class="tcard__facts"><span>Machinery</span><span>Steel structures</span></p><a class="btn btn--ghost" href="#contact" data-route="contact">Enquire</a></div></article>
+      <article class="tcard product-item" data-kind="Bolts"><div class="tcard__media"><img src="ca.jpeg" alt="Carriage Bolt" width="800" height="600" loading="lazy" /><span class="tcard__kind">Bolt</span></div><div class="tcard__body"><h3 class="tcard__name">Carriage Bolt</h3><p class="tcard__facts"><span>Fabrication</span><span>Industrial equipment</span></p><a class="btn btn--ghost" href="#contact" data-route="contact">Enquire</a></div></article>
+      <article class="tcard product-item" data-kind="Bolts"><div class="tcard__media"><img src="fl.jpeg" alt="Flange Bolt" width="800" height="600" loading="lazy" /><span class="tcard__kind">Bolt</span></div><div class="tcard__body"><h3 class="tcard__name">Flange Bolt</h3><p class="tcard__facts"><span>Industrial assemblies</span><span>Engineering applications</span></p><a class="btn btn--ghost" href="#contact" data-route="contact">Enquire</a></div></article>
+      <article class="tcard product-item" data-kind="Screws"><div class="tcard__media"><img src="as.jpeg" alt="Assembly Screw" width="800" height="600" loading="lazy" /><span class="tcard__kind">Screw</span></div><div class="tcard__body"><h3 class="tcard__name">Assembly Screw</h3><p class="tcard__facts"><span>Engineering</span><span>Fabrication</span></p><a class="btn btn--ghost" href="#contact" data-route="contact">Enquire</a></div></article>
+      <article class="tcard product-item" data-kind="Nuts"><div class="tcard__media"><img src="h.jpeg" alt="Hex Nut" width="800" height="600" loading="lazy" /><span class="tcard__kind">Nut</span></div><div class="tcard__body"><h3 class="tcard__name">Hex Nut</h3><p class="tcard__facts"><span>Industrial fastening</span><span>Standard requirements</span></p><a class="btn btn--ghost" href="#contact" data-route="contact">Enquire</a></div></article>
+    </div>
+  </section>
+  <section class="section section--flush-top"><div class="container"><div class="shead"><p class="label">Applications</p><h2>Where industrial fasteners are used</h2><p>Automobile, construction, electrical, engineering, heavy fabrication, industrial machinery, infrastructure projects and general industrial applications.</p></div><div class="dest-strip"><a class="dtile" href="#engineering" data-route="engineering"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80" alt="Engineering application" /><span class="dtile__meta"><span class="dtile__name">Engineering &amp; Machinery</span></span></a><a class="dtile" href="#engineering" data-route="engineering"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80" alt="Industrial construction" /><span class="dtile__meta"><span class="dtile__name">Construction &amp; Infrastructure</span></span></a><a class="dtile" href="#engineering" data-route="engineering"><img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1200&q=80" alt="Industrial application" /><span class="dtile__meta"><span class="dtile__name">Fabrication &amp; Industry</span></span></a></div></div></section>
+</div>
+
+<div id="page-about" class="spa-page">
+  <section class="thero thero--about on-photo" aria-labelledby="about-title"><img class="thero__img" src="ab.png" alt="Shree Pooja Fasteners & Engineering" /><div class="container thero__inner"><p class="label thero__label">About Our Company</p><h1 id="about-title">Quality, precision and dependable fastening supply</h1><div class="crumbs"><a href="#home" data-route="home">Home</a><span>/</span><span>About Us</span></div></div></section>
+  <section class="section"><div class="container story"><h2 class="story__lead">Shree Pooja Fasteners &amp; Engineering is a growing wholesaler and supplier based in Vasai East, Tungar Phata, Maharashtra, providing reliable fastening solutions for engineering, fabrication, construction, electrical, infrastructure and industrial sectors.</h2><div class="story__cols"><p>Our product range includes Stainless Steel Screws, Mild Steel Screws, Stainless Steel Bolts, Mild Steel Bolts, Nuts, Washers and customized fasteners according to customer requirements and industrial standards.</p><p>Our foundation is customer satisfaction, product quality and timely delivery. We continuously focus on dependable sourcing, product consistency, professional support and long-term customer relationships.</p></div></div></section>
+  <section class="section section--flush-top"><div class="container figures"><figure class="figures__media"><img src="ab.png" alt="Shree Pooja Fasteners & Engineering" /></figure><dl class="figures__grid"><div><dt>Business Type</dt><dd>Wholesaler</dd></div><div><dt>Supply Focus</dt><dd>SS &amp; MS</dd></div><div><dt>Location</dt><dd>Vasai</dd></div><div><dt>Core</dt><dd>Fasteners</dd></div></dl></div></section>
+  <section class="section values" aria-labelledby="values-title"><div class="container"><div class="shead"><p class="label">Our Core Principles</p><h2 id="values-title">What guides our business</h2></div><ul class="values__list"><li><span class="label">01</span><h3>Integrity</h3><p>Transparency and professionalism in business dealings.</p></li><li><span class="label">02</span><h3>Commitment</h3><p>Fulfilling customer requirements consistently and responsibly.</p></li><li><span class="label">03</span><h3>Excellence</h3><p>Focusing on product quality, service and customer expectations.</p></li></ul></div></section>
+</div>
+
+<div id="page-engineering" class="spa-page">
+  <section class="thero on-photo" aria-labelledby="engineering-title"><img class="thero__img" src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1800&q=85" alt="Fastener engineering and industrial manufacturing" /><div class="container thero__inner"><p class="label thero__label">Fastener Engineering</p><h1 id="engineering-title">How industrial fasteners are engineered and supplied</h1><div class="crumbs"><a href="#home" data-route="home">Home</a><span>/</span><span>Engineering</span></div></div></section>
+  <section class="section"><div class="container prose"><p class="label">Educational Overview</p><h2>From material selection to final supply</h2><p>Industrial fasteners are selected and produced around application requirements such as load, joint design, material compatibility, corrosion exposure, temperature and required dimensions. A typical manufacturing route can involve raw-material selection, forming or machining, thread creation, heat treatment where applicable, surface finishing, inspection and packing. As a wholesaler and supplier, Shree Pooja Fasteners &amp; Engineering can coordinate suitable products and sourcing against customer requirements.</p><p>For drawing-based or customized requirements, important inputs can include fastener type, diameter, length, thread specification, material/grade, surface finish, quantity and applicable standard.</p></div></section>
+  <section class="section section--flush-top"><div class="container"><div class="shead"><p class="label">Fastener Crafting</p><h2>Key stages customers should understand</h2></div><div class="itinerary">
+    <div class="acc"><h3><button class="acc__btn" type="button" aria-expanded="true" aria-controls="eng1"><span class="label">01</span>Raw material selection &amp; inspection</button></h3><div class="acc__panel" id="eng1"><p>Material is selected according to the required fastener type and application. Incoming material should be checked for quality and consistency before processing.</p></div></div>
+    <div class="acc"><h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="eng2"><span class="label">02</span>Forming / machining</button></h3><div class="acc__panel" id="eng2" hidden><p>Depending on the product, fasteners may be formed, forged, machined or otherwise processed to achieve the required head, body and dimensions.</p></div></div>
+    <div class="acc"><h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="eng3"><span class="label">03</span>Threading &amp; finishing</button></h3><div class="acc__panel" id="eng3" hidden><p>Thread geometry, surface condition and finishing requirements are controlled to support proper assembly and service performance.</p></div></div>
+    <div class="acc"><h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="eng4"><span class="label">04</span>Quality inspection</button></h3><div class="acc__panel" id="eng4" hidden><p>Checks can include dimensional accuracy, visual inspection, thread quality and other product-specific verification before packing.</p></div></div>
+    <div class="acc"><h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="eng5"><span class="label">05</span>Packing &amp; dispatch</button></h3><div class="acc__panel" id="eng5" hidden><p>Proper packing helps protect products during transportation, followed by dispatch according to customer schedules and delivery commitments.</p></div></div>
+  </div></div></section>
+  <section class="section values"><div class="container"><div class="shead"><p class="label">Materials &amp; Applications</p><h2>Common material and use categories</h2></div><ul class="values__list"><li><h3>Stainless Steel</h3><p>Customer files specify SS 202, SS 304 and SS 316 options for screws and bolts.</p></li><li><h3>Mild Steel</h3><p>Mild Steel screws and bolts are included in the supplied product range.</p></li><li><h3>Applications</h3><p>Automobile, construction, electrical, engineering, heavy fabrication, machinery and infrastructure.</p></li></ul></div></section>
+</div>
+
 <div id="page-contact" class="spa-page">
-  <section class="thero on-photo">
-    <img class="thero__img" src="ho5.png" alt="Industrial fasteners" loading="eager">
-    <div class="container thero__inner">
-      <p class="label thero__label">CONTACT US</p>
-      <h1>We're Ready to Help Your Business</h1>
-      <p>Contact us for quotations, product information, bulk supply and customized fastener requirements.</p>
-    </div>
+  <section class="container phead" aria-labelledby="contact-title"><p class="label">Contact Us</p><h1 id="contact-title">We&rsquo;re Ready to Help Your Business</h1><p>Contact us for quotations, product information, bulk supply and customized fastener requirements.</p></section>
+  <section class="container section section--flush-top contact" aria-label="Contact form and details">
+    <form class="contact__form" id="contact-form"><div class="contact__row"><div class="field"><label class="field__label" for="name">Your Name</label><input class="input" id="name" name="name" required /></div><div class="field"><label class="field__label" for="company">Company Name</label><input class="input" id="company" name="company" /></div></div><div class="contact__row"><div class="field"><label class="field__label" for="email">Email Address</label><input class="input" id="email" name="email" type="email" /></div><div class="field"><label class="field__label" for="mobile">Mobile Number</label><input class="input" id="mobile" name="mobile" required /></div></div><div class="contact__row"><div class="field"><label class="field__label" for="city">City</label><input class="input" id="city" name="city" /></div><div class="field"><label class="field__label" for="product">Product Name</label><input class="input" id="product" name="product" /></div></div><div class="field"><label class="field__label" for="quantity">Quantity Required</label><input class="input" id="quantity" name="quantity" /></div><div class="field"><label class="field__label" for="message">Write your requirement here...</label><textarea class="input" id="message" name="message"></textarea></div><button class="btn btn--dark" type="submit">Send Inquiry</button></form>
+    <aside class="contact__aside"><figure class="contact__photo"><img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1200&q=80" alt="Industrial fastener warehouse" /></figure><div class="contact__card"><p class="label">Business Information</p><address>SHREE POOJA FASTENERS &amp; ENGINEERING<br>Vasai East, Tungar Phata, Maharashtra, India</address><a href="tel:+916262665358">+91 6262665358</a><a href="mailto:shreepoojafasteners.eng@gmail.com">shreepoojafasteners.eng@gmail.com</a><p class="contact__hours">Business Type: Wholesaler &amp; Supplier<br>Products: Industrial Fasteners, Screws, Bolts, Nuts, Washers</p></div></aside>
   </section>
-
-  <section class="section">
-    <div class="container contact">
-      <form class="contact__form" data-demo-form>
-        <div class="shead"><p class="label">Send Your Inquiry</p><h2>Product &amp; Business Inquiry</h2></div>
-        <div class="contact__row">
-          <label class="field"><span class="field__label">Your Name</span><input class="input" type="text" required></label>
-          <label class="field"><span class="field__label">Company Name</span><input class="input" type="text"></label>
-        </div>
-        <div class="contact__row">
-          <label class="field"><span class="field__label">Email Address</span><input class="input" type="email" required></label>
-          <label class="field"><span class="field__label">Mobile Number</span><input class="input" type="tel" required></label>
-        </div>
-        <div class="contact__row">
-          <label class="field"><span class="field__label">City</span><input class="input" type="text"></label>
-          <label class="field"><span class="field__label">Product Name</span><input class="input" type="text"></label>
-        </div>
-        <label class="field"><span class="field__label">Quantity Required</span><input class="input" type="text"></label>
-        <label class="field"><span class="field__label">Write your requirement here...</span><textarea class="input" rows="6" required></textarea></label>
-        <button class="btn btn--dark" type="submit">Send Inquiry</button>
-        <p class="form-note" role="status" aria-live="polite"></p>
-      </form>
-
-      <aside class="contact__aside">
-        <figure class="contact__photo"><img src="ab.png" alt="SHREE POOJA FASTENERS & ENGINEERING" loading="lazy"></figure>
-        <div class="contact__card">
-          <p class="label">Get In Touch</p>
-          <address>Vasai East, Tungar Phata, Maharashtra, India<br><br>
-            <a href="tel:+916262665358">+91 6262665358</a><br>
-            <a href="mailto:shreepoojafasteners.eng@gmail.com">shreepoojafasteners.eng@gmail.com</a>
-          </address>
-        </div>
-        <div class="bookcard">
-          <strong>Business Information</strong>
-          <p><b>Company:</b> SHREE POOJA FASTENERS &amp; ENGINEERING</p>
-          <p><b>Business Type:</b> Wholesaler &amp; Supplier</p>
-          <p><b>Products:</b> Industrial Fasteners, Screws, Bolts, Nuts, Washers</p>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <section class="section destinations">
-    <div class="container">
-      <div class="shead"><p class="label">Location</p><h2>Vasai East, Tungar Phata, Maharashtra</h2></div>
-      <iframe title="SHREE POOJA FASTENERS & ENGINEERING location" src="https://www.google.com/maps?q=Vasai%20East%2C%20Tungar%20Phata%2C%20Maharashtra&output=embed" width="100%" height="420" style="border:0;border-radius:var(--r-lg);display:block" loading="lazy"></iframe>
-    </div>
-  </section>
+  <section class="section section--flush-top"><div class="container"><div class="shead"><p class="label">Location · Temporary Map</p><h2>Find Shree Pooja Fasteners &amp; Engineering</h2></div><div style="border-radius:var(--r-lg);overflow:hidden;background:var(--paper);min-height:380px"><iframe title="Shree Pooja Fasteners & Engineering map" src="https://www.google.com/maps?q=Vasai+East,+Tungar+Phata,+Maharashtra,+India&output=embed" width="100%" height="420" style="border:0" loading="lazy"></iframe></div></div></section>
+  <section class="section section--flush-top faq" aria-labelledby="faq-title"><div class="container"><div class="shead"><p class="label">FAQ · Temporary</p><h2 id="faq-title">Frequently Asked Questions</h2></div><div class="itinerary"><div class="acc"><h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq1">What products do you supply?</button></h3><div class="acc__panel" id="faq1" hidden><p>Our supplied range includes Stainless Steel and Mild Steel screws, bolts, nuts, washers and selected customized fasteners.</p></div></div><div class="acc"><h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq2">Do you handle bulk orders?</button></h3><div class="acc__panel" id="faq2" hidden><p>Yes. The customer information states that bulk supply and quotations are part of the business offering.</p></div></div><div class="acc"><h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq3">Can you support customized requirements?</button></h3><div class="acc__panel" id="faq3" hidden><p>Yes. Customized fastener requirements and drawing/specification-based sourcing are supported subject to requirement review and sourcing capability.</p></div><div></div></div></div></div></section>
 </div>
-
-<!-- ==================== 404 ==================== -->
-<div id="page-404" class="spa-page">
-  <section class="section">
-    <div class="container lost">
-      <div>
-        <p class="lost__code">404</p>
-        <h1>This specification doesn't exist</h1>
-        <p>The requested page could not be found.</p>
-        <div class="lost__actions"><a class="btn btn--dark" href="#home" data-route="home">Back To Home</a></div>
-      </div>
-      <figure class="lost__media"><img src="ho6.jpeg" alt="Industrial fasteners" loading="lazy"></figure>
-    </div>
-  </section>
-</div>
-
 </main>
 
+<a class="floating-wa" href="https://wa.me/916262665358" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WA</a>
+<a class="floating-call" href="tel:+916262665358" aria-label="Call Shree Pooja Fasteners">☎</a>
+
 <footer class="footer">
-  <div class="container footer__top">
-    <div>
-      <h2 class="footer__title">SHREE POOJA FASTENERS &amp; ENGINEERING</h2>
-      <p class="footer__sub">Wholesaler &amp; Supplier of Industrial Fasteners.</p>
-      <div class="subscribe">
-        <a class="btn btn--glacier" href="mailto:shreepoojafasteners.eng@gmail.com">Email Us</a>
-      </div>
-    </div>
-
-    <div class="footer__cols">
-      <div>
-        <p class="label footer__h">Products</p>
-        <ul>
-          <li><a href="#products" data-route="products">Industrial Fasteners</a></li>
-          <li><a href="#products" data-route="products">Bolts</a></li>
-          <li><a href="#products" data-route="products">Screws</a></li>
-          <li><a href="#products" data-route="products">Nuts &amp; Washers</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="label footer__h">Company</p>
-        <ul>
-          <li><a href="#about" data-route="about">About Us</a></li>
-          <li><a href="#infrastructure" data-route="infrastructure">Infrastructure</a></li>
-          <li><a href="#contact" data-route="contact">Contact</a></li>
-          <li><a href="#home" data-route="home">Home</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="label footer__h">Contact</p>
-        <address>
-          Vasai East, Tungar Phata<br />Maharashtra, India<br />
-          <a href="tel:+916262665358">+91 6262665358</a><br />
-          <a href="mailto:shreepoojafasteners.eng@gmail.com">shreepoojafasteners.eng@gmail.com</a>
-        </address>
-      </div>
-    </div>
-  </div>
-
-  <p class="footer__word" aria-hidden="true">SHREE POOJA FASTENERS</p>
-
-  <div class="container footer__bottom">
-    <p>&copy; <span data-year>2026</span> SHREE POOJA FASTENERS &amp; ENGINEERING. All Rights Reserved.</p>
-    <p>Designed by Marwar Infotech</p>
-  </div>
+  <div class="container footer__grid"><div><a class="brand footer__brand" href="#home" data-route="home"><img class="brand__mark" src="l.png" alt="" width="30" height="30" style="object-fit:contain;border-radius:6px"/><span class="brand__word">Shree Pooja Fasteners</span></a><p>Wholesaler &amp; Supplier of Industrial Fasteners</p></div><div><p class="label">Contact</p><p>Vasai East, Tungar Phata, Maharashtra</p><p><a href="tel:+916262665358">+91 6262665358</a></p><p><a href="mailto:shreepoojafasteners.eng@gmail.com">shreepoojafasteners.eng@gmail.com</a></p></div><div><p class="label">Quick Links</p><p><a href="#products" data-route="products">Products</a></p><p><a href="#about" data-route="about">About Us</a></p><p><a href="#contact" data-route="contact">Contact Us</a></p></div></div>
+  <div class="container footer__bottom"><span>© 2026 Shree Pooja Fasteners &amp; Engineering</span><span>Designed by Marwar Infotech</span></div>
 </footer>
 
-<div class="floating-contact" aria-label="Quick contact">
-  <a href="tel:+916262665358" aria-label="Call">CALL</a>
-  <a href="https://wa.me/916262665358" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
-</div>
-
-<div class="toast" role="status" aria-live="polite" hidden></div>
+<style>
+/* Required functionality only — original theme tokens/layout remain unchanged. */
+.hero-slides{position:absolute;inset:0;z-index:-2;overflow:hidden}.hero-slide{opacity:0;transition:opacity 900ms ease}.hero-slide.is-active{opacity:1}.hero__dots{position:absolute;right:clamp(1rem,4vw,3rem);bottom:2rem;display:flex;gap:.45rem;z-index:4}.hero__dots button{width:8px;height:8px;border:0;border-radius:50%;background:rgba(255,255,255,.45);padding:0}.hero__dots button.is-active{background:#fff;transform:scale(1.35)}.floating-wa,.floating-call{position:fixed;right:20px;z-index:80;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--pine);color:#fff;font-weight:600;box-shadow:var(--shadow-card);transition:transform .2s ease,background .2s ease}.floating-wa{bottom:86px}.floating-call{bottom:22px}.floating-wa:hover,.floating-call:hover{transform:translateY(-4px) scale(1.04);background:#26302B}.product-item.is-hidden{display:none}.chip.is-active{background:var(--pine);border-color:var(--pine);color:#fff}.hero__sub{max-width:62ch}
+@media(max-width:720px){.hero__dots{bottom:1rem}.floating-wa,.floating-call{right:14px;width:48px;height:48px}.floating-wa{bottom:76px}}
+</style>
 
 <script>
 (() => {
-  "use strict";
-  const $ = (s,r=document)=>r.querySelector(s);
-  const $$ = (s,r=document)=>[...r.querySelectorAll(s)];
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  /* Header */
-  const header=$(".header");
-  const onScroll=()=>header?.classList.toggle("is-scrolled",window.scrollY>40);
-  onScroll(); window.addEventListener("scroll",onScroll,{passive:true});
-
-  /* Mobile menu */
-  const burger=$(".burger"), nav=$("#site-nav");
-  const setMenu=(open)=>{
-    if(!burger)return;
-    burger.setAttribute("aria-expanded",String(open));
-    burger.setAttribute("aria-label",open?"Close menu":"Open menu");
-    document.body.classList.toggle("menu-open",open);
-  };
-  burger?.addEventListener("click",()=>setMenu(burger.getAttribute("aria-expanded")!=="true"));
-  $$("#site-nav a").forEach(a=>a.addEventListener("click",()=>setMenu(false)));
-
-  /* SPA routing */
-  const pages={home:$("#page-home"),products:$("#page-products"),about:$("#page-about"),infrastructure:$("#page-infrastructure"),contact:$("#page-contact"),"404":$("#page-404")};
-  function routeTo(hash){
-    let key=(hash||"#home").replace("#","")||"home";
-    if(!pages[key])key="404";
-    Object.entries(pages).forEach(([k,el])=>el?.classList.toggle("active-page",k===key));
-    $$("[data-route]").forEach(a=>{
-      if(a.getAttribute("data-route")===key)a.setAttribute("aria-current","page");
-      else a.removeAttribute("aria-current");
-    });
-    window.scrollTo({top:0,behavior:reduceMotion?"auto":"smooth"});
-    setMenu(false);
+  const routes=[...document.querySelectorAll('[data-route]')];
+  const pages={home:'page-home',products:'page-products',about:'page-about',engineering:'page-engineering',contact:'page-contact'};
+  function show(route){
+    route=pages[route]?route:'home';
+    Object.entries(pages).forEach(([key,id])=>document.getElementById(id)?.classList.toggle('active-page',key===route));
+    routes.forEach(a=>a.setAttribute('aria-current',a.dataset.route===route?'page':'false'));
+    window.scrollTo({top:0,behavior:'smooth'});
+    document.body.classList.remove('menu-open');
+    const b=document.querySelector('.burger'); if(b)b.setAttribute('aria-expanded','false');
   }
-  window.addEventListener("hashchange",()=>routeTo(location.hash));
-  document.addEventListener("click",e=>{
-    const a=e.target.closest("[data-route]");
-    if(a){e.preventDefault();const r=a.getAttribute("data-route");if(location.hash!==`#${r}`)location.hash=r;routeTo(`#${r}`);}
-  });
-  routeTo(location.hash);
+  document.querySelectorAll('[data-route]').forEach(a=>a.addEventListener('click',e=>{const r=a.dataset.route;if(pages[r]){e.preventDefault();show(r);history.pushState({route:r},'',`#${r}`)}}));
+  window.addEventListener('popstate',()=>show(location.hash.slice(1)||'home'));
+  show(location.hash.slice(1)||'home');
 
-  /* Hero slider */
-  const slides=$$(".hero-slider img");
-  if(slides.length>1 && !reduceMotion){
-    let i=0;
-    setInterval(()=>{slides[i].classList.remove("is-active");i=(i+1)%slides.length;slides[i].classList.add("is-active");},4500);
-  }
+  const header=document.getElementById('site-header');
+  addEventListener('scroll',()=>header.classList.toggle('is-scrolled',scrollY>20),{passive:true});
+  const burger=document.querySelector('.burger');
+  burger?.addEventListener('click',()=>{const open=document.body.classList.toggle('menu-open');burger.setAttribute('aria-expanded',String(open))});
 
-  /* Category panels */
-  $$("[data-category-btn]").forEach(btn=>{
-    btn.addEventListener("click",()=>{
-      const key=btn.dataset.categoryBtn;
-      $$("[data-category-panel]").forEach(p=>p.classList.toggle("is-active",p.dataset.categoryPanel===key));
-      document.querySelector(`[data-category-panel="${key}"]`)?.scrollIntoView({behavior:reduceMotion?"auto":"smooth",block:"start"});
-    });
-  });
-  document.addEventListener("click",e=>{
-    const a=e.target.closest("[data-category]");
-    if(a && location.hash==="#products"){
-      setTimeout(()=>document.querySelector(`[data-category-btn="${a.dataset.category}"]`)?.click(),50);
-    }
-  });
+  const slides=[...document.querySelectorAll('.hero-slide')],dots=[...document.querySelectorAll('[data-hero-dot]')];let hi=0;
+  function hero(n){hi=(n+slides.length)%slides.length;slides.forEach((s,i)=>s.classList.toggle('is-active',i===hi));dots.forEach((d,i)=>d.classList.toggle('is-active',i===hi))}
+  dots.forEach((d,i)=>d.addEventListener('click',()=>hero(i)));setInterval(()=>hero(hi+1),5000);
 
-  /* Accordion */
-  document.addEventListener("click",e=>{
-    const btn=e.target.closest("[data-accordion] .acc__btn");
-    if(!btn)return;
-    const open=btn.getAttribute("aria-expanded")==="true";
-    btn.setAttribute("aria-expanded",String(!open));
-    const panel=$("#"+btn.getAttribute("aria-controls"));
-    if(panel)panel.hidden=open;
-  });
+  document.querySelectorAll('[data-product-filter]').forEach(btn=>btn.addEventListener('click',()=>{const f=btn.dataset.productFilter;document.querySelectorAll('[data-product-filter]').forEach(x=>x.classList.toggle('is-active',x===btn));document.querySelectorAll('.product-item').forEach(card=>card.classList.toggle('is-hidden',f!=='All'&&card.dataset.kind!==f))}));
+  document.querySelectorAll('[data-filter]').forEach(a=>a.addEventListener('click',()=>{const f=a.dataset.filter;setTimeout(()=>document.querySelector(`[data-product-filter="${f}"]`)?.click(),50)}));
 
-  /* Demo contact form */
-  document.addEventListener("submit",e=>{
-    const form=e.target;
-    if(!form.hasAttribute("data-demo-form"))return;
-    e.preventDefault();
-    const note=$(".form-note",form);
-    if(!form.checkValidity()){form.reportValidity();return;}
-    if(note)note.textContent="Your inquiry has been received successfully. Our team will contact you shortly.";
-    form.reset();
-  });
+  document.querySelectorAll('.acc__btn').forEach(btn=>btn.addEventListener('click',()=>{const panel=document.getElementById(btn.getAttribute('aria-controls'));const open=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!open));if(panel)panel.hidden=open}));
 
-  /* Scroll reveal */
-  const reveals=$$("[data-reveal]");
-  if(reveals.length && !reduceMotion && "IntersectionObserver" in window){
-    document.documentElement.classList.add("js-reveal");
-    const io=new IntersectionObserver(entries=>{
-      entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-in");io.unobserve(entry.target);}});
-    },{rootMargin:"0px 0px -8% 0px"});
-    reveals.forEach(el=>io.observe(el));
-  } else reveals.forEach(el=>el.classList.add("is-in"));
+  const io='IntersectionObserver' in window?new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-revealed');io.unobserve(e.target)}}),{threshold:.12}):null;
+  document.querySelectorAll('[data-reveal]').forEach(el=>io?.observe(el));
 
-  $$("[data-year]").forEach(el=>el.textContent=new Date().getFullYear());
+  document.getElementById('contact-form')?.addEventListener('submit',e=>{e.preventDefault();const f=e.currentTarget;const d=new FormData(f);const msg=`Hello Shree Pooja Fasteners & Engineering,\nName: ${d.get('name')}\nCompany: ${d.get('company')}\nMobile: ${d.get('mobile')}\nProduct: ${d.get('product')}\nQuantity: ${d.get('quantity')}\nRequirement: ${d.get('message')}`;window.open('https://wa.me/916262665358?text='+encodeURIComponent(msg),'_blank')});
 })();
 </script>
 </body>
+</html>

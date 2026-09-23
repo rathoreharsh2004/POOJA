@@ -3,43 +3,38 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Shree Pooja Fasteners & Engineering — Industrial Fasteners & Engineering Solutions</title>
-<meta name="description" content="Shree Pooja Fasteners & Engineering provides high-quality industrial fasteners, bolts, nuts, custom engineering components, and precision hardware solutions." />
+<title>Shree Pooja Fasteners & Engineering — Industrial Fasteners Wholesaler & Supplier</title>
+<meta name="description" content="Shree Pooja Fasteners & Engineering — Wholesaler and Supplier of premium industrial fasteners, bolts, nuts, custom engineering components, and precision hardware solutions based in Vasai East, Maharashtra." />
 <meta name="theme-color" content="#101412" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23101412'/%3E%3Ccircle cx='16' cy='12' r='4' fill='%23D5E4E1'/%3E%3Cpath d='M5 24l7-8 4 4 3-3 8 7z' fill='%23fff'/%3E%3C/svg%3E" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@400;500;600&family=Golos+Text:wght@400;500;600&family=Ubuntu+Sans+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="preconnect" href="https://images.pexels.com" crossorigin />
 
 <style>
 /* ==========================================================================
-   Fjelvik — design tokens, reset, primitives (Modified for Shree Pooja Fasteners)
+   Fjelvik — Design Tokens & Core Theme (Shree Pooja Fasteners & Engineering)
    ========================================================================== */
 
 :root {
-  /* Ground + ink -------------------------------------------------------- */
-  --fog:          #F3F4F1;   /* page ground — cool off-white               */
-  --paper:        #FFFFFF;   /* cards, booking panel, inputs               */
-  --fog-deep:     #E6E9E4;   /* hairlines on fog, tab track                */
-  --line:         #DCE1DB;   /* input borders                              */
-  --pine:         #101412;   /* headings, primary buttons (17.9:1 on fog)  */
-  --pine-soft:    #3A423E;   /* body copy (10.2:1 on fog)                  */
-  --pine-mute:    #66706B;   /* meta text (4.9:1 on fog)                   */
-  --pine-night:   #0B1210;   /* footer / dark bands                        */
+  --fog:          #F3F4F1;   
+  --paper:        #FFFFFF;   
+  --fog-deep:     #E6E9E4;   
+  --line:         #DCE1DB;   
+  --pine:         #101412;   
+  --pine-soft:    #3A423E;   
+  --pine-mute:    #66706B;   
+  --pine-night:   #0B1210;   
 
-  /* The only colour: glacier melt, used as a FIELD not a mark ----------- */
   --glacier:      #D5E4E1;
   --glacier-hi:   #E6F0EE;
   --glacier-deep: #B9D0CB;
 
-  /* Light ink that sits on photographs — never remap these in a dark band */
   --snow:         #FFFFFF;
   --snow-soft:    rgba(255, 255, 255, .82);
   --snow-line:    rgba(255, 255, 255, .34);
 
-  /* Type ------------------------------------------------------------------ */
   --font-display: "SUSE", "Golos Text", system-ui, sans-serif;
   --font-body:    "Golos Text", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono:    "Ubuntu Sans Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
@@ -53,7 +48,6 @@
   --text-2xl:  clamp(2rem, 1.5rem + 2vw, 3.25rem);
   --text-hero: clamp(2.6rem, 1.6rem + 3.6vw, 5rem);
 
-  /* Space + shape --------------------------------------------------------- */
   --container: 1320px;
   --gutter:    clamp(1rem, .5rem + 2.4vw, 3rem);
   --section:   clamp(4rem, 3rem + 4vw, 7.5rem);
@@ -74,7 +68,6 @@
   --z-menu:   60;
 }
 
-/* Reset ------------------------------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 body {
@@ -103,7 +96,6 @@ button, input, select, textarea { font: inherit; color: inherit; }
 button { cursor: pointer; }
 ul, ol { margin: 0; padding: 0; list-style: none; }
 :focus-visible { outline: 2px solid var(--pine); outline-offset: 3px; border-radius: 6px; }
-.on-photo :focus-visible { outline-color: var(--snow); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -114,7 +106,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   }
 }
 
-/* Layout primitives ------------------------------------------------------- */
 .container {
   width: 100%;
   max-width: var(--container);
@@ -134,7 +125,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .skip:focus { top: 1rem; }
 
-/* Labels ------------------------------------------------------------------ */
 .label {
   font-family: var(--font-mono);
   font-size: var(--text-xs);
@@ -144,7 +134,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   color: var(--pine-mute);
 }
 
-/* Buttons ----------------------------------------------------------------- */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: .6rem;
   min-height: 48px; padding: .8rem 1.5rem;
@@ -154,17 +143,14 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
               border-color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
 }
 .btn:active { transform: translateY(1px); }
-.btn--dark  { background: var(--pine); color: var(--snow); }
+.btn--dark   { background: var(--pine); color: var(--snow); }
 .btn--dark:hover { background: #26302B; }
 .btn--glacier { background: var(--glacier); color: var(--pine); }
 .btn--glacier:hover { background: var(--glacier-deep); }
 .btn--ghost { border-color: var(--line); color: var(--pine); background: transparent; }
 .btn--ghost:hover { border-color: var(--pine); }
-.btn--outline-snow { border-color: var(--snow-line); color: var(--snow); }
-.btn--outline-snow:hover { background: var(--snow); color: var(--pine); border-color: var(--snow); }
 .btn--block { width: 100%; }
 
-/* The tourex "pill + circle" call to action */
 .cta-orbit {
   display: inline-flex; align-items: center; gap: 0;
   border-radius: var(--r-pill);
@@ -189,7 +175,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .cta-orbit:hover .cta-orbit__text { background: var(--glacier-deep); }
 .cta-orbit:hover .cta-orbit__dot { transform: rotate(45deg); }
 
-/* Form fields ------------------------------------------------------------- */
 .field { display: grid; gap: .5rem; }
 .field__label { font-size: var(--text-sm); color: var(--pine); font-weight: 500; }
 .input {
@@ -209,9 +194,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .input:focus-within { border-color: var(--pine); box-shadow: 0 0 0 3px var(--glacier); }
 textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r-md); resize: vertical; }
 
-/* ==========================================================================
-   Site Chrome + Shared Components
-   ========================================================================== */
+/* Header & Chrome */
 .header {
   position: absolute; inset: 0 0 auto; z-index: var(--z-header);
   padding-block: 1.4rem;
@@ -226,7 +209,6 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
   transition: opacity var(--dur) var(--ease);
 }
 .header[data-header="photo"].is-scrolled::before { opacity: 0; }
-.header__inner { position: relative; }
 .header[data-header="photo"].is-scrolled,
 .header[data-header="solid"] {
   background: rgba(243, 244, 241, .92);
@@ -237,12 +219,12 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
 .header[data-header="photo"].is-scrolled { padding-block: .8rem; }
 .header[data-header="solid"] { position: sticky; top: 0; }
 
-.header__inner { display: flex; align-items: center; gap: 2rem; }
-.brand { display: inline-flex; align-items: center; gap: .6rem; margin-right: auto; }
-.brand__mark { width: 30px; height: 30px; }
+.header__inner { display: flex; align-items: center; gap: 2rem; position: relative; }
+.brand { display: inline-flex; align-items: center; gap: .8rem; margin-right: auto; }
+.brand__mark { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
 .brand__word {
   font-family: var(--font-display); font-weight: 600;
-  font-size: 1.35rem; letter-spacing: -.035em; line-height: 1.1;
+  font-size: 1.25rem; letter-spacing: -.035em; line-height: 1.1;
 }
 
 .nav { display: flex; align-items: center; gap: clamp(1rem, 2vw, 2rem); }
@@ -309,12 +291,9 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
   }
 }
 
-/* Section heads & Other shared components */
 .shead { display: grid; gap: 1rem; margin-bottom: clamp(2.25rem, 4vw, 3.5rem); }
 .shead--center { justify-items: center; text-align: center; }
-.shead--split {
-  grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 1.5rem 3rem;
-}
+.shead--split { grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 1.5rem 3rem; }
 .shead h2 { font-size: var(--text-2xl); max-width: 22ch; }
 .shead p:not(.label) { max-width: 52ch; color: var(--pine-mute); font-size: var(--text-md); }
 @media (max-width: 720px) { .shead--split { grid-template-columns: minmax(0, 1fr); } }
@@ -326,7 +305,7 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
 .link-arrow svg { width: 18px; height: 18px; transition: transform var(--dur) var(--ease); }
 .link-arrow:hover svg { transform: translate(3px, -3px); }
 
-/* Destination tile / Product Category Tile */
+/* High Demand / Category Tiles (.dtile) */
 .dtile {
   position: relative; display: block; overflow: hidden;
   min-height: 260px; border-radius: var(--r-md);
@@ -345,7 +324,6 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
 .dtile__meta { position: absolute; left: 1.25rem; bottom: 1.1rem; right: 1.25rem; display: grid; gap: .15rem; }
 .dtile__name { font-family: var(--font-display); font-size: var(--text-lg); letter-spacing: -.02em; line-height: 1.2; }
 .dtile__place { display: inline-flex; align-items: center; gap: .3rem; font-size: var(--text-xs); color: var(--snow-soft); }
-.dtile__place svg { width: 13px; height: 13px; }
 .dtile__count {
   position: absolute; top: 1rem; right: 1rem;
   padding: .35rem .7rem; border-radius: var(--r-pill);
@@ -375,13 +353,10 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
 }
 .tcard__body { display: grid; gap: .55rem; padding: 1.1rem 1.35rem 1.35rem; flex: 1; }
 .tcard__place { display: inline-flex; align-items: center; gap: .35rem; font-size: var(--text-sm); color: var(--pine-mute); }
-.tcard__place svg { width: 15px; height: 15px; }
 .tcard__name { font-size: var(--text-lg); line-height: 1.2; }
 .tcard__name a::after { content: ""; position: absolute; inset: 0; }
 .tcard__facts { display: flex; flex-wrap: wrap; gap: .4rem 1rem; font-size: var(--text-sm); color: var(--pine-soft); }
 .tcard__facts span { display: inline-flex; align-items: center; gap: .35rem; }
-.tcard__facts svg { width: 15px; height: 15px; }
-.tcard__rating svg { color: var(--pine); }
 .tcard__rating small { color: var(--pine-mute); font-size: inherit; }
 .tcard__foot {
   display: flex; align-items: center; justify-content: space-between;
@@ -397,7 +372,6 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
 .tcard__go svg { width: 18px; height: 18px; }
 .tcard:hover .tcard__go { background: var(--pine); color: var(--snow); transform: rotate(45deg); }
 
-/* Chips */
 .chips { display: flex; flex-wrap: wrap; gap: .5rem; }
 .chip {
   min-height: 42px; padding: 0 1.1rem; border-radius: var(--r-pill);
@@ -408,7 +382,6 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
 .chip:hover { border-color: var(--pine); }
 .chip[aria-pressed="true"] { background: var(--pine); border-color: var(--pine); color: var(--snow); }
 
-/* Page hero */
 .phead { padding-block: clamp(3rem, 2rem + 4vw, 5.5rem) clamp(2rem, 1.5rem + 2vw, 3rem); }
 .phead h1 { font-size: var(--text-hero); max-width: 16ch; }
 .phead p:not(.label) { margin-top: 1.1rem; max-width: 56ch; font-size: var(--text-md); color: var(--pine-mute); }
@@ -452,14 +425,9 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
   font-size: var(--text-sm);
 }
 .footer__bottom a { text-decoration: underline; text-underline-offset: 3px; }
-@media (max-width: 900px) {
-  .footer__top { grid-template-columns: minmax(0, 1fr); }
-}
-@media (max-width: 520px) {
-  .footer__cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
+@media (max-width: 900px) { .footer__top { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 520px) { .footer__cols { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
-/* Toast */
 .toast {
   position: fixed; left: 50%; bottom: 1.5rem; z-index: 90;
   transform: translateX(-50%);
@@ -470,14 +438,14 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
 }
 
 .form-note { font-size: var(--text-sm); color: var(--pine-soft); min-height: 1.4em; }
-.is-invalid, .input:has(.is-invalid) { border-color: #B3261E !important; box-shadow: 0 0 0 3px rgba(179, 38, 30, .12) !important; }
+.is-invalid { border-color: #B3261E !important; box-shadow: 0 0 0 3px rgba(179, 38, 30, .12) !important; }
 
 .js-reveal [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity 800ms var(--ease), transform 800ms var(--ease); }
 .js-reveal [data-reveal].is-in { opacity: 1; transform: none; }
 
-/* Page Specific CSS */
 .section--flush-top { padding-top: 0; }
 
+/* Hero Slider */
 .hero {
   position: relative; isolation: isolate; overflow: hidden;
   display: grid; grid-template-rows: minmax(0, 1fr) auto;
@@ -486,7 +454,12 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
   color: var(--snow);
   background: var(--pine-night);
 }
-.hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.hero__slider { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -2; }
+.hero__slide {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  opacity: 0; transition: opacity 1.2s var(--ease);
+}
+.hero__slide.active { opacity: 1; }
 .hero::after {
   content: ""; position: absolute; inset: 0; z-index: -1;
   background:
@@ -494,7 +467,7 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
     linear-gradient(to bottom, rgba(6, 10, 8, .45) 0%, rgba(6, 10, 8, 0) 26%, rgba(6, 10, 8, 0) 70%, rgba(6, 10, 8, .5) 100%);
 }
 .hero__grid {
-  display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 440px);
+  display: grid; grid-template-columns: minmax(0, 1fr);
   align-items: center; gap: clamp(2rem, 4vw, 5rem);
   padding-bottom: 2.5rem;
 }
@@ -510,44 +483,11 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
 .hero__title {
   color: var(--snow);
   font-size: var(--text-hero); line-height: 1.04; letter-spacing: -.045em; font-weight: 500;
-  max-width: 12ch;
+  max-width: 14ch;
 }
-.hero__sub { max-width: 44ch; font-size: var(--text-md); color: var(--snow-soft); }
+.hero__sub { max-width: 52ch; font-size: var(--text-md); color: var(--snow-soft); }
 .hero__copy .cta-orbit { margin-top: .75rem; }
 .hero .cta-orbit__dot { box-shadow: 0 0 0 5px rgba(255, 255, 255, .9); }
-
-/* Custom Quote / RFQ Panel */
-.booking {
-  justify-self: end; width: 100%;
-  display: grid; gap: 1.15rem;
-  padding: 1.25rem; border-radius: var(--r-lg);
-  background: var(--paper); color: var(--pine);
-  box-shadow: var(--shadow-lift);
-}
-.booking__tabs {
-  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .25rem;
-  padding: .3rem; border-radius: var(--r-pill); background: var(--fog);
-}
-.booking__tabs button {
-  display: inline-flex; align-items: center; justify-content: center; gap: .45rem;
-  min-height: 46px; border: 0; border-radius: var(--r-pill);
-  background: transparent; color: var(--pine-mute); font-size: var(--text-sm);
-  transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
-}
-.booking__tabs button svg { width: 17px; height: 17px; }
-.booking__tabs button:hover { color: var(--pine); }
-.booking__tabs button[aria-selected="true"] { background: var(--paper); color: var(--pine); box-shadow: 0 2px 8px rgba(16, 20, 18, .08); }
-.booking__panel { display: grid; gap: 1rem; padding-inline: .15rem; }
-.booking__panel[hidden] { display: none; }
-.booking__row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
-.booking__submit { min-height: 54px; margin-top: .25rem; }
-.stepper output { flex: 1; font-size: var(--text-sm); }
-.stepper button {
-  display: grid; place-items: center; width: 34px; height: 34px; flex: none;
-  border: 1px solid var(--line); border-radius: 50%; background: var(--fog);
-  font-size: 1.1rem; line-height: 1;
-}
-.stepper button:hover { border-color: var(--pine); }
 
 .hero__rail { padding-bottom: 2rem; }
 .hero__rail span {
@@ -555,19 +495,7 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
   background: linear-gradient(90deg, var(--snow) 0 34%, var(--snow-line) 34% 100%);
 }
 
-@media (max-width: 1024px) {
-  .hero__grid { grid-template-columns: minmax(0, 1fr); }
-  .booking { justify-self: stretch; max-width: 560px; }
-  .hero__title { max-width: 13ch; }
-}
-@media (max-width: 480px) {
-  .booking__row { grid-template-columns: minmax(0, 1fr); }
-  .booking { padding: 1rem; }
-  .cta-orbit__text { min-height: 54px; }
-  .cta-orbit__dot { width: 54px; height: 54px; }
-}
-
-/* Statement with inline photo pills */
+/* Statement & Split */
 .statement { text-align: center; }
 .statement__line {
   max-width: 22ch; margin-inline: auto;
@@ -584,7 +512,6 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
 .pill-img img { width: 100%; height: 100%; object-fit: cover; }
 .statement__sub { max-width: 58ch; margin: clamp(2rem, 4vw, 3rem) auto 0; font-size: var(--text-md); color: var(--pine-mute); }
 
-/* Split: photo + stat ledger */
 .split {
   display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: center; gap: clamp(2rem, 6vw, 6rem);
@@ -612,21 +539,15 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
   .split__media { aspect-ratio: 4 / 3; }
 }
 
-/* Bento */
+/* Bento 4 Categories */
 .destinations { background: var(--paper); border-radius: var(--r-lg) var(--r-lg) 0 0; }
 .bento {
   display: grid; gap: clamp(.75rem, 1.4vw, 1.1rem);
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-auto-rows: clamp(220px, 20vw, 290px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: clamp(240px, 24vw, 320px);
 }
-.bento > :nth-child(1) { grid-column: span 5; }
-.bento > :nth-child(2) { grid-column: span 7; }
-.bento > :nth-child(3) { grid-column: span 12; }
-.bento > :nth-child(4) { grid-column: span 7; }
-.bento > :nth-child(5) { grid-column: span 5; }
 @media (max-width: 760px) {
   .bento { grid-template-columns: minmax(0, 1fr); grid-auto-rows: 240px; }
-  .bento > * { grid-column: auto !important; }
 }
 
 /* Promises */
@@ -646,7 +567,6 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
   .promise + .promise { border-left: 0; border-top: 1px solid var(--fog-deep); }
 }
 
-/* Quote over photograph */
 .quote-band {
   position: relative; isolation: isolate; overflow: hidden;
   display: grid; grid-template-rows: minmax(0, 1fr);
@@ -664,7 +584,6 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
 .quote-band figcaption { margin-top: 1.25rem; color: var(--snow-soft); font-size: var(--text-sm); }
 .quote-band strong { color: var(--snow); font-weight: 500; }
 
-/* Closer */
 .closer__card {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem;
   padding-block: clamp(2.5rem, 4vw, 4rem);
@@ -682,7 +601,6 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
 .closer__card .btn--ghost { border-color: rgba(16, 20, 18, .25); }
 .closer__card .btn--ghost:hover { border-color: var(--pine); }
 
-/* Toolbar & Filters */
 .toolbar {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem;
   padding: 1rem; margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
@@ -696,271 +614,841 @@ textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r
 .results-meta { margin-bottom: 1rem; font-family: var(--font-mono); font-size: var(--text-sm); color: var(--pine-mute); }
 .empty { display: grid; justify-items: center; gap: 1rem; padding: 4rem 1rem; text-align: center; background: var(--paper); border-radius: var(--r-lg); }
 .empty[hidden] { display: none; }
-.empty h2 { font-size: var(--text-xl); }
 .tcard[hidden] { display: none; }
 .dest-strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
 @media (max-width: 900px) { .dest-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 480px) { .dest-strip { grid-template-columns: minmax(0, 1fr); } }
 
-/* 404 */
-.lost {
-  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: clamp(2rem, 5vw, 5rem);
-  padding-block: clamp(3rem, 6vw, 6rem);
-}
-.lost__code { font-family: var(--font-mono); font-size: var(--text-sm); color: var(--pine-mute); letter-spacing: .08em; }
-.lost h1 { margin-top: 1rem; font-size: var(--text-hero); max-width: 12ch; }
-.lost p:not(.lost__code) { margin-top: 1rem; max-width: 42ch; color: var(--pine-mute); font-size: var(--text-md); }
-.lost__actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
-.lost__media { border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 4 / 5; max-height: 600px; width: 100%; justify-self: end; }
-.lost__media img { width: 100%; height: 100%; object-fit: cover; }
-@media (max-width: 800px) { .lost { grid-template-columns: minmax(0, 1fr); } .lost__media { aspect-ratio: 16 / 10; } }
-
-/* Inner pages (Product detail / About / Contact) */
-.thero {
-  position: relative; isolation: isolate; overflow: hidden;
-  display: grid; grid-template-rows: minmax(0, 1fr);
-  min-height: clamp(480px, 62vh, 640px);
-  color: var(--snow); background: var(--pine-night);
-}
-.thero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
-.thero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(to top, rgba(6, 10, 8, .82) 0%, rgba(6, 10, 8, .3) 50%, rgba(6, 10, 8, .35) 78%, rgba(6, 10, 8, .6) 100%); }
-.thero__inner { display: grid; align-content: end; gap: 1.25rem; padding-top: 8rem; padding-bottom: clamp(2rem, 4vw, 3.5rem); }
-.thero h1 { color: var(--snow); font-size: var(--text-hero); line-height: 1.05; letter-spacing: -.045em; max-width: 15ch; }
-.thero__label { color: var(--snow-soft); }
-.crumbs { display: flex; flex-wrap: wrap; gap: .5rem; font-size: var(--text-sm); color: var(--snow-soft); }
-.crumbs a:hover { color: var(--snow); }
-.thero__facts {
-  display: flex; flex-wrap: wrap; gap: .75rem 2.5rem;
-  padding-top: 1.25rem; border-top: 1px solid var(--snow-line);
-}
-.thero__facts li { display: grid; gap: .2rem; font-size: var(--text-md); }
-.thero__facts .label { color: var(--snow-soft); }
-
-.tour { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 380px); gap: clamp(2rem, 4vw, 4rem); align-items: start; }
-.tour__main { display: grid; gap: clamp(2.5rem, 4vw, 3.5rem); }
-.tour__aside { position: sticky; top: 6rem; }
-@media (max-width: 960px) { .tour { grid-template-columns: minmax(0, 1fr); } .tour__aside { position: static; } }
-
-.gallery { display: grid; gap: .75rem; }
-.gallery__stage { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--r-lg); background: var(--fog-deep); }
-.gallery__thumbs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; }
-.gallery__thumbs button { padding: 0; border: 2px solid transparent; border-radius: var(--r-md); overflow: hidden; background: none; opacity: .65; transition: opacity var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease); }
-.gallery__thumbs button:hover { opacity: 1; }
-.gallery__thumbs button[aria-pressed="true"] { opacity: 1; border-color: var(--pine); }
-.gallery__thumbs img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
-
-.prose { display: grid; gap: 1rem; max-width: 64ch; }
-.prose h2, .itinerary h2 { font-size: var(--text-xl); }
-.prose p { font-size: var(--text-md); }
-
-.includes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem 2rem; padding: clamp(1.5rem, 3vw, 2rem); border-radius: var(--r-lg); background: var(--glacier-hi); }
-.includes li { position: relative; padding-left: 1.75rem; color: var(--pine); }
-.includes li::before { content: ""; position: absolute; left: 0; top: .45em; width: 1rem; height: .55rem; border-left: 2px solid var(--pine); border-bottom: 2px solid var(--pine); transform: rotate(-45deg); }
-@media (max-width: 560px) { .includes { grid-template-columns: minmax(0, 1fr); } }
-
-.itinerary { display: grid; gap: 1.25rem; }
-.acc { border-top: 1px solid var(--fog-deep); }
-.acc h3 { font-size: inherit; font-family: var(--font-body); letter-spacing: 0; }
-.acc__btn {
-  position: relative; display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem 1.25rem;
-  width: 100%; padding: 1.25rem 3rem 1.25rem 0; border: 0; border-bottom: 1px solid var(--fog-deep);
-  background: none; text-align: left; color: var(--pine);
-  font-family: var(--font-display); font-size: var(--text-lg); letter-spacing: -.02em; line-height: 1.25;
-}
-.acc__btn .label { min-width: 6.5ch; }
-.acc__btn::after {
-  content: "+"; position: absolute; right: 0; top: 50%; transform: translateY(-50%);
-  display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%;
-  background: var(--glacier); font-family: var(--font-body); font-size: 1.1rem;
-  transition: transform var(--dur) var(--ease);
-}
-.acc__btn[aria-expanded="true"]::after { transform: translateY(-50%) rotate(45deg); }
-.acc__panel { padding: 0 3rem 1.5rem 0; border-bottom: 1px solid var(--fog-deep); margin-top: -1px; }
-.acc__panel p { max-width: 60ch; }
-
-.bookcard { display: grid; gap: 1rem; padding: 1.5rem; border-radius: var(--r-lg); background: var(--paper); box-shadow: var(--shadow-card); }
-.bookcard__price { font-family: var(--font-display); font-size: var(--text-2xl); color: var(--pine); letter-spacing: -.035em; line-height: 1.1; }
-.bookcard__price small { font-family: var(--font-body); font-size: var(--text-sm); color: var(--pine-mute); letter-spacing: 0; }
-.bookcard__fine { font-size: var(--text-xs); color: var(--pine-mute); }
-
-/* About */
-.story { display: grid; gap: clamp(2rem, 4vw, 3rem); }
-.story__lead { font-size: clamp(1.6rem, 1.1rem + 2vw, 2.75rem); line-height: 1.25; letter-spacing: -.03em; font-weight: 400; max-width: 36ch; }
-.story__cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; max-width: 880px; margin-left: auto; font-size: var(--text-md); }
-@media (max-width: 700px) { .story__cols { grid-template-columns: minmax(0, 1fr); } }
-
-.figures { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(1rem, 2vw, 1.5rem); }
-.figures__media { border-radius: var(--r-lg); overflow: hidden; min-height: 360px; }
-.figures__media img { width: 100%; height: 100%; object-fit: cover; }
-.figures__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1rem, 2vw, 1.5rem); margin: 0; }
-.figures__grid div { display: flex; flex-direction: column; justify-content: space-between; gap: 2rem; padding: clamp(1.25rem, 2.5vw, 2rem); border-radius: var(--r-lg); background: var(--paper); }
-.figures__grid div:nth-child(2) { background: var(--glacier); }
-.figures__grid div:nth-child(3) { background: var(--pine); }
-.figures__grid div:nth-child(3) dt { color: rgba(255, 255, 255, .65); }
-.figures__grid div:nth-child(3) dd { color: var(--snow); }
-.figures__grid dt { font-size: var(--text-sm); color: var(--pine-mute); }
-.figures__grid dd { margin: 0; font-family: var(--font-display); font-size: clamp(2.5rem, 1.8rem + 2.6vw, 4.5rem); line-height: 1; letter-spacing: -.045em; color: var(--pine); }
-@media (max-width: 800px) { .figures { grid-template-columns: minmax(0, 1fr); } .figures__media { aspect-ratio: 16 / 10; min-height: 0; } }
-
-.values { background: var(--paper); }
-.values__list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.5rem, 3vw, 3rem); list-style: none; }
-.values__list li { display: grid; gap: .75rem; align-content: start; padding-top: 1.25rem; border-top: 2px solid var(--pine); }
-.values__list h3 { font-size: var(--text-lg); }
-.values__list p { color: var(--pine-mute); }
-@media (max-width: 800px) { .values__list { grid-template-columns: minmax(0, 1fr); } }
-
-.team { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
-.guide { display: grid; gap: .35rem; justify-items: start; padding: 1.5rem; border-radius: var(--r-lg); background: var(--paper); }
-.guide__avatar { display: grid; place-items: center; width: 64px; height: 64px; margin-bottom: 1rem; border-radius: 50%; background: var(--glacier); color: var(--pine); font-family: var(--font-display); font-size: 1.25rem; font-weight: 500; }
-.guide h3 { font-size: var(--text-md); letter-spacing: -.01em; }
-.guide p { font-size: var(--text-sm); color: var(--pine-mute); }
-.guide .label { margin-top: .75rem; }
-@media (max-width: 960px) { .team { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 480px) { .team { grid-template-columns: minmax(0, 1fr); } }
-
-/* Contact */
-.contact { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: start; }
-.contact__form { display: grid; gap: 1.25rem; padding: clamp(1.5rem, 3vw, 2.5rem); border-radius: var(--r-lg); background: var(--paper); }
-.contact__form .btn { justify-self: start; }
-.contact__row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
-.contact__form input.input, .contact__form select.input { padding-inline: 1.1rem; }
-.contact__size { border: 0; padding: 0; margin: 0; min-width: 0; }
-.contact__size legend { margin-bottom: .5rem; padding: 0; }
-.radio-chip { position: relative; }
-.radio-chip input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
-.radio-chip span { display: inline-flex; align-items: center; min-height: 42px; padding: 0 1.2rem; border-radius: var(--r-pill); border: 1px solid var(--line); font-size: var(--text-sm); color: var(--pine); transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease); }
-.radio-chip input:checked + span { background: var(--pine); border-color: var(--pine); color: var(--snow); }
-.radio-chip input:focus-visible + span { outline: 2px solid var(--pine); outline-offset: 3px; }
-.contact__aside { display: grid; gap: 1rem; }
-.contact__photo { margin: 0; border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 4 / 3; }
-.contact__photo img { width: 100%; height: 100%; object-fit: cover; }
-.contact__card { display: grid; gap: .5rem; padding: 1.5rem; border-radius: var(--r-lg); background: var(--glacier); color: var(--pine); }
-.contact__card address { font-style: normal; font-family: var(--font-display); font-size: var(--text-lg); line-height: 1.3; letter-spacing: -.015em; }
-.contact__card a { text-decoration: underline; text-underline-offset: 3px; }
-.contact__hours { font-size: var(--text-sm); color: var(--pine-soft); }
-.faq { max-width: 880px; }
-@media (max-width: 860px) { .contact { grid-template-columns: minmax(0, 1fr); } }
-@media (max-width: 520px) { .contact__row { grid-template-columns: minmax(0, 1fr); } }
-
-/* Single Page Hide Sections / Tab Switching for All-in-One */
+/* Single Page Hide Sections */
 .spa-page { display: none; }
 .spa-page.active-page { display: block; }
+
+/* Engineering section styling */
+.eng-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+@media (max-width: 768px) { .eng-grid { grid-template-columns: minmax(0, 1fr); } }
+.eng-card { background: var(--paper); padding: 2rem; border-radius: var(--r-lg); display: grid; gap: .75rem; }
+.eng-card h3 { font-size: var(--text-lg); }
+.eng-card p { color: var(--pine-mute); font-size: var(--text-sm); }
 </style>
 </head>
-<style>
-/* Required additions — existing visual system is intentionally preserved */
-.hero-slider{position:absolute;inset:0;z-index:-2;overflow:hidden}.hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 900ms var(--ease)}.hero-slide.is-active{opacity:1}.hero__img{display:none}
-.hero-controls{position:absolute;right:var(--gutter);bottom:2rem;display:flex;gap:.5rem;z-index:3}.hero-control{width:42px;height:42px;border:1px solid var(--snow-line);border-radius:50%;background:rgba(6,10,8,.3);color:var(--snow);backdrop-filter:blur(8px);display:grid;place-items:center;transition:background var(--dur-fast) var(--ease),transform var(--dur-fast) var(--ease)}.hero-control:hover{background:var(--snow);color:var(--pine);transform:translateY(-2px)}
-.featured-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(1rem,2vw,1.5rem)}
-.featured-card{position:relative;display:block;overflow:hidden;aspect-ratio:1/1;border-radius:var(--r-md);background:var(--pine);color:var(--snow);isolation:isolate;cursor:pointer}.featured-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 900ms var(--ease)}.featured-card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(8,12,10,.82),rgba(8,12,10,.08) 62%,rgba(8,12,10,0))}.featured-card:hover img{transform:scale(1.06)}.featured-card__body{position:absolute;left:1.2rem;right:1.2rem;bottom:1.15rem}.featured-card__number{font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:.08em;color:var(--snow-soft)}.featured-card__name{font-family:var(--font-display);font-size:var(--text-xl);margin-top:.2rem}
-.catalog-modal{position:fixed;inset:0;z-index:100;background:rgba(11,18,16,.72);backdrop-filter:blur(12px);display:grid;place-items:center;padding:1rem;opacity:0;visibility:hidden;transition:opacity var(--dur) var(--ease),visibility 0s var(--dur)}.catalog-modal.is-open{opacity:1;visibility:visible;transition:opacity var(--dur) var(--ease),visibility 0s}.catalog-modal__panel{width:min(1100px,100%);max-height:min(86vh,900px);overflow:auto;background:var(--fog);border-radius:var(--r-lg);box-shadow:var(--shadow-lift);padding:clamp(1.25rem,3vw,2rem);transform:translateY(18px);transition:transform var(--dur) var(--ease)}.catalog-modal.is-open .catalog-modal__panel{transform:none}.catalog-modal__head{display:flex;justify-content:space-between;gap:1rem;align-items:start;margin-bottom:1.25rem}.catalog-close{width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:var(--paper);color:var(--pine);font-size:1.4rem}.catalog-close:hover{border-color:var(--pine)}.catalog-items{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.catalog-item{background:var(--paper);border-radius:var(--r-md);overflow:hidden}.catalog-item img{width:100%;aspect-ratio:4/3;object-fit:cover}.catalog-item__body{padding:1rem}.catalog-item h3{font-size:var(--text-md)}.catalog-item p{margin-top:.3rem;color:var(--pine-mute);font-size:var(--text-sm)}
-.info-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.info-card{padding:1.5rem;border-radius:var(--r-lg);background:var(--paper)}.info-card h3{font-size:var(--text-lg);margin-bottom:.55rem}.info-card p,.info-card li{color:var(--pine-mute);font-size:var(--text-sm)}.info-card ul{display:grid;gap:.4rem;list-style:disc;padding-left:1.1rem}
-.process-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.process-card{padding:1.4rem;border-radius:var(--r-lg);background:var(--paper);border-top:2px solid var(--pine)}.process-card .label{display:block;margin-bottom:.5rem}.process-card h3{font-size:var(--text-lg)}.process-card p{margin-top:.5rem;color:var(--pine-mute);font-size:var(--text-sm)}
-.map-wrap{border-radius:var(--r-lg);overflow:hidden;background:var(--paper);min-height:360px}.map-wrap iframe{width:100%;height:420px;border:0;display:block}
-@media(max-width:900px){.featured-grid,.info-grid,.process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.catalog-items{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:560px){.featured-grid,.info-grid,.process-grid,.catalog-items{grid-template-columns:minmax(0,1fr)}.hero-controls{right:1rem;bottom:1rem}}
-body.modal-open{overflow:hidden}
-</style>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+
 <header class="header" data-header="photo" id="site-header">
   <div class="container header__inner">
     <a class="brand" href="#home" data-route="home" aria-label="Shree Pooja Fasteners & Engineering — home">
-      <img class="brand__mark" src="l.png" alt="Shree Pooja Fasteners & Engineering logo" width="30" height="30" style="object-fit:contain;border-radius:6px" />
+      <img class="brand__mark" src="l.png" alt="Shree Pooja Fasteners Logo" width="34" height="34" />
       <span class="brand__word">Shree Pooja Fasteners</span>
     </a>
+
     <nav class="nav" id="site-nav" aria-label="Main">
       <a href="#home" data-route="home" aria-current="page">Home</a>
       <a href="#products" data-route="products">Products</a>
+      <a href="#engineering" data-route="engineering">Engineering</a>
       <a href="#about" data-route="about">About Us</a>
       <a href="#contact" data-route="contact">Contact Us</a>
       <a class="nav__signin-mobile" href="#contact" data-route="contact">Request Quote</a>
     </nav>
-    <div class="header__tools"><a class="btn header__signin" href="#contact" data-route="contact">Request Quote</a><button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span></button></div>
+
+    <div class="header__tools">
+      <a class="btn header__signin" href="#contact" data-route="contact">Request Quote</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
+
 <main id="main">
-<div id="page-home" class="spa-page active-page">
-  <section class="hero on-photo" aria-labelledby="hero-title">
-    <div class="hero-slider" aria-label="Company images">
-      <img class="hero-slide is-active" src="ho1.png" alt="Industrial fasteners and engineering components" fetchpriority="high">
-      <img class="hero-slide" src="ho2.png" alt="Industrial fastener supply" loading="lazy">
-      <img class="hero-slide" src="ho3.png" alt="Metal fasteners" loading="lazy">
-      <img class="hero-slide" src="ho4.png" alt="Engineering components" loading="lazy">
-      <img class="hero-slide" src="ho5.png" alt="Industrial hardware" loading="lazy">
-      <img class="hero-slide" src="ho6.jpeg" alt="Industrial fasteners" loading="lazy">
-    </div>
-    <div class="container hero__grid">
-      <div class="hero__copy" data-reveal>
-        <p class="hero__eyebrow"><span class="hero__dot" aria-hidden="true"></span>Industrial Fasteners &amp; Engineering</p>
-        <h1 id="hero-title" class="hero__title">SHREE POOJA FASTENERS &amp; ENGINEERING</h1>
-        <p class="hero__sub">Manufacturer &amp; Supplier of Premium Industrial Fasteners</p>
-        <a class="cta-orbit" href="#products" data-route="products"><span class="cta-orbit__text">Explore Product Catalog</span><span class="cta-orbit__dot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+
+  <!-- ==================== HOME PAGE ==================== -->
+  <div id="page-home" class="spa-page active-page">
+    <section class="hero on-photo" aria-labelledby="hero-title">
+      <div class="hero__slider" aria-hidden="true">
+        <img class="hero__slide active" src="ho1.png" alt="" />
+        <img class="hero__slide" src="ho2.png" alt="" />
+        <img class="hero__slide" src="ho3.png" alt="" />
+        <img class="hero__slide" src="ho4.png" alt="" />
+        <img class="hero__slide" src="ho5.png" alt="" />
+        <img class="hero__slide" src="ho6.jpeg" alt="" />
       </div>
-    </div>
-    <div class="hero-controls" aria-label="Hero controls"><button class="hero-control" type="button" data-hero-prev aria-label="Previous image">←</button><button class="hero-control" type="button" data-hero-next aria-label="Next image">→</button></div>
-    <div class="container hero__rail" aria-hidden="true"><span></span></div>
-  </section>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="hero__eyebrow"><span class="hero__dot" aria-hidden="true"></span>Industrial Wholesaler &amp; Supplier</p>
+          <h1 id="hero-title" class="hero__title">Manufacturer &amp; Supplier of Premium Industrial Fasteners</h1>
+          <p class="hero__sub">Delivering top-grade bolts, screws, nuts, washers, and customized engineering hardware solutions built to international quality standards for infrastructure, machinery, and fabrication.</p>
+          <a class="cta-orbit" href="#products" data-route="products">
+            <span class="cta-orbit__text">Explore catalog</span>
+            <span class="cta-orbit__dot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </a>
+        </div>
+      </div>
+      <div class="container hero__rail" aria-hidden="true"><span></span></div>
+    </section>
 
-  <section class="section statement" aria-labelledby="statement-title"><div class="container"><h2 id="statement-title" class="statement__line" data-reveal>Reliable industrial fasteners for demanding engineering applications.</h2><p class="statement__sub" data-reveal>Shree Pooja Fasteners &amp; Engineering is positioned as an industrial fastener wholesaler and supplier serving engineering, fabrication, construction, electrical, infrastructure and industrial requirements.</p></div></section>
+    <!-- Statement -->
+    <section class="section statement" aria-labelledby="statement-title">
+      <div class="container">
+        <h2 id="statement-title" class="statement__line" data-reveal>
+          Delivering precision 
+          <span class="pill-img"><img src="ho1.png" alt="" width="600" height="400" loading="lazy" decoding="async" /></span>
+          fasteners &amp; fittings
+          <span class="pill-img pill-img--wide"><img src="ho2.png" alt="" width="600" height="400" loading="lazy" decoding="async" /></span>
+          for industrial excellence.
+        </h2>
+        <p class="statement__sub" data-reveal>Shree Pooja Fasteners &amp; Engineering ensures strict dimensional accuracy, robust material inspection, and dependable supply chain execution.</p>
+      </div>
+    </section>
 
-  <section class="section section--flush-top" aria-labelledby="about-home-title"><div class="container split"><figure class="split__media" data-reveal><img src="ab.png" alt="Shree Pooja Fasteners & Engineering" loading="lazy"><figcaption class="split__cap"><span class="label">Vasai East · Tungar Phata · Maharashtra</span></figcaption></figure><div class="split__copy" data-reveal><p class="label">About Shree Pooja Fasteners &amp; Engineering</p><h2 id="about-home-title">Industrial fastener supply with a dependable engineering focus</h2><p>Based in Vasai East, Tungar Phata, Maharashtra, the company supplies industrial fasteners for engineering, fabrication, construction, electrical, infrastructure and industrial applications.</p><dl class="ledger"><div><dt>Business Positioning</dt><dd>01</dd></div><div><dt>Bulk Supply</dt><dd>02</dd></div><div><dt>Drawing-Based Requirements</dt><dd>03</dd></div></dl></div></div></section>
+    <!-- Split About Highlight -->
+    <section class="section section--flush-top" aria-labelledby="closer-title">
+      <div class="container split">
+        <figure class="split__media" data-reveal>
+          <img src="ab.png" alt="Shree Pooja Fasteners & Engineering facility in Vasai East" width="1100" height="1375" loading="lazy" decoding="async" />
+          <figcaption class="split__cap"><span class="label">Vasai East, Tungar Phata · Maharashtra</span></figcaption>
+        </figure>
+        <div class="split__copy">
+          <p class="label">Trusted Industrial Partner</p>
+          <h2 id="closer-title">Comprehensive industrial fastener supply and engineering solutions</h2>
+          <p>Based in Vasai East, Maharashtra, we cater to engineering, fabrication, construction, electrical, infrastructure, and heavy machinery sectors with extensive inventory and custom supply capabilities.</p>
+          <dl class="ledger">
+            <div><dt>On-Time Supply Rate</dt><dd>98.5%</dd></div>
+            <div><dt>Material Standards</dt><dd>DIN/ISO/ASTM</dd></div>
+            <div><dt>Core Sectors Served</dt><dd>8+</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
 
-  <section id="products" class="section destinations" aria-labelledby="dest-title"><div class="container"><div class="shead shead--split"><div><p class="label">Product Catalog</p><h2 id="dest-title">Featured Fasteners</h2><p>Four core fastener categories. Select a category to open the complete product list and matching product images.</p></div><a class="link-arrow" href="#products" data-route="products">Open full catalog <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div><div class="featured-grid">
-    <button class="featured-card" type="button" data-category="Bolt"><img src="hex.jpeg" alt="Bolts" loading="lazy"><span class="featured-card__body"><span class="featured-card__number">01</span><span class="featured-card__name">Bolt</span></span></button>
-    <button class="featured-card" type="button" data-category="Screw"><img src="as.jpeg" alt="Screws" loading="lazy"><span class="featured-card__body"><span class="featured-card__number">02</span><span class="featured-card__name">Screw</span></span></button>
-    <button class="featured-card" type="button" data-category="Washer"><img src="s.jpeg" alt="Washers" loading="lazy"><span class="featured-card__body"><span class="featured-card__number">03</span><span class="featured-card__name">Washer</span></span></button>
-    <button class="featured-card" type="button" data-category="Nuts"><img src="h.jpeg" alt="Nuts" loading="lazy"><span class="featured-card__body"><span class="featured-card__number">04</span><span class="featured-card__name">Nuts</span></span></button>
-  </div></div></section>
+    <!-- Bento / High Demand (4 Categories ONLY) -->
+    <section class="section destinations" aria-labelledby="dest-title">
+      <div class="container">
+        <div class="shead shead--split">
+          <div>
+            <p class="label">High Demand</p>
+            <h2 id="dest-title">Core Fastener Categories</h2>
+          </div>
+          <a class="link-arrow" href="#products" data-route="products">View all products <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+        <div class="bento">
+          <a class="dtile" href="#products" data-route="products">
+            <img src="hex.jpeg" alt="Bolt Category" width="1100" height="733" loading="lazy" decoding="async" />
+            <span class="dtile__meta">
+              <span class="dtile__name">01 — Bolt</span>
+              <span class="dtile__place">Hex, Foundation, Carriage &amp; Flange Bolts</span>
+            </span>
+            <span class="dtile__count">View Products</span>
+          </a>
+          <a class="dtile" href="#products" data-route="products">
+            <img src="as.jpeg" alt="Screw Category" width="1100" height="733" loading="lazy" decoding="async" />
+            <span class="dtile__meta">
+              <span class="dtile__name">02 — Screw</span>
+              <span class="dtile__place">Assembly, Machine, Self Tapping, Drywall &amp; Wood Screws</span>
+            </span>
+            <span class="dtile__count">View Products</span>
+          </a>
+          <a class="dtile" href="#products" data-route="products">
+            <img src="s.jpeg" alt="Washer Category" width="1100" height="733" loading="lazy" decoding="async" />
+            <span class="dtile__meta">
+              <span class="dtile__name">03 — Washer</span>
+              <span class="dtile__place">Spring &amp; Plain Washers</span>
+            </span>
+            <span class="dtile__count">View Products</span>
+          </a>
+          <a class="dtile" href="#products" data-route="products">
+            <img src="h.jpeg" alt="Nuts Category" width="1100" height="733" loading="lazy" decoding="async" />
+            <span class="dtile__meta">
+              <span class="dtile__name">04 — Nuts</span>
+              <span class="dtile__place">Hex Nuts &amp; Heavy Fastening Hardware</span>
+            </span>
+            <span class="dtile__count">View Products</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-  <section class="section" aria-labelledby="engineering-title"><div class="container"><div class="shead" data-reveal><p class="label">Engineering &amp; Supply</p><h2 id="engineering-title">Fastener Engineering &amp; Manufacturing</h2><p>Fastener production commonly involves raw-material selection, cold forming/heading, thread formation or rolling, machining where applicable, heat treatment, surface finishing, dimensional inspection, thread verification, packing and dispatch. For Shree Pooja, these manufacturing activities are presented as associated manufacturing-partner capabilities rather than an in-house factory claim.</p></div><div class="process-grid"><article class="process-card" data-reveal><span class="label">01 · Material</span><h3>Raw Material &amp; Forming</h3><p>Material selection followed by heading/cold forming or other applicable forming processes.</p></article><article class="process-card" data-reveal><span class="label">02 · Threads</span><h3>Thread Formation</h3><p>Thread rolling or machining is used as appropriate to the fastener design and requirement.</p></article><article class="process-card" data-reveal><span class="label">03 · Finish</span><h3>Heat &amp; Surface Treatment</h3><p>Applicable heat treatment and surface finishing help meet required performance and environmental needs.</p></article><article class="process-card" data-reveal><span class="label">04 · Inspection</span><h3>Dimensional &amp; Thread Checks</h3><p>Dimensional accuracy, visual checks and thread verification support controlled supply.</p></article><article class="process-card" data-reveal><span class="label">05 · Quality</span><h3>Quality Control</h3><p>Raw material inspection, packing inspection and final dispatch verification are part of the controlled process.</p></article><article class="process-card" data-reveal><span class="label">06 · Dispatch</span><h3>Bulk Packing &amp; Delivery</h3><p>Products are packed and dispatched according to the requirement, quantity and delivery plan.</p></article></div></div></section>
+    <!-- Promises -->
+    <section class="section promises" aria-labelledby="prom-title">
+      <div class="container">
+        <div class="shead shead--center">
+          <p class="label">Why Choose Us</p>
+          <h2 id="prom-title">Precision, Quality &amp; Dependability</h2>
+          <p>Commitment to material consistency, dimensional precision, and dependable support.</p>
+        </div>
+        <ul class="promise-row">
+          <li class="promise" data-reveal>
+            <span class="promise__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h6a4 4 0 0 0 0-8h-4a4 4 0 0 1 0-8h6"/></svg></span>
+            <h3>Bulk Supply</h3>
+            <p>Reliable handling of bulk orders and schedule-based dispatches for large-scale industrial projects.</p>
+          </li>
+          <li class="promise" data-reveal>
+            <span class="promise__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3.5"/><path d="M5 21a7 7 0 0 1 14 0M12 14v3"/></svg></span>
+            <h3>Dimensional Accuracy</h3>
+            <p>Rigorous quality checks ensuring precise thread pitch, length, and diameter standards.</p>
+          </li>
+          <li class="promise" data-reveal>
+            <span class="promise__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <h3>Timely Delivery</h3>
+            <p>Efficient supply chain coordination ensuring your production and construction deadlines are met without delay.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <section class="section values" aria-labelledby="quality-title"><div class="container"><div class="shead shead--center"><p class="label">Quality</p><h2 id="quality-title">Consistency across every supply requirement</h2></div><ul class="values__list"><li data-reveal><span class="label">01</span><h3>Precision</h3><p>Focus on dimensional accuracy and consistent product specifications.</p></li><li data-reveal><span class="label">02</span><h3>Durability &amp; Reliability</h3><p>Fasteners selected and supplied for demanding industrial applications.</p></li><li data-reveal><span class="label">03</span><h3>Timely Delivery</h3><p>Dependable supply planning with customer support for bulk requirements.</p></li></ul></div></section>
+    <!-- Featured Products (6 Products ONLY) -->
+    <section class="section" aria-labelledby="feat-title">
+      <div class="container">
+        <div class="shead shead--split">
+          <div>
+            <p class="label">Product Catalog</p>
+            <h2 id="feat-title">Featured Fasteners</h2>
+          </div>
+          <a class="link-arrow" href="#products" data-route="products">View all products <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+        <div class="tgrid">
+          <article class="tcard" data-kind="bolts" data-price="189" data-days="1">
+            <div class="tcard__media">
+              <img src="hex.jpeg" alt="Hex Bolt" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="tcard__kind">Bolt</span>
+            </div>
+            <div class="tcard__body">
+              <p class="tcard__place">High-Tensile Industrial Grade</p>
+              <h3 class="tcard__name"><a href="#detail" data-route="detail">Hex Bolt</a></h3>
+              <p class="tcard__facts"><span>Standard Metric &amp; Imperial</span><span>In Stock</span></p>
+              <p class="tcard__foot">
+                <span class="tcard__price"><small>Inquire for price</small></span>
+                <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+              </p>
+            </div>
+          </article>
+          <article class="tcard" data-kind="screws" data-price="210" data-days="1">
+            <div class="tcard__media">
+              <img src="as.jpeg" alt="Assembly Screw" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="tcard__kind">Screw</span>
+            </div>
+            <div class="tcard__body">
+              <p class="tcard__place">Precision Assembly Hardware</p>
+              <h3 class="tcard__name"><a href="#detail" data-route="detail">Assembly Screw</a></h3>
+              <p class="tcard__facts"><span>Various Thread Profiles</span><span>Ready Ship</span></p>
+              <p class="tcard__foot">
+                <span class="tcard__price"><small>Inquire for price</small></span>
+                <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+              </p>
+            </div>
+          </article>
+          <article class="tcard" data-kind="washers" data-price="150" data-days="1">
+            <div class="tcard__media">
+              <img src="p.jpeg" alt="Plain Washer" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="tcard__kind">Washer</span>
+            </div>
+            <div class="tcard__body">
+              <p class="tcard__place">Load Distribution</p>
+              <h3 class="tcard__name"><a href="#detail" data-route="detail">Plain Washer</a></h3>
+              <p class="tcard__facts"><span>SS / MS Grades</span><span>In Stock</span></p>
+              <p class="tcard__foot">
+                <span class="tcard__price"><small>Inquire for price</small></span>
+                <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+              </p>
+            </div>
+          </article>
+          <article class="tcard" data-kind="nuts" data-price="190" data-days="1">
+            <div class="tcard__media">
+              <img src="h.jpeg" alt="Hex Nut" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="tcard__kind">Nuts</span>
+            </div>
+            <div class="tcard__body">
+              <p class="tcard__place">Secure Fastening</p>
+              <h3 class="tcard__name"><a href="#detail" data-route="detail">Hex Nut</a></h3>
+              <p class="tcard__facts"><span>DIN / ISO Standards</span><span>In Stock</span></p>
+              <p class="tcard__foot">
+                <span class="tcard__price"><small>Inquire for price</small></span>
+                <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+              </p>
+            </div>
+          </article>
+          <article class="tcard" data-kind="bolts" data-price="240" data-days="2">
+            <div class="tcard__media">
+              <img src="fo.jpeg" alt="Foundation Bolt" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="tcard__kind">Bolt</span>
+            </div>
+            <div class="tcard__body">
+              <p class="tcard__place">Heavy Construction</p>
+              <h3 class="tcard__name"><a href="#detail" data-route="detail">Foundation Bolt</a></h3>
+              <p class="tcard__facts"><span>Custom Lengths</span><span>Heavy Duty</span></p>
+              <p class="tcard__foot">
+                <span class="tcard__price"><small>Inquire for price</small></span>
+                <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+              </p>
+            </div>
+          </article>
+          <article class="tcard" data-kind="washers" data-price="170" data-days="1">
+            <div class="tcard__media">
+              <img src="s.jpeg" alt="Spring Washer" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="tcard__kind">Washer</span>
+            </div>
+            <div class="tcard__body">
+              <p class="tcard__place">Vibration Resistance</p>
+              <h3 class="tcard__name"><a href="#detail" data-route="detail">Spring Washer</a></h3>
+              <p class="tcard__facts"><span>DIN 127 Series</span><span>In Stock</span></p>
+              <p class="tcard__foot">
+                <span class="tcard__price"><small>Inquire for price</small></span>
+                <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <section class="section" aria-labelledby="applications-title"><div class="container"><div class="shead shead--split"><div><p class="label">Applications</p><h2 id="applications-title">Industries we serve</h2></div></div><div class="info-grid"><article class="info-card" data-reveal><h3>Automobile Industry</h3><p>Industrial fasteners for automotive engineering and related applications.</p></article><article class="info-card" data-reveal><h3>Construction Industry</h3><p>Bolts, screws, nuts and washers for construction requirements.</p></article><article class="info-card" data-reveal><h3>Electrical Industry</h3><p>Fastener supply for electrical and equipment-related requirements.</p></article><article class="info-card" data-reveal><h3>Engineering Industry</h3><p>Fasteners for general engineering and fabrication applications.</p></article><article class="info-card" data-reveal><h3>Heavy Fabrication</h3><p>Industrial fastening requirements across heavy fabrication work.</p></article><article class="info-card" data-reveal><h3>Industrial Machinery</h3><p>Fasteners used in machinery and industrial equipment applications.</p></article><article class="info-card" data-reveal><h3>Infrastructure Projects</h3><p>Supply support for infrastructure and project requirements.</p></article><article class="info-card" data-reveal><h3>General Industrial Applications</h3><p>Standard and requirement-based industrial fastener supply.</p></article></div></div></section>
+    <!-- Quote Banner -->
+    <section class="section quote-band on-photo" aria-labelledby="quote-title">
+      <img class="quote-band__img" src="ho3.png" alt="Industrial operations" width="2000" height="1333" loading="lazy" decoding="async" />
+      <div class="container quote-band__inner">
+        <h2 id="quote-title" class="sr-only">Client Testimonial</h2>
+        <figure>
+          <blockquote>&ldquo;Shree Pooja Fasteners provided exceptional supply reliability and timely delivery for our industrial fabrication requirements.&rdquo;</blockquote>
+          <figcaption><strong>Client Feedback</strong> · Industrial Engineering Partner</figcaption>
+        </figure>
+      </div>
+    </section>
 
-  <section class="section quote-band on-photo"><img class="quote-band__img" src="https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=2000" alt="Industrial engineering and metal components" loading="lazy"><div class="container quote-band__inner"><figure data-reveal><blockquote>Bulk requirements, drawing-based specifications and dependable industrial fastener supply.</blockquote><figcaption><strong>Shree Pooja Fasteners &amp; Engineering</strong> · Vasai East, Maharashtra</figcaption></figure></div></section>
+    <!-- Closer -->
+    <section class="section closer" aria-labelledby="closer-cta">
+      <div class="container closer__card">
+        <div>
+          <p class="label">Ready to Order?</p>
+          <h2 id="closer-cta">Get competitive wholesale pricing for your bulk fastener requirement</h2>
+        </div>
+        <div class="closer__actions">
+          <a class="btn btn--dark" href="#contact" data-route="contact">Request Quote</a>
+          <a class="btn btn--ghost" href="#products" data-route="products">Browse Catalog</a>
+        </div>
+      </div>
+    </section>
+  </div>
 
-  <section class="section" aria-labelledby="faq-title"><div class="container faq"><div class="shead"><p class="label">FAQ</p><h2 id="faq-title">Frequently asked questions</h2></div><div class="itinerary" data-accordion><div class="acc"><h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq1"><span class="label">01</span>What products do you supply?</button></h3><div class="acc__panel" id="faq1" hidden><p>Industrial fasteners including bolts, screws, washers and nuts, along with other fastener requirements such as SS/MS screws, anchor bolts, U bolts, threaded rods, hex nuts, lock nuts and customized fasteners.</p></div></div><div class="acc"><h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq2"><span class="label">02</span>Do you accept bulk orders?</button></h3><div class="acc__panel" id="faq2" hidden><p>Yes. Bulk industrial requirements can be discussed with the sales team based on product, specification and quantity.</p></div></div><div class="acc"><h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq3"><span class="label">03</span>Can requirements be supplied from drawings or specifications?</button></h3><div class="acc__panel" id="faq3" hidden><p>Drawing-based and customized requirements can be discussed. Customers can share drawings, specifications, dimensions and quantities for evaluation.</p></div></div><div class="acc"><h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq4"><span class="label">04</span>Where is the company located?</button></h3><div class="acc__panel" id="faq4" hidden><p>Vasai East, Tungar Phata, Maharashtra, India.</p></div></div></div></div></section>
+  <!-- ==================== PRODUCTS PAGE ==================== -->
+  <div id="page-products" class="spa-page">
+    <section class="container phead" aria-labelledby="products-title">
+      <p class="label">Product Catalog · 2026</p>
+      <h1 id="products-title">Industrial Fasteners &amp; Components</h1>
+      <p>Explore our core product categories: Bolts, Screws, Washers, and Nuts. Bulk supply and customized requirements handled efficiently.</p>
+    </section>
 
-  <section class="section closer"><div class="closer__card"><div><p class="label">Bulk &amp; Custom Requirements</p><h2>Share your product requirement, quantity or drawing.</h2></div><div class="closer__actions"><a class="btn btn--dark" href="#contact" data-route="contact">Send Enquiry</a><a class="btn btn--ghost" href="tel:+916262665358">Call Us</a></div></div></section>
-</div>
+    <section class="container section section--flush-top" aria-label="Product listings">
+      <div class="toolbar">
+        <div class="chips" role="group" aria-label="Product Category">
+          <button class="chip" type="button" data-kind-chip="all" aria-pressed="true">All</button>
+          <button class="chip" type="button" data-kind-chip="bolts" aria-pressed="false">Bolt</button>
+          <button class="chip" type="button" data-kind-chip="screws" aria-pressed="false">Screw</button>
+          <button class="chip" type="button" data-kind-chip="washers" aria-pressed="false">Washer</button>
+          <button class="chip" type="button" data-kind-chip="nuts" aria-pressed="false">Nuts</button>
+        </div>
+        <div class="toolbar__right">
+          <label>
+            <span class="sr-only">Sort products</span>
+            <select class="sort" data-sort>
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+            </select>
+          </label>
+        </div>
+      </div>
 
-<div id="page-products" class="spa-page"><section class="container phead"><p class="label">Product Catalog</p><h1>Featured Fasteners</h1><p>One catalog only — four featured categories. Click any category to view all supplied product names and matching images.</p></section><section class="container section section--flush-top"><div class="featured-grid"><button class="featured-card" type="button" data-category="Bolt"><img src="hex.jpeg" alt="Bolts"><span class="featured-card__body"><span class="featured-card__number">01</span><span class="featured-card__name">Bolt</span></span></button><button class="featured-card" type="button" data-category="Screw"><img src="as.jpeg" alt="Screws"><span class="featured-card__body"><span class="featured-card__number">02</span><span class="featured-card__name">Screw</span></span></button><button class="featured-card" type="button" data-category="Washer"><img src="s.jpeg" alt="Washers"><span class="featured-card__body"><span class="featured-card__number">03</span><span class="featured-card__name">Washer</span></span></button><button class="featured-card" type="button" data-category="Nuts"><img src="h.jpeg" alt="Nuts"><span class="featured-card__body"><span class="featured-card__number">04</span><span class="featured-card__name">Nuts</span></span></button></div></section></div>
+      <p class="results-meta" aria-live="polite">Showing <span data-tour-count>6 products</span></p>
 
-<div id="page-about" class="spa-page"><section class="thero on-photo"><img class="thero__img" src="ab.png" alt="Shree Pooja Fasteners & Engineering" loading="eager"><div class="container thero__inner"><p class="label thero__label">About Shree Pooja Fasteners &amp; Engineering</p><h1>Industrial Fastener Wholesaler &amp; Supplier</h1><p class="hero__sub">Vasai East, Tungar Phata, Maharashtra, India</p></div></section><section class="section"><div class="container story"><p class="story__lead">Shree Pooja Fasteners &amp; Engineering serves industrial customers with fastener supply across engineering, fabrication, construction, electrical, infrastructure and industrial sectors.</p><div class="story__cols"><p>The company focuses on precision, dimensional accuracy, durability, reliability, product consistency, timely delivery and dependable customer support.</p><p>Where manufacturing is involved, the website presents associated manufacturing facilities and manufacturing partners rather than claiming that every product is manufactured in-house by Shree Pooja Fasteners &amp; Engineering.</p></div></div></section><section class="section values"><div class="container"><div class="shead"><p class="label">Why Customers Choose Us</p><h2>Reliable supply with an engineering-first approach</h2></div><ul class="values__list"><li><span class="label">01</span><h3>Precision</h3><p>Attention to dimensional requirements and product consistency.</p></li><li><span class="label">02</span><h3>Dependability</h3><p>Support for bulk industrial requirements and timely delivery.</p></li><li><span class="label">03</span><h3>Customer Support</h3><p>Requirement-based discussions for products, drawings and specifications.</p></li></ul></div></section></div>
+      <div class="tgrid" data-tour-grid>
+        <article class="tcard" data-kind="bolts" data-price="189" data-days="1">
+          <div class="tcard__media">
+            <img src="hex.jpeg" alt="Hex Bolt" width="800" height="600" loading="lazy" decoding="async" />
+            <span class="tcard__kind">Bolt</span>
+          </div>
+          <div class="tcard__body">
+            <p class="tcard__place">Hex Bolt</p>
+            <h3 class="tcard__name"><a href="#detail" data-route="detail">Hex Bolt</a></h3>
+            <p class="tcard__facts"><span>Standard Sizes</span><span>In Stock</span></p>
+            <p class="tcard__foot">
+              <span class="tcard__price"><small>Inquire</small></span>
+              <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </p>
+          </div>
+        </article>
+        <article class="tcard" data-kind="bolts" data-price="240" data-days="2">
+          <div class="tcard__media">
+            <img src="fo.jpeg" alt="Foundation Bolt" width="800" height="600" loading="lazy" decoding="async" />
+            <span class="tcard__kind">Bolt</span>
+          </div>
+          <div class="tcard__body">
+            <p class="tcard__place">Foundation Bolt</p>
+            <h3 class="tcard__name"><a href="#detail" data-route="detail">Foundation Bolt</a></h3>
+            <p class="tcard__facts"><span>Heavy Duty</span><span>Custom Lengths</span></p>
+            <p class="tcard__foot">
+              <span class="tcard__price"><small>Inquire</small></span>
+              <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </p>
+          </div>
+        </article>
+        <article class="tcard" data-kind="screws" data-price="210" data-days="1">
+          <div class="tcard__media">
+            <img src="as.jpeg" alt="Assembly Screw" width="800" height="600" loading="lazy" decoding="async" />
+            <span class="tcard__kind">Screw</span>
+          </div>
+          <div class="tcard__body">
+            <p class="tcard__place">Assembly Screw</p>
+            <h3 class="tcard__name"><a href="#detail" data-route="detail">Assembly Screw</a></h3>
+            <p class="tcard__facts"><span>Precision Fit</span><span>Ready Ship</span></p>
+            <p class="tcard__foot">
+              <span class="tcard__price"><small>Inquire</small></span>
+              <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </p>
+          </div>
+        </article>
+        <article class="tcard" data-kind="washers" data-price="150" data-days="1">
+          <div class="tcard__media">
+            <img src="p.jpeg" alt="Plain Washer" width="800" height="600" loading="lazy" decoding="async" />
+            <span class="tcard__kind">Washer</span>
+          </div>
+          <div class="tcard__body">
+            <p class="tcard__place">Plain Washer</p>
+            <h3 class="tcard__name"><a href="#detail" data-route="detail">Plain Washer</a></h3>
+            <p class="tcard__facts"><span>Standard Standards</span><span>In Stock</span></p>
+            <p class="tcard__foot">
+              <span class="tcard__price"><small>Inquire</small></span>
+              <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </p>
+          </div>
+        </article>
+        <article class="tcard" data-kind="washers" data-price="170" data-days="1">
+          <div class="tcard__media">
+            <img src="s.jpeg" alt="Spring Washer" width="800" height="600" loading="lazy" decoding="async" />
+            <span class="tcard__kind">Washer</span>
+          </div>
+          <div class="tcard__body">
+            <p class="tcard__place">Spring Washer</p>
+            <h3 class="tcard__name"><a href="#detail" data-route="detail">Spring Washer</a></h3>
+            <p class="tcard__facts"><span>DIN 127</span><span>In Stock</span></p>
+            <p class="tcard__foot">
+              <span class="tcard__price"><small>Inquire</small></span>
+              <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </p>
+          </div>
+        </article>
+        <article class="tcard" data-kind="nuts" data-price="190" data-days="1">
+          <div class="tcard__media">
+            <img src="h.jpeg" alt="Hex Nut" width="800" height="600" loading="lazy" decoding="async" />
+            <span class="tcard__kind">Nuts</span>
+          </div>
+          <div class="tcard__body">
+            <p class="tcard__place">Hex Nut</p>
+            <h3 class="tcard__name"><a href="#detail" data-route="detail">Hex Nut</a></h3>
+            <p class="tcard__facts"><span>Robust Fit</span><span>In Stock</span></p>
+            <p class="tcard__foot">
+              <span class="tcard__price"><small>Inquire</small></span>
+              <span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </p>
+          </div>
+        </article>
+      </div>
 
-<div id="page-contact" class="spa-page"><section class="container phead"><p class="label">Contact</p><h1>Send your requirement</h1><p>Share your product, quantity, location and requirement. For customized requirements, drawings and specifications can also be shared.</p></section><section class="container section section--flush-top contact"><form class="contact__form" data-demo-form novalidate><div class="contact__row"><div class="field"><label class="field__label" for="c-name">Your Name</label><input class="input" id="c-name" name="name" required placeholder="Your name"></div><div class="field"><label class="field__label" for="c-company">Company Name</label><input class="input" id="c-company" name="company" required placeholder="Company name"></div></div><div class="contact__row"><div class="field"><label class="field__label" for="c-email">Email Address</label><input class="input" id="c-email" name="email" type="email" required placeholder="you@company.com"></div><div class="field"><label class="field__label" for="c-mobile">Mobile Number</label><input class="input" id="c-mobile" name="mobile" type="tel" required placeholder="Mobile number"></div></div><div class="contact__row"><div class="field"><label class="field__label" for="c-city">City</label><input class="input" id="c-city" name="city" placeholder="City"></div><div class="field"><label class="field__label" for="c-product">Product Name</label><select class="input" id="c-product" name="product"><option>Bolt</option><option>Screw</option><option>Washer</option><option>Nuts</option><option>Other / Customized</option></select></div></div><div class="contact__row"><div class="field"><label class="field__label" for="c-qty">Quantity Required</label><input class="input" id="c-qty" name="quantity" placeholder="e.g. 1000 pcs"></div><div class="field"><label class="field__label" for="c-req">Requirement</label><input class="input" id="c-req" name="requirement" placeholder="Size / grade / specification"></div></div><button class="btn btn--dark" type="submit">Send Enquiry on WhatsApp</button><p class="form-note" role="status" aria-live="polite"></p></form><aside class="contact__aside"><figure class="contact__photo"><img src="https://images.pexels.com/photos/386237/pexels-photo-386237.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Industrial engineering workspace" loading="lazy"></figure><div class="contact__card"><p class="label">Shree Pooja Fasteners &amp; Engineering</p><address>Vasai East, Tungar Phata<br>Maharashtra, India<br><br><a href="tel:+916262665358">+91 6262665358</a><br><a href="mailto:shreepoojafasteners.eng@gmail.com">shreepoojafasteners.eng@gmail.com</a></address></div></aside></section><section class="container section section--flush-top"><div class="map-wrap"><iframe title="Shree Pooja Fasteners & Engineering location" src="https://www.google.com/maps?q=Vasai%20East%2C%20Tungar%20Phata%2C%20Maharashtra%2C%20India&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></section></div>
+      <div class="empty" data-tour-empty hidden>
+        <h2>No products match your filter criteria</h2>
+        <p>Try selecting a different category.</p>
+        <button class="btn btn--dark" type="button" data-tour-reset>Reset filters</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- ==================== ENGINEERING & MANUFACTURING PAGE ==================== -->
+  <div id="page-engineering" class="spa-page">
+    <section class="container phead" aria-labelledby="eng-title">
+      <p class="label">Technical Insights</p>
+      <h1 id="eng-title">Fastener Engineering &amp; Manufacturing Capabilities</h1>
+      <p>Understanding the rigorous processes behind high-quality industrial fasteners provided through our associated manufacturing facilities and partner network.</p>
+    </section>
+
+    <section class="container section section--flush-top" aria-label="Engineering details">
+      <div class="eng-grid">
+        <div class="eng-card">
+          <h3>Fastener Manufacturing Basics</h3>
+          <p>Industrial fasteners are produced through specialized metal forming techniques designed to ensure maximum tensile strength, fatigue resistance, and load-bearing capacity under extreme operating conditions.</p>
+        </div>
+        <div class="eng-card">
+          <h3>Raw Material Selection</h3>
+          <p>Sourcing high-grade carbon steels, alloy steels, and stainless steel wire rods that meet stringent chemical composition and mechanical property standards.</p>
+        </div>
+        <div class="eng-card">
+          <h3>Cold Forming &amp; Heading</h3>
+          <p>High-speed mechanical presses shape raw wire into bolt blanks and screw heads through multi-stage cold forging without sacrificing grain flow.</p>
+        </div>
+        <div class="eng-card">
+          <h3>Thread Rolling &amp; Formation</h3>
+          <p>Threads are formed via cold rolling dies rather than cutting, compressing the metal grain to significantly enhance shear and tensile strength.</p>
+        </div>
+        <div class="eng-card">
+          <h3>Heat Treatment &amp; Surface Finishing</h3>
+          <p>Controlled atmosphere hardening, tempering, and surface coatings (such as Hot Dip Galvanizing and zinc plating) provide superior corrosion resistance.</p>
+        </div>
+        <div class="eng-card">
+          <h3>Quality Inspection &amp; Verification</h3>
+          <p>Rigorous dimensional accuracy checks, thread pitch verification, visual inspection, and batch testing prior to packing and dispatch.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ==================== ABOUT US PAGE ==================== -->
+  <div id="page-about" class="spa-page">
+    <section class="thero thero--about on-photo" aria-labelledby="about-title">
+      <img class="thero__img" src="ab.png" alt="Shree Pooja Fasteners facility" width="2000" height="1333" fetchpriority="high" decoding="async" />
+      <div class="container thero__inner" style="padding-top: 10rem; padding-bottom: 3rem;">
+        <p class="label" style="color:var(--snow-soft);">About Shree Pooja Fasteners &amp; Engineering</p>
+        <h1 id="about-title" style="color:var(--snow);">Wholesaler &amp; Supplier of Premium Industrial Fasteners</h1>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="story-title">
+      <div class="container story">
+        <h2 id="story-title" class="story__lead">Based in Vasai East, Tungar Phata, Maharashtra, Shree Pooja Fasteners &amp; Engineering is a trusted industrial fastener business serving engineering, fabrication, construction, electrical, infrastructure, and heavy sectors.</h2>
+        <div class="story__cols">
+          <p>We operate as a reliable wholesaler and supplier, offering an extensive product range including SS Screws, MS Screws, Hex Bolts, Foundation Bolts, Anchor Bolts, Carriage Bolts, U Bolts, Threaded Rods, Hex Nuts, Lock Nuts, Plain Washers, Spring Washers, Machine Screws, Self Tapping Screws, Drywall Screws, Wood Screws, Flange Bolts, and Customized Fasteners.</p>
+          <p>Through our associated manufacturing facilities and controlled quality processes, we ensure that every batch meets rigorous dimensional accuracy, durability, and reliability standards for demanding industrial applications.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ==================== CONTACT US PAGE ==================== -->
+  <div id="page-contact" class="spa-page">
+    <section class="container phead" aria-labelledby="contact-title">
+      <p class="label">Contact &amp; RFQ</p>
+      <h1 id="contact-title">Let&rsquo;s discuss your engineering requirements</h1>
+      <p>Send us your specifications or bulk requirements. Our team responds promptly.</p>
+    </section>
+
+    <section class="container section section--flush-top contact" aria-label="Contact form and details">
+      <form class="contact__form" data-demo-form novalidate>
+        <div class="contact__row">
+          <div class="field">
+            <label class="field__label" for="c-name">Your Name</label>
+            <input class="input" id="c-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label class="field__label" for="c-company">Company Name</label>
+            <input class="input" id="c-company" name="company" type="text" autocomplete="organization" required />
+          </div>
+        </div>
+        <div class="contact__row">
+          <div class="field">
+            <label class="field__label" for="c-email">Email Address</label>
+            <input class="input" id="c-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label class="field__label" for="c-mobile">Mobile Number</label>
+            <input class="input" id="c-mobile" name="mobile" type="tel" autocomplete="tel" required />
+          </div>
+        </div>
+        <div class="contact__row">
+          <div class="field">
+            <label class="field__label" for="c-city">City</label>
+            <input class="input" id="c-city" name="city" type="text" autocomplete="address-level2" required />
+          </div>
+          <div class="field">
+            <label class="field__label" for="c-prod">Product Name</label>
+            <input class="input" id="c-prod" name="product" type="text" required placeholder="e.g. Hex Bolt, Washer..." />
+          </div>
+        </div>
+        <div class="contact__row">
+          <div class="field">
+            <label class="field__label" for="c-qty">Quantity Required</label>
+            <input class="input" id="c-qty" name="quantity" type="text" required placeholder="e.g. 5,000 pcs" />
+          </div>
+          <div class="field">
+            <label class="field__label" for="c-req">Requirement Details</label>
+            <input class="input" id="c-req" name="requirement" type="text" required placeholder="Sizes, grades, specifications..." />
+          </div>
+        </div>
+        <button class="btn btn--dark" type="submit">Submit Inquiry</button>
+        <p class="form-note" role="status" aria-live="polite"></p>
+      </form>
+
+      <aside class="contact__aside">
+        <figure class="contact__photo">
+          <img src="ab.png" alt="Shree Pooja Fasteners office" width="900" height="1200" loading="lazy" decoding="async" />
+        </figure>
+        <div class="contact__card">
+          <p class="label">Head Office &amp; Works</p>
+          <address>Vasai East, Tungar Phata,<br />Maharashtra, India</address>
+          <p><a href="tel:+916262665358">+91 6262665358</a></p>
+          <p><a href="mailto:shreepoojafasteners.eng@gmail.com">shreepoojafasteners.eng@gmail.com</a></p>
+          <p class="contact__hours">Mon&ndash;Sat, 09:00&ndash;18:00 IST</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section section--flush-top" aria-labelledby="faq-title">
+      <div class="container faq">
+        <div class="shead">
+          <p class="label">FAQ</p>
+          <h2 id="faq-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="acc" data-accordion>
+          <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq1"><span class="label">Products</span>What types of fasteners do you supply?</button></h3>
+          <div class="acc__panel" id="faq1" hidden><p>We supply SS Screws, MS Screws, Hex Bolts, Foundation Bolts, Anchor Bolts, Carriage Bolts, U Bolts, Threaded Rods, Hex Nuts, Lock Nuts, Plain Washers, Spring Washers, Machine Screws, Self Tapping Screws, Drywall Screws, Wood Screws, Flange Bolts, and Customized Fasteners.</p></div>
+          <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq2"><span class="label">Bulk</span>Do you handle bulk orders?</button></h3>
+          <div class="acc__panel" id="faq2" hidden><p>Yes, we specialize in bulk supply for industrial, construction, and infrastructure projects with reliable dispatch schedules.</p></div>
+          <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq3"><span class="label">Custom</span>Can you manufacture based on drawings and specifications?</button></h3>
+          <div class="acc__panel" id="faq3" hidden><p>Yes, we accept drawing-based and customized requirements through our associated manufacturing partner capabilities.</p></div>
+          <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq4"><span class="label">Location</span>Where are you located?</button></h3>
+          <div class="acc__panel" id="faq4" hidden><p>Our business is located in Vasai East, Tungar Phata, Maharashtra, India.</p></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ==================== 404 PAGE ==================== -->
+  <div id="page-404" class="spa-page">
+    <section class="container lost" aria-labelledby="lost-title" style="display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:3rem; padding-block:5rem;">
+      <div>
+        <p class="lost__code">ERROR 404 · PAGE NOT FOUND</p>
+        <h1 id="lost-title">This page doesn&rsquo;t exist</h1>
+        <p>The page or product specification you were looking for is unavailable.</p>
+        <div class="lost__actions" style="margin-top:2rem; display:flex; gap:1rem;">
+          <a class="btn btn--dark" href="#home" data-route="home">Back to Home</a>
+          <a class="btn btn--ghost" href="#products" data-route="products">Browse Catalog</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
 </main>
 
-<footer class="footer"><div class="container"><div class="footer__top"><div><p class="footer__title">Shree Pooja Fasteners &amp; Engineering</p><p class="footer__sub">Industrial Fastener Wholesaler / Supplier · Vasai East, Tungar Phata, Maharashtra</p></div><div class="footer__cols"><div><p class="label footer__h">Products</p><ul><li><a href="#products" data-route="products">Product Catalog</a></li><li><a href="#products" data-route="products">Bolts</a></li><li><a href="#products" data-route="products">Screws</a></li><li><a href="#products" data-route="products">Washers &amp; Nuts</a></li></ul></div><div><p class="label footer__h">Company</p><ul><li><a href="#about" data-route="about">About Us</a></li><li><a href="#home" data-route="home">Quality</a></li><li><a href="#home" data-route="home">Applications</a></li><li><a href="#contact" data-route="contact">Contact</a></li></ul></div><div><p class="label footer__h">Contact</p><address>Vasai East, Tungar Phata<br>Maharashtra, India<br><a href="tel:+916262665358">+91 6262665358</a><br><a href="mailto:shreepoojafasteners.eng@gmail.com">shreepoojafasteners.eng@gmail.com</a></address></div></div></div><p class="footer__word" aria-hidden="true">SHREE POOJA FASTENERS</p><div class="footer__bottom"><p>&copy; <span data-year>2026</span> Shree Pooja Fasteners &amp; Engineering. All rights reserved.</p><p>Designed by Marwar Infotech</p></div></div></footer>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__lead">
+        <p class="footer__title">Shree Pooja Fasteners &amp; Engineering</p>
+        <p class="footer__sub">Wholesaler &amp; Supplier of Premium Industrial Fasteners and Engineering Solutions.</p>
+      </div>
 
-<div class="catalog-modal" id="catalog-modal" aria-hidden="true"><div class="catalog-modal__panel" role="dialog" aria-modal="true" aria-labelledby="catalog-modal-title"><div class="catalog-modal__head"><div><p class="label">Product Catalog</p><h2 id="catalog-modal-title">Products</h2><p id="catalog-modal-sub" class="form-note"></p></div><button class="catalog-close" type="button" data-close-catalog aria-label="Close catalog">×</button></div><div class="catalog-items" id="catalog-items"></div></div></div>
+      <div class="footer__cols">
+        <div>
+          <p class="label footer__h">Products</p>
+          <ul>
+            <li><a href="#products" data-route="products">Bolt</a></li>
+            <li><a href="#products" data-route="products">Screw</a></li>
+            <li><a href="#products" data-route="products">Washer</a></li>
+            <li><a href="#products" data-route="products">Nuts</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="label footer__h">Company</p>
+          <ul>
+            <li><a href="#about" data-route="about">About Us</a></li>
+            <li><a href="#engineering" data-route="engineering">Engineering</a></li>
+            <li><a href="#contact" data-route="contact">Contact &amp; RFQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="label footer__h">Works</p>
+          <address>
+            Vasai East, Tungar Phata,<br />Maharashtra, India<br />
+            <a href="tel:+916262665358">+91 6262665358</a><br />
+            <a href="mailto:shreepoojafasteners.eng@gmail.com">shreepoojafasteners.eng@gmail.com</a>
+          </address>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer__word" aria-hidden="true">SHREE POOJA FASTENERS</p>
+
+    <div class="footer__bottom">
+      <p>&copy; <span data-year>2026</span> Shree Pooja Fasteners &amp; Engineering. All rights reserved.</p>
+      <p>Designed by Marwar Infotech</p>
+    </div>
+  </div>
+</footer>
+
 <div class="toast" role="status" aria-live="polite" hidden></div>
 
 <script>
-(function(){
-  const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
-  const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const toastEl=$('.toast'); let toastTimer; function toast(m){if(!toastEl)return;toastEl.textContent=m;toastEl.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>toastEl.hidden=true,3600)}
-  const header=$('.header'); if(header){const on=()=>header.classList.toggle('is-scrolled',scrollY>40);on();addEventListener('scroll',on,{passive:true})}
-  const burger=$('.burger'),nav=$('#site-nav'); if(burger&&nav){const set=o=>{burger.setAttribute('aria-expanded',String(o));burger.setAttribute('aria-label',o?'Close menu':'Open menu');document.body.classList.toggle('menu-open',o)};burger.onclick=()=>set(burger.getAttribute('aria-expanded')!=='true');$$('a',nav).forEach(a=>a.onclick=()=>set(false));addEventListener('keydown',e=>{if(e.key==='Escape')set(false)})}
-  const pages={home:$('#page-home'),products:$('#page-products'),about:$('#page-about'),contact:$('#page-contact')};
-  function routeTo(hash){let key=(hash||'#home').replace('#','')||'home';if(!pages[key])key='home';Object.entries(pages).forEach(([k,el])=>el&&el.classList.toggle('active-page',k===key));$$('[data-route]').forEach(a=>a.getAttribute('data-route')===key?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current'));window.scrollTo({top:0,behavior:'smooth'})}
-  addEventListener('hashchange',()=>routeTo(location.hash));document.addEventListener('click',e=>{const a=e.target.closest('[data-route]');if(a){e.preventDefault();location.hash=a.getAttribute('data-route');routeTo(location.hash)}});routeTo(location.hash);
-  // Hero slider
-  const slides=$$('.hero-slide');let slideIndex=0,slideTimer;function showSlide(i){slideIndex=(i+slides.length)%slides.length;slides.forEach((s,n)=>s.classList.toggle('is-active',n===slideIndex))}function restartSlider(){clearInterval(slideTimer);if(!reduceMotion)slideTimer=setInterval(()=>showSlide(slideIndex+1),5000)}showSlide(0);restartSlider();$('[data-hero-prev]')?.addEventListener('click',()=>{showSlide(slideIndex-1);restartSlider()});$('[data-hero-next]')?.addEventListener('click',()=>{showSlide(slideIndex+1);restartSlider()});
-  // Catalog data: exact customer-supplied asset names/product mapping
-  const catalog={Bolt:[['Hex Bolt','hex.jpeg'],['Foundation Bolt','fo.jpeg'],['Carriage Bolt','ca.jpeg'],['Flange Bolt','fl.jpeg']],Screw:[['Assembly Screw','as.jpeg'],['Machine Screw','ma.jpeg'],['Self Tapping Screw','se1.jpeg'],['Self Tapping Screw — Variant','se2.jpeg'],['Drywall Screw','dr.jpeg'],['Wood Screw','w.jpeg']],Washer:[['Spring Washer','s.jpeg'],['Plain Washer','p.jpeg']],Nuts:[['Hex Nut','h.jpeg']]};
-  const modal=$('#catalog-modal'),items=$('#catalog-items'),modalTitle=$('#catalog-modal-title'),modalSub=$('#catalog-modal-sub');function openCatalog(cat){modalTitle.textContent=cat+' Products';modalSub.textContent=`${catalog[cat].length} products`;items.innerHTML=catalog[cat].map(([name,img])=>`<article class="catalog-item"><img src="${img}" alt="${name}" loading="lazy"><div class="catalog-item__body"><h3>${name}</h3><p>${cat}</p></div></article>`).join('');modal.classList.add('is-open');modal.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');$('.catalog-close')?.focus()}
-  $$('[data-category]').forEach(b=>b.addEventListener('click',()=>openCatalog(b.dataset.category)));$('[data-close-catalog]')?.addEventListener('click',closeCatalog);modal?.addEventListener('click',e=>{if(e.target===modal)closeCatalog()});function closeCatalog(){modal.classList.remove('is-open');modal.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open')};addEventListener('keydown',e=>{if(e.key==='Escape'&&modal?.classList.contains('is-open'))closeCatalog()});
-  // FAQ accordion
-  document.addEventListener('click',e=>{const b=e.target.closest('[data-accordion] .acc__btn');if(!b)return;const open=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!open));const p=$('#'+b.getAttribute('aria-controls'));if(p)p.hidden=open});
-  // Contact form -> WhatsApp enquiry
-  document.addEventListener('submit',e=>{const f=e.target;if(!f.hasAttribute('data-demo-form'))return;e.preventDefault();const invalid=$$('input,select,textarea',f).filter(x=>!x.checkValidity());$$('.is-invalid',f).forEach(x=>x.classList.remove('is-invalid'));if(invalid.length){invalid.forEach(x=>x.classList.add('is-invalid'));invalid[0].focus();$('.form-note',f).textContent='Please check the highlighted required fields.';return}const d=new FormData(f);const msg=`Hello Shree Pooja Fasteners & Engineering,\n\nI have an industrial fastener requirement.\nName: ${d.get('name')}\nCompany: ${d.get('company')}\nEmail: ${d.get('email')}\nMobile: ${d.get('mobile')}\nCity: ${d.get('city')}\nProduct: ${d.get('product')}\nQuantity: ${d.get('quantity')}\nRequirement: ${d.get('requirement')}`;window.open('https://wa.me/916262665358?text='+encodeURIComponent(msg),'_blank','noopener');$('.form-note',f).textContent='Opening WhatsApp with your enquiry details…';toast('WhatsApp enquiry prepared successfully.');f.reset()});
-  // Reveal on scroll — same existing bottom-to-top motion
-  const reveals=$$('[data-reveal]');if(reveals.length&&!reduceMotion&&'IntersectionObserver'in window){document.documentElement.classList.add('js-reveal');const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('is-in');io.unobserve(en.target)}}),{rootMargin:'0px 0px -8% 0px'});reveals.forEach(x=>io.observe(x))}else reveals.forEach(x=>x.classList.add('is-in'));
-  $$('[data-year]').forEach(e=>e.textContent=new Date().getFullYear());
+/* ==========================================================================
+   Shree Pooja Fasteners & Engineering — Integrated Vanilla JS
+   ========================================================================== */
+(() => {
+  "use strict";
+
+  const $ = (sel, root = document) => root.querySelector(sel);
+  const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
+
+  const toastEl = $(".toast");
+  let toastTimer;
+  function toast(message) {
+    if (!toastEl) return;
+    toastEl.textContent = message;
+    toastEl.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => { toastEl.hidden = true; }, 3600);
+  }
+
+  const header = $(".header");
+  if (header && header.dataset.header === "photo") {
+    const onScroll = () => header.classList.toggle("is-scrolled", window.scrollY > 40);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
+
+  const burger = $(".burger");
+  const nav = $("#site-nav");
+  if (burger && nav) {
+    const setOpen = (open) => {
+      burger.setAttribute("aria-expanded", String(open));
+      burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      document.body.classList.toggle("menu-open", open);
+    };
+    burger.addEventListener("click", () => setOpen(burger.getAttribute("aria-expanded") !== "true"));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && document.body.classList.contains("menu-open")) {
+        setOpen(false);
+        burger.focus();
+      }
+    });
+    $$("a", nav).forEach((a) => a.addEventListener("click", () => setOpen(false)));
+    window.matchMedia("(min-width: 961px)").addEventListener("change", (e) => { if (e.matches) setOpen(false); });
+  }
+
+  // Hero Image Slider
+  const slides = $$(".hero__slide");
+  if (slides.length > 1) {
+    let currentSlide = 0;
+    setInterval(() => {
+      slides[currentSlide].classList.remove("active");
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add("active");
+    }, 4000);
+  }
+
+  const pages = {
+    home: $("#page-home"),
+    products: $("#page-products"),
+    engineering: $("#page-engineering"),
+    detail: $("#page-detail"),
+    about: $("#page-about"),
+    contact: $("#page-contact"),
+    "404": $("#page-404")
+  };
+
+  function routeTo(hash) {
+    let key = hash.replace("#", "") || "home";
+    if (!pages[key]) key = "404";
+
+    Object.entries(pages).forEach(([k, el]) => {
+      if (el) {
+        el.classList.toggle("active-page", k === key);
+      }
+    });
+
+    $$("[data-route]").forEach((link) => {
+      const targetRoute = link.getAttribute("data-route");
+      if (targetRoute === key) {
+        link.setAttribute("aria-current", "page");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  window.addEventListener("hashchange", () => {
+    routeTo(window.location.hash);
+  });
+
+  document.addEventListener("click", (e) => {
+    const link = e.target.closest("[data-route]");
+    if (link) {
+      e.preventDefault();
+      const route = link.getAttribute("data-route");
+      window.location.hash = route;
+      routeTo(route);
+      if (document.body.classList.contains("menu-open")) {
+        document.body.classList.remove("menu-open");
+        if (burger) burger.setAttribute("aria-expanded", "false");
+      }
+    }
+  });
+
+  routeTo(window.location.hash);
+
+  const grid = $("[data-tour-grid]");
+  if (grid) {
+    const cards = $$(".tcard", grid);
+    const count = $("[data-tour-count]");
+    const empty = $("[data-tour-empty]");
+    const chips = $$("[data-kind-chip]");
+    const sort = $("[data-sort]");
+    cards.forEach((c, i) => { c.dataset.order = i; });
+
+    const apply = () => {
+      const kind = (chips.find((c) => c.getAttribute("aria-pressed") === "true") || {}).dataset?.kindChip || "all";
+      let shown = 0;
+      cards.forEach((c) => {
+        const ok = (kind === "all" || c.dataset.kind === kind);
+        c.hidden = !ok;
+        if (ok) shown += 1;
+      });
+      const key = sort ? sort.value : "featured";
+      const by = {
+        featured: (a, b) => a.dataset.order - b.dataset.order,
+        "price-asc": (a, b) => a.dataset.price - b.dataset.price,
+        "price-desc": (a, b) => b.dataset.price - a.dataset.price,
+      }[key];
+      cards.slice().sort(by).forEach((c) => grid.appendChild(c));
+      if (count) count.textContent = `${shown} ${shown === 1 ? "product" : "products"}`;
+      if (empty) empty.hidden = shown > 0;
+    };
+
+    chips.forEach((chip) => chip.addEventListener("click", () => {
+      chips.forEach((c) => c.setAttribute("aria-pressed", String(c === chip)));
+      apply();
+    }));
+    sort?.addEventListener("change", apply);
+    $("[data-tour-reset]")?.addEventListener("click", () => {
+      chips.forEach((c, i) => c.setAttribute("aria-pressed", String(i === 0)));
+      apply();
+    });
+    apply();
+  }
+
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-accordion] .acc__btn");
+    if (btn) {
+      const open = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", String(!open));
+      const panel = $("#" + btn.getAttribute("aria-controls"));
+      if (panel) panel.hidden = open;
+    }
+  });
+
+  document.addEventListener("submit", (e) => {
+    const form = e.target;
+    if (form.hasAttribute("data-demo-form")) {
+      e.preventDefault();
+      const invalid = $$("input, select, textarea", form).filter((f) => !f.checkValidity());       $$(".is-invalid", form).forEach((f) => f.classList.remove("is-invalid"));
+      if (invalid.length) {
+        invalid.forEach((f) => {
+          f.classList.add("is-invalid");
+          f.setAttribute("aria-invalid", "true");
+        });
+        invalid[0].focus();
+        return;
+      }
+      toast("Inquiry submitted successfully!");
+      form.reset();
+    }
+  });
+
+  const reveals = $$("[data-reveal]");   if (reveals.length && "IntersectionObserver" in window) {     document.documentElement.classList.add("js-reveal");     const io = new IntersectionObserver((entries) => {       entries.forEach((entry) => {         if (!entry.isIntersecting) return;         entry.target.classList.add("is-in");         io.unobserve(entry.target);       });     }, { rootMargin: "0px 0px -8\% 0px" });     reveals.forEach((el) => io.observe(el));   }    $$("[data-year]").forEach((el) => { el.textContent = new Date().getFullYear(); });
 })();
 </script>
 </body>
